@@ -46,7 +46,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  custom_dir: overrides # 用来搞评论的，参考 https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/
+  # custom_dir: overrides # 用来搞评论的，参考 https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/
 
 edit_uri: ""
 
