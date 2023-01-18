@@ -21,9 +21,9 @@ nav:
     - test/index.md
   
 site_name: 果壳的宇宙
-site_url: https://guoke.github.io/
-# repo_name: xuan-insr/咸鱼暄的代码空间
-# repo_url: https://github.com/xuan-insr/xuan-insr.github.io
+site_url: https://loveofguoke.github.io/
+repo_name: loveofguoke/果壳的宇宙
+repo_url: https://github.com/loveofguoke/loveofguoke.github.io
 
 theme:
   name: material
@@ -121,4 +121,4 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
-  # - statistics
+  - statistics
