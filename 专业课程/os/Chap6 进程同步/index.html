@@ -1,0 +1,1674 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://guoke.github.io/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B/os/Chap6%20%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/">
+      
+      
+      
+      <link rel="icon" href="../../../logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>Chap6 进程同步 - 果壳的宇宙</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/timeago.css">
+    
+      <link rel="stylesheet" href="../../../from_oi_wiki/css/extra.css?v=13">
+    
+      <link rel="stylesheet" href="../../../css/status.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-JT9BRCXKJJ"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-JT9BRCXKJJ",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-JT9BRCXKJJ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chap6-进程同步" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="果壳的宇宙" class="md-header__button md-logo" aria-label="果壳的宇宙" data-md-component="logo">
+      
+  <img src="../../../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            果壳的宇宙
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chap6 进程同步
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        🏡 主页
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../1_intro/" class="md-tabs__link">
+        ZJU-CS专业课
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/" class="md-tabs__link">
+        自学课程
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%E6%9D%82%E9%A1%B9/" class="md-tabs__link">
+        杂项
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%E7%94%9F%E6%B4%BB/" class="md-tabs__link">
+        生活
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../test/" class="md-tabs__link">
+        测试
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="果壳的宇宙" class="md-nav__button md-logo" aria-label="果壳的宇宙" data-md-component="logo">
+      
+  <img src="../../../logo.png" alt="logo">
+
+    </a>
+    果壳的宇宙
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../..">🏡 主页</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="🏡 主页" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          🏡 主页
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../home/about/" class="md-nav__link">
+        ❤️ 我和朋友们！
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../recent/" class="md-nav__link">
+        📆 最近更新
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          ZJU-CS专业课
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ZJU-CS专业课" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          ZJU-CS专业课
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" tabindex="0" aria-expanded="false">
+          操作系统
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="操作系统" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          操作系统
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_intro/" class="md-nav__link">
+        1 写在前面
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/">自学课程</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="自学课程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          自学课程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../%E6%9D%82%E9%A1%B9/">杂项</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="杂项" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          杂项
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../%E7%94%9F%E6%B4%BB/">生活</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="生活" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          生活
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%94%9F%E6%B4%BB/2022/" class="md-nav__link">
+        2022 年终总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../test/">测试</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="测试" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          测试
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chap6-进程同步" class="md-nav__link">
+    Chap6 进程同步
+  </a>
+  
+    <nav class="md-nav" aria-label="Chap6 进程同步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#背景" class="md-nav__link">
+    背景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#临界区问题" class="md-nav__link">
+    临界区问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#软件同步" class="md-nav__link">
+    软件同步
+  </a>
+  
+    <nav class="md-nav" aria-label="软件同步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#petersons-solution" class="md-nav__link">
+    Peterson's Solution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bakery-algorithm" class="md-nav__link">
+    Bakery Algorithm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#硬件同步" class="md-nav__link">
+    硬件同步
+  </a>
+  
+    <nav class="md-nav" aria-label="硬件同步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#测试与设置" class="md-nav__link">
+    测试与设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#交换" class="md-nav__link">
+    交换
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#小结" class="md-nav__link">
+    小结
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#互斥锁-mutex-lock" class="md-nav__link">
+    互斥锁 (Mutex Lock)
+  </a>
+  
+    <nav class="md-nav" aria-label="互斥锁 (Mutex Lock)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#自旋锁-spinlock" class="md-nav__link">
+    自旋锁 spinlock
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#信号量-semaphores" class="md-nav__link">
+    信号量 (Semaphores)
+  </a>
+  
+    <nav class="md-nav" aria-label="信号量 (Semaphores)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#整型信号量-integer-semaphore" class="md-nav__link">
+    整型信号量 Integer semaphore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#计数信号量-counting-semaphore" class="md-nav__link">
+    计数信号量 Counting semaphore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#二值信号量-binary-semaphore" class="md-nav__link">
+    二值信号量 Binary semaphore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#信号量的实现" class="md-nav__link">
+    信号量的实现
+  </a>
+  
+    <nav class="md-nav" aria-label="信号量的实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#记录型信号量" class="md-nav__link">
+    记录型信号量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#两种操作原子" class="md-nav__link">
+    两种操作(原子?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#无忙等待的实现方式真正使用的--题干中所指的" class="md-nav__link">
+    无忙等待的实现方式(真正使用的 &amp; 题干中所指的)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wait-signal操作讨论" class="md-nav__link">
+    wait signal操作讨论
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#死锁与饥饿" class="md-nav__link">
+    死锁与饥饿
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#经典进程同步问题" class="md-nav__link">
+    经典进程同步问题
+  </a>
+  
+    <nav class="md-nav" aria-label="经典进程同步问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#有限缓冲区问题生产者-消费者问题" class="md-nav__link">
+    有限缓冲区问题(生产者-消费者问题)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#读者-写者问题" class="md-nav__link">
+    读者-写者问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#哲学家就餐问题" class="md-nav__link">
+    哲学家就餐问题
+  </a>
+  
+    <nav class="md-nav" aria-label="哲学家就餐问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#哲学家就餐问题讨论" class="md-nav__link">
+    哲学家就餐问题讨论
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#管程" class="md-nav__link">
+    管程*
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#总结" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Chap6 进程同步</h1>
+
+<h2 id="chap6-进程同步">Chap6 进程同步<a class="headerlink" href="#chap6-进程同步" title="Permanent link">&para;</a></h2>
+<h3 id="背景">背景<a class="headerlink" href="#背景" title="Permanent link">&para;</a></h3>
+<p>并行或并发的进程在访问共享的数据区域的时候可能会导致数据的不一致性，保持数据一致性需要有特定的机制使协作过程有序执行 </p>
+<p>有限缓冲区问题：生产者往有限的缓冲区写入数据，消费者从中读取数据，如果我们用一个 count 来表示缓冲区中数据的个数，两种操作分别对应的就是count++ 和count--，但是这两种操作都需要满足原子性，即操作的时候不能被中断，如果一个生产者和一个消费者同时想要改变count 就会造成数据的不一致性(取决于进程调度执行的顺序)。</p>
+<p>count++可能通过如下机器语言实现：</p>
+<div class="highlight"><pre><span></span><code><span class="n">register1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">counter</span>
+<span class="n">register1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">register1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<span class="n">counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">register1</span>
+</code></pre></div>
+<p>count--同理</p>
+<p><strong>例题</strong></p>
+<p>有两个进程P1、P2分别执行下面的程序体，其中total是两个进程的共享变量且初值为0，count是每个进程的私有变量。假设这两个进程并发执行，并可自由交叉（interleave），则这两个进程都执行完后，变量total可能得到的最小取值是 3</p>
+<div class="highlight"><pre><span></span><code><span class="nl">P1</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w"> </span><span class="n">count</span><span class="o">++</span><span class="w"> </span><span class="p">)</span>
+<span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+<span class="nl">P2</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w"> </span><span class="n">count</span><span class="o">++</span><span class="w"> </span><span class="p">)</span>
+<span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</code></pre></div>
+<p>经过编译后有：</p>
+<div class="highlight"><pre><span></span><code><span class="n">total</span><span class="o">=</span><span class="n">total</span><span class="w"> </span><span class="o">+</span><span class="mi">1</span><span class="o">:</span>
+<span class="n">register1</span><span class="o">=</span><span class="w"> </span><span class="n">total</span>
+<span class="n">register1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">register1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">register1</span>
+<span class="c1">//</span>
+<span class="n">total</span><span class="o">=</span><span class="n">total</span><span class="w"> </span><span class="o">+</span><span class="mi">2</span><span class="o">:</span>
+<span class="n">register2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">total</span>
+<span class="n">register2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">register2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span>
+<span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">register2</span>
+</code></pre></div>
+<p>到最后一步才会把寄存器中的值写回total 中，只要进行合理控制，如使得 <span class="arithmatex">\(P_1\)</span> 的第一次加操作结束之前 <span class="arithmatex">\(P_2\)</span> 运行49 次，这样一来这49 次就不会影响total 的最终结果，因为两个进程分别用两个不同的寄存器对total 进行操作。此时total就被写成1，然后 <span class="arithmatex">\(P_2\)</span> 进行第50次操作，且 <span class="arithmatex">\(P_1\)</span> 在 <span class="arithmatex">\(P_2\)</span> 前结束，则最终影响到total 的可以只有一次+1 和一次+2，最后结果就是3。</p>
+<p><strong>竞争条件</strong>(race condition)：多个进程并发访问和操作共享数据，此时共享数据最终的值及进程执行的结果取决于特定的访问顺序。为了防止竞争条件，并发的进程必须被同步。</p>
+<p>进程间竞争资源面临三个控制问题：</p>
+<ul>
+<li>互斥（mutual exclusion )指多个进程不能**同时(同一时间段)**使用同一个资源</li>
+<li>死锁（deadlock )指多个进程互不相让，都得不到足够的资源。永远得不到资源</li>
+<li>饥饿（starvation )指一个进程长时间得不到资源（其它进程可能轮流占用资源）。资源分配不公平</li>
+</ul>
+<h3 id="临界区问题">临界区问题<a class="headerlink" href="#临界区问题" title="Permanent link">&para;</a></h3>
+<p>临界资源：一次只允许一个进程使用(访问)的资源，如消息缓冲队列、打印机等。这里的一次指只有当一个进程使**用完**(可能分多个时间片)这些资源，其它进程才能访问。</p>
+<p>临界区：进程中访问临界资源的代码段</p>
+<p>临界区问题：设计一个协议，确保当一个进程在临界区内执行时，别的进程不被允许执行其临界区。</p>
+<p>进程的一般结构：</p>
+<div class="highlight"><pre><span></span><code><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">entry</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="c1">//进入区</span>
+<span class="w">    </span><span class="n">critical</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="c1">//临界区</span>
+<span class="w">    </span><span class="n">exit</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="c1">//退出区</span>
+<span class="w">    </span><span class="n">reminder</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="c1">//剩余区</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div>
+<p>临界区问题的解决方案必须满足三个条件：</p>
+<ul>
+<li>互斥（Mutual Exclusion）：如果进程 <span class="arithmatex">\(P_i\)</span> 在临界区内执行，那么其它进程不能在其临界区内执行</li>
+<li>空闲让进（Progress）：如果没有进程在其临界区内执行，并且有进程想要进入临界区，那么只有那些不在剩余区内执行的进程可以参加选择，以便确定接下来谁能进入临界区，这种选择不能无限期推迟</li>
+<li>
+<p>有限等待（Bounded Waiting）：从一个进程做出进入临界区的请求到这个请求被允许为止，其它进程被允许进入临界区的次数具有上限。即进程应当在等待有限时间后被允许访问临界资源。</p>
+</li>
+<li>
+<p><strong>让权等待不是必须的</strong></p>
+</li>
+</ul>
+<blockquote>
+<p>让权等待</p>
+<p>如果一个进程在当前状态下根本无法获得临界资源而进入临界区，则应当释放处理机暂时退让，防止进程忙等待</p>
+</blockquote>
+<h3 id="软件同步">软件同步<a class="headerlink" href="#软件同步" title="Permanent link">&para;</a></h3>
+<p>前提：LOAD和STORE指令是原子的，即无法被中断</p>
+<h4 id="petersons-solution">Peterson's Solution<a class="headerlink" href="#petersons-solution" title="Permanent link">&para;</a></h4>
+<p>适用于两个进程交错执行临界区，要求两个进程共享两个数据项：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">turn</span><span class="p">;</span><span class="w"> </span><span class="c1">// 表示哪个进程可以进入临界区，初始化为0或1</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">flag</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="c1">// 表示哪个进程准备好进入临界区，初始化为false</span>
+</code></pre></div>
+<p>进程结构如下：</p>
+<div class="highlight"><pre><span></span><code><span class="nl">P0</span><span class="p">:</span>
+<span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">flag</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">    </span><span class="n">turn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">flag</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">turn</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// 临界区</span>
+<span class="w">    </span><span class="n">flag</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// 其余代码</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+
+<span class="nl">P1</span><span class="p">:</span>
+<span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">flag</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">    </span><span class="n">turn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">flag</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">turn</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// 临界区</span>
+<span class="w">    </span><span class="n">flag</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// 其余代码</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>peterson 算法 软件解决方案 2进程 单处理器系统
+进之前先把turn给对方，如果对方想进/正在进就让它先进/继续进，否则自己进，如果两个都想进，由于turn不是0就是1，所以一定有一个会等，保证了互斥
+当两个人都想进时，由于turn的给予是有先后的，所以一定有一个能进，不会死锁，保证了空闲让进
+一个结束了就把flag置为false，另一个如果在等就能马上进，保证有限等待</p>
+</blockquote>
+<p><a href="https://blog.csdn.net/Hundredl/article/details/105585280">在多处理器系统不适用</a>，指的是一个进程在多个处理器上并行</p>
+<p>Peterson算法适合单处理器系统，对于多处理器系统并不适用，因为一个进程内部顺序执行的指令，可能由于满足Bernstein条件而被**并行执行**，并行执行的效果可能是重排序执行的结果，比如Peterson算法中，进程 <span class="arithmatex">\(P_0\)</span> 进入临界区之前的两条指令<code>flag[0]=1;</code> <code>turn=1;</code>重排序后可能顺序变为 <code>turn=1;</code> <code>flag[0]=1;</code>，此时将不再满足互斥性，即进程 <span class="arithmatex">\(P_0\)</span> 和进程 <span class="arithmatex">\(P_1\)</span> 可能同时进入临界区，原因如下：
+当 <span class="arithmatex">\(P_0\)</span> 进程执行<code>turn=1</code>后时间片用尽，若此时 <span class="arithmatex">\(P_1\)</span> 获得处理器，将直接进入临界区，若 <span class="arithmatex">\(P_1\)</span> 进程在临界区中时间片用尽，<span class="arithmatex">\(P_0\)</span> 进程又重新获得处理器，则 <span class="arithmatex">\(P_0\)</span> 进程也将进入临界区。此时不能满足互斥性。</p>
+<h4 id="bakery-algorithm">Bakery Algorithm<a class="headerlink" href="#bakery-algorithm" title="Permanent link">&para;</a></h4>
+<p>处理N个进程的同步，进入临界区之前，进程会收到一个number，拥有最小number的进程有权进入临界区。如果两个进程有相同的number，就按照FCFS 原则，先服务下标小的。编号方式总是按枚举的递增顺序产生number，如1，2，3，3，3，3，4，5 ...</p>
+<p>定义标记order = (a, b) = (#ticket, #pid)，ticket即number，排队登记号</p>
+<p>进程共享数据项：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">boolean</span><span class="w"> </span><span class="n">choosing</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="c1">// choosing[i] = true表示进程i正在获取number，初始化为false</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="c1">// 进程当前的number，若为0表示进程未参与排队，不想获得临界资源，初始化为0</span>
+</code></pre></div>
+<p>进程结构如下：</p>
+<div class="highlight"><pre><span></span><code><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">choosing</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// 保证计算number[i]值的原子操作</span>
+<span class="w">    </span><span class="n">number</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">number</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="err">…</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="p">[</span><span class="n">n</span><span class="err">–</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// 获取新number</span>
+<span class="w">    </span><span class="n">choosing</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">choosing</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span><span class="w"> </span><span class="c1">// 等j取号结束</span>
+<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">((</span><span class="n">number</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">i</span><span class="p">));</span><span class="w"> </span><span class="c1">// 若j想进入临界区且j的number更小，则i等待</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c1">// critical section</span>
+<span class="w">    </span><span class="n">number</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// remainder section</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div>
+<blockquote>
+<p>Bakery Algorithm 软件方案 n进程
+number小优先级高，number相同时进程id小优先级高
+对于进程p：
+先原子取号，然后和各个进程比较：</p>
+<ol>
+<li>若该进程正在取号，则等它取号结束</li>
+<li>若该进程想进入临界区且优先级更高，则等待
+若比较结束离开循环，则我优先级已经最高，轮到我进入。
+由于取到的号总是递增的，所以一个进程进入一次后下一次的号会变大，所以同一轮取号的进程能依次进入，满足有限等待</li>
+</ol>
+</blockquote>
+<h3 id="硬件同步">硬件同步<a class="headerlink" href="#硬件同步" title="Permanent link">&para;</a></h3>
+<p>对于单处理器环境，可以禁用中断，这样当前运行的代码将在没有抢占的情况下执行。对于多处理器系统，禁用中断效率很低，因为消息要传递到所有处理器。</p>
+<p>许多现代操作系统提供特殊的原子硬件指令(无法被中断)，用于测试和设置内存字的内容，或者用于原子地交换两个字。</p>
+<h4 id="测试与设置">测试与设置<a class="headerlink" href="#测试与设置" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1">// 原子指令，同时应该只能由一个进程执行(硬件实现)，否则可能多个进程同时取到false</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="nf">TestAndSet</span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="o">&amp;</span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">boolean</span><span class="w"> </span><span class="n">rv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">;</span>
+<span class="w">    </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// 设置为true</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">rv</span><span class="p">;</span><span class="w"> </span><span class="c1">// 返回target原来的值</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>如果一台机器支持指令<code>test_and_set()</code>，可以通过声明一个共享布尔变量<code>lock</code>，初始化为<code>false</code>，来实现互斥。</p>
+<div class="highlight"><pre><span></span><code><span class="kt">boolean</span><span class="w"> </span><span class="n">lock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// Shared data，true表示已经被某进程上锁</span>
+</code></pre></div>
+<p>进程结构如下：</p>
+<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">TestAndSet</span><span class="p">(</span><span class="n">lock</span><span class="p">));</span><span class="w"> </span><span class="c1">// 如果是true，说明lock原来就被别的进程占用，需要等待，若为false，则lock是被此进程设置为true的，即此进程成功占用了lock</span>
+<span class="w">    </span><span class="c1">// critical section</span>
+<span class="w">    </span><span class="n">lock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// remainder section</span>
+<span class="p">};</span>
+</code></pre></div>
+<blockquote>
+<p>testandset 硬件方案 原子指令
+取锁的旧值，然后上锁(赋值为true)，返回锁的旧值
+若返回值是true，则锁本来就被别人上了(本来就是true，我只是又给它赋了一遍，没影响)，我得等
+若返回值是false，则锁本来没人上，这次被我上了，我独占了这把锁，我可以进
+进完就释放锁</p>
+</blockquote>
+<p>由于是在lock = false后从等待进程中随机选择了一个(执行TestAndSet的那个)进入临界区，所以有的进程可能一直选不上，造成饥饿。因此需要用新的机制实现**有限等待**的互斥：</p>
+<div class="highlight"><pre><span></span><code><span class="n">Boolean</span><span class="w"> </span><span class="n">waiting</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="p">,</span><span class="w"> </span><span class="n">lock</span><span class="p">;</span><span class="w"> </span><span class="c1">// 初始化为false, waiting[]：排队队列，通过排队解决饥饿问题</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">waiting</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">    </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">waiting</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TestAndSet</span><span class="p">(</span><span class="n">lock</span><span class="p">);</span><span class="w"> </span><span class="c1">// 如果别的进程占用锁，就等待</span>
+<span class="w">    </span><span class="n">waiting</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// critical section;</span>
+<span class="w">    </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">((</span><span class="n">j</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="n">waiting</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="p">)</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="n">lock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// 遍历整个队列都没有发现在排队的进程，则将lock置为false</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="n">waiting</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// 将下一个的waiting设置成false，使其退出死循环，起到将lock和对临界区的访问权限传递给j的作用</span>
+<span class="w">    </span><span class="c1">// remainder section;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>此版本只有在初始化以及没有进程要访问临界区时lock才等于false，在依次访问临界区时lock始终为true，即锁是伴随着设置下一个的waiting = false使其退出死循环而**平滑传递**的，不需要每次都上锁再释放锁。</p>
+<p>原来的版本就是只管自己能不能访问临界区，互相之间没有任何交流。现在引入排队队列，相当于互相告知自己是否渴望进入临界区，并将渴望的进程**排个队**，一个进程访问完后就礼貌地把锁交给排在它后面的进程，这样就是先来先得，解决了饥饿的问题。</p>
+<h4 id="交换">交换<a class="headerlink" href="#交换" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1">// 原子指令，通过原子交换实现lock的转移，同时应该只能由一个进程执行(硬件实现)</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">Swap</span><span class="w"> </span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="o">*</span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">boolean</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="p">;</span>
+<span class="w">    </span><span class="o">*</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="o">*</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">temp</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>声明一个**共享**布尔变量<code>lock</code>，并初始化为 false，来实现互斥。</p>
+<div class="highlight"><pre><span></span><code><span class="kt">boolean</span><span class="w"> </span><span class="n">lock</span><span class="p">;</span>
+</code></pre></div>
+<p>进程结构如下：</p>
+<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span><span class="w"> </span><span class="c1">// 局部变量，不是共享的</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">TRUE</span><span class="p">)</span>
+<span class="w">        </span><span class="n">Swap</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lock</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">key</span><span class="p">);</span><span class="w"> </span><span class="c1">// 如果lock是false，则交换成功，跳出循环</span>
+<span class="w">    </span><span class="c1">// critical section</span>
+<span class="w">    </span><span class="n">lock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// remainder section</span>
+<span class="p">}</span>
+</code></pre></div>
+<blockquote>
+<p>swap 硬件方案 原子指令
+每个进程都准备好true这个值，存在自己的key里，然后交换key和lock
+如果交换完key还是true，则lock本来就是true，我得等
+如果交换完key为false，则lock本来是false，本次交换中我把key的true给了lock，我独占了锁，我可以进
+进完就释放锁</p>
+</blockquote>
+<h4 id="小结">小结<a class="headerlink" href="#小结" title="Permanent link">&para;</a></h4>
+<p>硬件方法的优点</p>
+<ul>
+<li>适用于任意数目的进程，在单处理器或多处理器上</li>
+<li>简单，容易验证其正确性</li>
+<li>可以支持进程内存在多个临界区，只需为每个临界区设立一个布尔变量</li>
+</ul>
+<p>硬件方法的缺点</p>
+<ul>
+<li>等待要耗费CPU时间，不能实现"让权等待"</li>
+<li>可能“饥饿”：从等待进程中随机选择一个进入临界区，有的进程可能一直选不上</li>
+<li>可能死锁：单CPU情况下,P1执行特殊指令(swap)进入临界区，这时拥有更高优先级P2执行并中断P1,如果P2又要使用P1占用的资源，按照资源分配规则拒绝P2对资源的要求，陷入忙等循环。然后P1也得不到CPU，因为P1比P2优先级低。(解决方案：P2进入waiting状态 or 动态优先级，P1优先级升高)</li>
+</ul>
+<h3 id="互斥锁-mutex-lock">互斥锁 (Mutex Lock)<a class="headerlink" href="#互斥锁-mutex-lock" title="Permanent link">&para;</a></h3>
+<p>采用互斥锁保护临界区，从而防止竞争条件</p>
+<p>一个进程在进入临界区时应得到锁，在退出临界区时释放锁</p>
+<h4 id="自旋锁-spinlock">自旋锁 spinlock<a class="headerlink" href="#自旋锁-spinlock" title="Permanent link">&para;</a></h4>
+<p>当一个进程欲访问已被其他进程锁定的资源时，进程循环检测该锁是否被释放，等待锁变得可用</p>
+<p>自旋锁<a href="https://blog.csdn.net/qq_46311811/article/details/122354855">不适用于单处理器系统</a>，但通常用于多处理器系统。</p>
+<p>自旋锁不适合单处理器的原因是由于当一个进程处于自旋锁状态时说明其正在等待某一个资源，而在单处理器系统中，一旦发生了这种自旋锁，那么拥有资源的那个进程也会由于无法得到CPU而一直等待，这样之后，占用CPU的进程会等待另一个进程释放资源，占用资源的进程会等待另一个进程释放CPU，从而导致程序进入一个死锁的状态，因此单处理器不适合自旋锁</p>
+<p>在多处理器中，即使一个进程处于自旋锁状态而占用一个CPU，拥有资源的进程也可以在另外空闲的处理器上执行，直到资源释放，处于忙等的进程这时便可以正常进行，防止了死锁的发生</p>
+<h3 id="信号量-semaphores">信号量 (Semaphores)<a class="headerlink" href="#信号量-semaphores" title="Permanent link">&para;</a></h3>
+<p>信号量是一种数据类型，只有初始化，wait(P) 和signal(V) 三种操作，信号量可以分为整型信号量、<strong>记录型信号量</strong>，AND 型信号量和二值信号量。现在信号量机制已广泛应用于操作系统了同步互斥中。</p>
+<p>不需要忙等待的同步工具，复杂度更低</p>
+<h4 id="整型信号量-integer-semaphore">整型信号量 Integer semaphore<a class="headerlink" href="#整型信号量-integer-semaphore" title="Permanent link">&para;</a></h4>
+<p>信号量是个整型变量，除了初始化外只能通过两个标准**原子**操作<code>wait()</code>和<code>signal()</code>来访问</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// 等待资源，等到后取走一份资源</span>
+<span class="n">wait</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// no-op</span>
+<span class="w">    </span><span class="n">S</span><span class="o">--</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// 释放一份资源</span>
+<span class="n">signal</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">S</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>在<code>wait()</code>和<code>signal()</code>操作中，信号量整数值的修改应不可分割地执行，即当一个进程修改信号量值时，没有其它进程能够同时修改同一信号量的值。</p>
+<h4 id="计数信号量-counting-semaphore">计数信号量 Counting semaphore<a class="headerlink" href="#计数信号量-counting-semaphore" title="Permanent link">&para;</a></h4>
+<p>integer value can range over an unrestricted domain</p>
+<p>Can implement a counting semaphore S as a binary semaphore</p>
+<h4 id="二值信号量-binary-semaphore">二值信号量 Binary semaphore<a class="headerlink" href="#二值信号量-binary-semaphore" title="Permanent link">&para;</a></h4>
+<p>integer value can range only between 0 and 1; can be simpler to implement</p>
+<ul>
+<li>Also known as mutex locks，提供互斥锁</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// mutual exclusion</span>
+<span class="n">Semaphore</span><span class="w"> </span><span class="n">mutex</span><span class="p">;</span><span class="w"> </span><span class="c1">// initialized to 1</span>
+<span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="w"> </span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span><span class="w">   </span><span class="c1">// 忙等待, spinlock</span>
+<span class="w">    </span><span class="c1">// Critical Section</span>
+<span class="w">    </span><span class="n">signal</span><span class="w"> </span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// remainder section</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</code></pre></div>
+<p>用二值信号量实现计数信号量：</p>
+<div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">S</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">integer</span><span class="w"> </span><span class="n">val</span><span class="p">;</span><span class="w">  </span><span class="c1">//initially K</span>
+<span class="w">    </span><span class="n">BinarySemaphore</span><span class="w"> </span><span class="n">sem</span><span class="p">;</span><span class="w">  </span><span class="c1">//initially 0</span>
+<span class="w">    </span><span class="n">integer</span><span class="w"> </span><span class="n">waitCount</span><span class="p">;</span><span class="w">  </span><span class="c1">//initially 0, number of processes waiting on S</span>
+<span class="w">    </span><span class="n">BinarySemaphore</span><span class="w"> </span><span class="n">mutex</span><span class="p">;</span><span class="w">  </span><span class="c1">//initially 1, protects val and waitCount</span>
+<span class="p">};</span>
+
+<span class="n">wait</span><span class="p">(</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">S</span><span class="p">.</span><span class="n">waitCount</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="n">signal</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">        </span><span class="n">wait</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">sem</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">S</span><span class="p">.</span><span class="n">val</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="n">signal</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">signal</span><span class="p">(</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">waitCount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">S</span><span class="p">.</span><span class="n">waitCount</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="n">signal</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">sem</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">S</span><span class="p">.</span><span class="n">val</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">mutex</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="信号量的实现">信号量的实现<a class="headerlink" href="#信号量的实现" title="Permanent link">&para;</a></h4>
+<p>当信号量只是一个值时，必须保证没有两个进程能同时对同一个信号量执行wait()或signal()，因此wait和signal的代码就要被放在临界区，成为临界区问题。</p>
+<p>Could now have <strong>busy waiting</strong> in critical section implementation</p>
+<ul>
+<li>But implementation code is short</li>
+<li>Little busy waiting if critical section rarely occupied</li>
+</ul>
+<p>Note that applications may spend lots of time in critical sections and therefore this is not a good solution</p>
+<p>忙等待**浪费 CPU 周期**，这原本可以有效用于其他进程</p>
+<p>为了克服忙等待，可以修改<code>wait()</code>和<code>signal()</code>操作的定义，将忙等待换成阻塞自己。即既然你还得不到资源，那就先去睡觉，等有资源了我会唤醒你，你再执行。</p>
+<p>每个信号量都有一个与之关联的等待队列，队列中每个元素有两个数据项：</p>
+<div class="highlight"><pre><span></span><code><span class="n">value</span><span class="p">;</span><span class="w"> </span><span class="c1">// 整型</span>
+<span class="n">pointer</span><span class="p">;</span><span class="w"> </span><span class="c1">// 指向列表中的下一条记录</span>
+</code></pre></div>
+<h5 id="记录型信号量">记录型信号量<a class="headerlink" href="#记录型信号量" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="c1">// 将信号量定义成结构体</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">process</span><span class="w"> </span><span class="o">*</span><span class="n">list</span><span class="p">;</span><span class="w"> </span><span class="c1">// 指向list中下一条记录</span>
+<span class="p">}</span><span class="w"> </span><span class="n">semaphore</span><span class="p">;</span>
+</code></pre></div>
+<p>该数据结构中list 指向等待队列的下一个进程，记录型信号量中value 的值大于0 表示资源的个数，等于0 的时候表示没有资源可以用或者不允许进入临界区，负数表示在等待队列中的进程个数或者等待进入临界区的进程。</p>
+<h5 id="两种操作原子">两种操作(原子?)<a class="headerlink" href="#两种操作原子" title="Permanent link">&para;</a></h5>
+<p>block()，将调用该操作的进程放置到适当的等待队列中。即将该进程从running转变为waiting。然后 CPU 调度程序选择执行另一个进程。</p>
+<p>wakeup()，将一个进程从等待队列中移出并放置到就绪队列中，从waiting转变为ready。即让等待信号量而阻塞的进程在其他进程执行操作<code>signal()</code>之后重新执行，将进程从等待状态改为就绪状态。</p>
+<h5 id="无忙等待的实现方式真正使用的--题干中所指的">无忙等待的实现方式(真正使用的 &amp; 题干中所指的)<a class="headerlink" href="#无忙等待的实现方式真正使用的--题干中所指的" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="n">wait</span><span class="p">(</span><span class="n">semaphore</span><span class="w"> </span><span class="o">*</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 相当于申请资源</span>
+<span class="w">    </span><span class="n">S</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">--</span><span class="p">;</span><span class="w"> </span><span class="c1">// 声明我需要此资源</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="o">-&gt;</span><span class="n">value</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 资源已被分配完毕且我没拿到(若=0则我拿到了最后一份资源)</span>
+<span class="w">        </span><span class="n">add</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">process</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">S</span><span class="o">-&gt;</span><span class="n">list</span><span class="p">;</span><span class="w"> </span><span class="c1">// 加入等待队列</span>
+<span class="w">        </span><span class="n">block</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">signal</span><span class="p">(</span><span class="n">semaphore</span><span class="w"> </span><span class="o">*</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// 相当于释放资源</span>
+<span class="w">    </span><span class="n">S</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="o">-&gt;</span><span class="n">value</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 有进程在等资源</span>
+<span class="w">        </span><span class="n">remove</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">process</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">S</span><span class="o">-&gt;</span><span class="n">list</span><span class="p">;</span>
+<span class="w">        </span><span class="n">wakeup</span><span class="p">(</span><span class="n">P</span><span class="p">);</span><span class="w"> </span><span class="c1">// 唤醒一个进程</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h5 id="wait-signal操作讨论">wait signal操作讨论<a class="headerlink" href="#wait-signal操作讨论" title="Permanent link">&para;</a></h5>
+<p>通常用信号量表示资源或临界区
+信号量的物理含义</p>
+<ul>
+<li>S.value&gt;0 表示有S.value个资源可用；</li>
+<li>
+<p>S.value=0 表示无资源可用或表示不允许进程再进入临界区；</p>
+</li>
+<li>
+<p>S.value&lt;0 则|S.value|表示在等待队列中进程的个数或表示等待进入临界区的进程个数。</p>
+</li>
+</ul>
+<p>wait(S)≡P(S) ≡down(S) ：表示申请一个资源
+signal(S)≡V(S)≡up(S) ：表示释放一个资源</p>
+<p>wait、signal操作必须成对出现，有一个wait操作就一定有一个signal操作。一般情况下：当为互斥操作时，它们同处于同一进程；当为同步操作时，则不在同一进程中出现。</p>
+<p>如果两个wait操作相邻，那么它们的顺序至关重要，而两个相邻的signal操作的顺序无关紧要。一个同步wait操作与一个互斥wait操作在一起时，<strong>同步wait操作在互斥wait操作前</strong>。
+wait、signal操作的优缺点</p>
+<ul>
+<li>优点：简单，而且表达能力强</li>
+<li>缺点：不够安全；wait、signal操作使用不当会出现死锁；实现复杂。</li>
+</ul>
+<p><strong>使用信号量时必须设定信号量的初始值。</strong></p>
+<h4 id="死锁与饥饿">死锁与饥饿<a class="headerlink" href="#死锁与饥饿" title="Permanent link">&para;</a></h4>
+<p>死锁：两个或多个进程无限等待一个事件，而该事件只能由等待进程之一引发</p>
+<p>饥饿：无限阻塞。A process may never be removed from the semaphore queue in which it is suspended</p>
+<p>优先级反转：因低优先级进程持有高优先级进程所需的锁而引发的调度问题</p>
+<h3 id="经典进程同步问题">经典进程同步问题<a class="headerlink" href="#经典进程同步问题" title="Permanent link">&para;</a></h3>
+<h4 id="有限缓冲区问题生产者-消费者问题">有限缓冲区问题(生产者-消费者问题)<a class="headerlink" href="#有限缓冲区问题生产者-消费者问题" title="Permanent link">&para;</a></h4>
+<p>主要形式就是生产者写入缓冲区，消费者读取缓冲区，是许多相互合作进程的一种抽象。消息队列。</p>
+<p><code>n</code>个缓冲区，每个缓冲区可存一个数据项</p>
+<p>信号量<code>mutex</code>提供缓冲池访问的互斥要求，并初始化为 1，即生产者和消费者不能同时访问缓冲区</p>
+<p>信号量<code>empty</code>用于表示空的缓冲区数量，并初始化为 n</p>
+<p>信号量<code>full</code>用于表示满的缓冲区数量，并初始化为 0</p>
+<p>共享数据及其初始化：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="n">semaphore</span><span class="w"> </span><span class="n">mutex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">semaphore</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="n">semaphore</span><span class="w"> </span><span class="n">full</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</code></pre></div>
+<p>生产者进程：</p>
+<div class="highlight"><pre><span></span><code><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">produce</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">nextp</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">empty</span><span class="p">);</span><span class="w"> </span><span class="c1">// 同步wait</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span><span class="w"> </span><span class="c1">// 互斥wait</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">add</span><span class="w"> </span><span class="n">nextp</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">buffer</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">full</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div>
+<blockquote>
+<p>生产了一个数据项，想要加入缓冲区，先看看有没有空的缓冲区，如果没有则等待，等到后等待互斥锁，拿到互斥锁后加入缓冲区，释放锁并将满的缓冲区数量+1</p>
+</blockquote>
+<p>消费者进程</p>
+<div class="highlight"><pre><span></span><code><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">full</span><span class="p">);</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">remove</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">buffer</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">nextc</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">empty</span><span class="p">);</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">consume</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">nextc</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div>
+<blockquote>
+<p>看看有没有满的缓冲区，如果没有则等待，等到后等待互斥锁，拿到锁后消费一个数据项，释放锁并将空的缓冲区数量+1</p>
+</blockquote>
+<h4 id="读者-写者问题">读者-写者问题<a class="headerlink" href="#读者-写者问题" title="Permanent link">&para;</a></h4>
+<p>一个数据集（如文件）如果被几个并行进程所共享：</p>
+<ul>
+<li>有些进程只要求读数据集内容，它称读者</li>
+<li>一些进程则要求修改数据集内容，它称写者</li>
+<li>几个读者可以同时读数据集，而不需要互斥</li>
+<li>一个写者不能和其它进程（不管是写者或读者）同时访问些数据集，它们之间必须互斥。</li>
+</ul>
+<p>第一读者写者问题：</p>
+<ul>
+<li>允许多个读者同时读。而一个写者在访问共享数据时将独占访问权。</li>
+<li>写者可能会饥饿，因为写者等待时新来的读者依然能访问共享数据，如果一直有新读者来，写者就无法执行写操作。</li>
+</ul>
+<p>信号量<code>wrt</code>供写者作为互斥信号量，也为第一个进入临界区和最后一个离开临界区的读者所使用，初始化为 1</p>
+<p>信号量<code>mutex</code>用于确保在更新变量<code>readcount</code>时互斥，初始化为 1</p>
+<p>变量<code>readcount</code>用于跟踪多少进程正在读对象，初始化为 0</p>
+<p>共享数据及初始化：</p>
+<div class="highlight"><pre><span></span><code><span class="n">Data</span><span class="w"> </span><span class="n">set</span><span class="p">;</span>
+<span class="n">semaphore</span><span class="w"> </span><span class="n">wrt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">semaphore</span><span class="w"> </span><span class="n">mutex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">readcount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</code></pre></div>
+<p>写者进程</p>
+<div class="highlight"><pre><span></span><code><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="w"> </span><span class="p">(</span><span class="n">wrt</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// writing is performed</span>
+<span class="w">    </span><span class="n">signal</span><span class="w"> </span><span class="p">(</span><span class="n">wrt</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">TRUE</span><span class="p">);</span>
+</code></pre></div>
+<p>读者进程</p>
+<div class="highlight"><pre><span></span><code><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="n">readcount</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">readcount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="n">wait</span><span class="p">(</span><span class="n">wrt</span><span class="p">);</span><span class="w"> </span><span class="c1">// 第一个读者到来</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span><span class="w"> </span><span class="c1">// 不能提前释放互斥锁，否则可能导致readcount跳过1，读者们没有拿到wrt就开始读</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="c1">// reading is performed</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+<span class="w">    </span><span class="n">readcount</span><span class="o">--</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">readcount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">        </span><span class="n">signal</span><span class="p">(</span><span class="n">wrt</span><span class="p">);</span><span class="w"> </span><span class="c1">// 最后一个读者离开</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">mutex</span><span class="p">)</span><span class="err">；</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">TRUE</span><span class="p">);</span>
+</code></pre></div>
+<p>第二读者写者问题</p>
+<ul>
+<li>一旦写者就绪就尽快让它执行写操作，即写者等待时不允许新读者进行操作</li>
+<li>读者可能会饥饿</li>
+</ul>
+<h4 id="哲学家就餐问题">哲学家就餐问题<a class="headerlink" href="#哲学家就餐问题" title="Permanent link">&para;</a></h4>
+<p>问题描述：</p>
+<ul>
+<li>N个哲学家围成一圈吃饭</li>
+<li>相邻哲学家之间有一根筷子(共享)</li>
+<li>每个哲学家需要拿起左右两边的筷子来吃饭</li>
+<li>相邻哲学家不能同时吃饭</li>
+<li>哲学家在吃饭和思考之间切换状态</li>
+</ul>
+<p>共享数据</p>
+<div class="highlight"><pre><span></span><code><span class="n">Bowl</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">rice</span><span class="w"> </span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="n">set</span><span class="p">);</span>
+<span class="n">Semaphore</span><span class="w"> </span><span class="n">chopstick</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="p">];</span><span class="w"> </span><span class="c1">// initialized to 1</span>
+</code></pre></div>
+<p>哲学家i的进程结构</p>
+<div class="highlight"><pre><span></span><code><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">5</span><span class="p">])</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="c1">// eat</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">5</span><span class="p">]);</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="w">    </span><span class="c1">// think</span>
+<span class="w">    </span><span class="err">…</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div>
+<h5 id="哲学家就餐问题讨论">哲学家就餐问题讨论<a class="headerlink" href="#哲学家就餐问题讨论" title="Permanent link">&para;</a></h5>
+<p>这个方案可以保证对筷子的使用互斥，但显然很容易导致死锁(都拿起左边的筷子)，且可能导致饥饿(starvation)。</p>
+<p>有几种可能的解决方案：</p>
+<ul>
+<li>一次只允许四个哲学家饥饿(hungry)</li>
+<li>只有当两个筷子都可获取时才允许拿起(在临界区实现)</li>
+<li>标号为奇数的哲学家总是先拿左边的筷子，标号为偶数的哲学家总是先拿右边的筷子</li>
+<li>为了避免死锁，把哲学家分为三种状态：思考、饥饿、吃饭，并且一次拿到两只筷子，否则不拿。（Dijkstra）</li>
+<li>每个哲学家拿起第1根筷子一定时间后，若拿不到第2根筷子，再放下第1根筷子。(可以解决死锁，但是不能消除饥饿，比如大家都拿起、放下、拿起...)</li>
+</ul>
+<p>没有死锁的解决方案不一定能消除饥饿的可能性</p>
+<h3 id="管程">管程*<a class="headerlink" href="#管程" title="Permanent link">&para;</a></h3>
+<h3 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h3>
+<p>同步问题对进程执行有额外的条件(顺序、时机)</p>
+<p>互斥问题仅要求不同时访问临界区</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-01-18T14:44:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-18</span>
+      
+        <br>
+        创建日期:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-01-18T14:44:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-18</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+<div id="__comments">
+
+<h3>颜色主题调整</h3>
+
+<div class="tx-switch">
+<button data-md-color-scheme="default"><code>default</code></button>
+<button data-md-color-scheme="slate"><code>slate</code></button>
+</div>
+
+<script>
+var buttons = document.querySelectorAll("button[data-md-color-scheme]")
+buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+        var attr = this.getAttribute("data-md-color-scheme")
+        document.body.setAttribute("data-md-color-scheme", attr)
+        localStorage.setItem("data-md-color-scheme",attr);
+        updateScheme();
+        })
+})
+</script>
+
+<div class="tx-switch">
+<button class="button1" data-md-color-primary="red" style="background-color:red">red</button>
+<button class="button1" data-md-color-primary="pink" style="background-color:pink;color:black">pink</button>
+<button class="button1" data-md-color-primary="purple" style="background-color:purple">purple</button>
+<button class="button1" data-md-color-primary="indigo" style="background-color:indigo">indigo</button>
+<button class="button1" data-md-color-primary="blue" style="background-color:blue">blue</button>
+<button class="button1" data-md-color-primary="cyan" style="background-color:cyan;color:black">cyan</button>
+<button class="button1" data-md-color-primary="teal" style="background-color:teal">teal</button>
+<button class="button1" data-md-color-primary="green" style="background-color:green">green</button>
+<button class="button1" data-md-color-primary="lime" style="background-color:lime;color:black">lime</button>
+<button class="button1" data-md-color-primary="orange" style="background-color:orange;color:black">orange</button>
+<button class="button1" data-md-color-primary="brown" style="background-color:brown;border-radius=3px">brown</button>
+<button class="button1" data-md-color-primary="grey" style="background-color:grey">grey</button>
+<button class="button1" data-md-color-primary="black" style="background-color:black">black</button>
+<button class="button1" data-md-color-primary="white" style="background-color:white;color:black">white</button>
+</div>
+
+<script>
+var buttons = document.querySelectorAll("button[data-md-color-primary]")
+buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+        var attr = this.getAttribute("data-md-color-primary")
+        document.body.setAttribute("data-md-color-primary", attr)
+        localStorage.setItem("data-md-color-primary",attr);
+        })
+})
+</script>
+
+<h2 ><!-- 评论 -->评论区~</h2>
+
+有用的话请给我个赞和 star => <a href="https://github.com/xuan-insr/xuan-insr.github.io"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xuan-insr/xuan-insr.github.io.svg?style=plastic&amp;label=Stars"></a>
+
+</br>
+
+快来跟我聊天~
+
+</div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="xuan-insr/discussion"
+        data-repo-id="R_kgDOIUW7XA"
+        data-category="General"
+        data-category-id="DIC_kwDOIUW7XM4CSOC3"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+
+updateScheme();
+
+</script>
+
+<!-- Synchronize Giscus theme with palette -->
+<script>
+var giscus = document.querySelector("script[src*=giscus]")
+
+/* Set palette on initial load */
+// var palette = __md_get("__palette")
+// if (palette && typeof palette.color === "object") {
+//     var theme = palette.color.scheme === "slate" ? "dark" : "light"
+//     giscus.setAttribute("data-theme", theme) 
+// }
+
+/* Register event handlers after documented loaded */
+// document.addEventListener("DOMContentLoaded", function() {
+//     var ref = document.querySelector("[data-md-component=palette]")
+//     ref.addEventListener("change", function() {
+//     var palette = __md_get("__palette")
+//     if (palette && typeof palette.color === "object") {
+//         var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+//         /* Instruct Giscus to change theme */
+//         var frame = document.querySelector(".giscus-frame")
+//         frame.contentWindow.postMessage(
+//         { giscus: { setConfig: { theme } } },
+//         "https://giscus.app"
+//         )
+//     }
+//     })
+// })
+</script>
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      本页面的全部内容在 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a> 协议之条款下提供，附加条款亦可能应用
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "content.code.annotate", "navigation.tracking", "navigation.indexes", "navigation.top", "toc.follow"], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+        <script src="../../../js/timeago.min.js"></script>
+      
+        <script src="../../../js/timeago_mkdocs_material.js"></script>
+      
+        <script src="../../../from_oi_wiki/js/extra.js"></script>
+      
+        <script src="../../../js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../../js/tablesort.js"></script>
+      
+    
+  </body>
+</html>
