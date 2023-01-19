@@ -4,10 +4,10 @@ nav:
     - ❤️ 我和朋友们！: home/about.md
     - 📆 最近更新: recent.md
     # - 🌈 颜色主题 & 夜间模式: home/theme.md
-  - ZJU-CS专业课: 
-    # - 核心知识/index.md
-    - 操作系统:
-      - 1 写在前面: 专业课程/os/1_intro.md
+  # - ZJU-CS专业课: 
+  #   # - 核心知识/index.md
+  #   - 操作系统:
+  #     - 1 写在前面: 专业课程/os/1_intro.md
       # - 2 进程同步: 专业课程/os/Chap6 进程同步.md
       # - 3 死锁: 专业课程/os/Chap7 死锁.md
   - 自学课程:
@@ -46,7 +46,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  # custom_dir: overrides # 用来搞评论的，参考 https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/
+  custom_dir: overrides # 用来搞评论的，参考 https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/
 
 edit_uri: ""
 
