@@ -2,7 +2,7 @@
 
 ### 系统模型
 
-​	<img src="Chap7 死锁.assets/image-20230105233507589.png" alt="image-20230105233507589" style="zoom:67%;" />
+![image-20230105233507589](../../img/image-20230105233507589.png){width=500}
 
 #### 死锁问题
 
@@ -53,11 +53,11 @@ E由两种有向边构成：
 
 图示如下：
 
-​	<img src="Chap7 死锁.assets/image-20221110194827313.png" alt="image-20221110194827313" style="zoom: 33%;" />
+![image-20221110194827313](../../img/image-20221110194827313.png){width=300}
 
 资源分配图示例如下(存在死锁)：
 
-​	<img src="Chap7 死锁.assets/image-20221110195110503.png" alt="image-20221110195110503" style="zoom:50%;" />
+![](../../img/image-20221110195110503.png){width=300}
 
 ##### 基本事实
 
@@ -148,7 +148,7 @@ Sequence <P1, P2, …, Pn> is safe(注意此编号序列并不是原进程的编
 - If a system is in unsafe state ⇒ **possibility** of deadlock.
 - Avoidance ⇒ ensure that a system will never enter an unsafe state.
 
-​	![image-20221110210747285](Chap7 死锁.assets/image-20221110210747285.png)
+​	![image-20221110210747285](../../img/image-20221110210747285.png)
 
 #### 资源分配图算法
 
@@ -170,9 +170,9 @@ Resources must be claimed a priori in the system(资源必须在系统中事先�
 
 举例：
 
-<img src="Chap7 死锁.assets/2022-11-19-18-14-09.png" alt="img" style="zoom: 50%;" />
+![](../../img/2022-11-19-18-14-09.png){width=300}
 
-<img src="Chap7 死锁.assets/2022-11-19-18-13-46.png" alt="img" style="zoom:50%;" />
+![](../../img/2022-11-19-18-13-46.png){width=300}
 
 R2分配给T2后成环了，不安全。
 

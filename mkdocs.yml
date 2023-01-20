@@ -6,10 +6,10 @@ nav:
     # - 🌈 颜色主题 & 夜间模式: home/theme.md
   - ZJU-CS专业课: 
     - 专业课程/index.md
-    # - 操作系统:
-    #   - 1 写在前面: 专业课程/os/1_intro.md
-    #   - 2 进程同步: 专业课程/os/Chap6 进程同步.md
-    #   - 3 死锁: 专业课程/os/Chap7 死锁.md
+    - 操作系统:
+      - 0 前言: 专业课程/os/index.md
+      - 1 进程同步: 专业课程/os/Chap6 进程同步.md
+      - 2 死锁: 专业课程/os/Chap7 死锁.md
     - PPL:
       - 0 前言: 专业课程/ppl/index.md
   - 自学课程:
