@@ -2,67 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://loveofguoke.github.io/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/recent/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/home/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/home/about/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/home/theme/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://loveofguoke.github.io/test/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <loc>https://loveofguoke.github.io/tool/</loc>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://loveofguoke.github.io/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B/</loc>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B/os/1_intro/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B/os/Chap6%20%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B/os/Chap7%20%E6%AD%BB%E9%94%81/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://loveofguoke.github.io/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B/ppl/</loc>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/%E6%9D%82%E9%A1%B9/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/%E7%94%9F%E6%B4%BB/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/%E7%94%9F%E6%B4%BB/2022/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://loveofguoke.github.io/%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://loveofguoke.github.io/%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/GAMES101/</loc>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
