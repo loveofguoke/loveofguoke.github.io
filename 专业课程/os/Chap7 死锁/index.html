@@ -11,13 +11,17 @@
         <link rel="canonical" href="https://loveofguoke.github.io/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B/os/Chap7%20%E6%AD%BB%E9%94%81/">
       
       
+        <link rel="prev" href="../Chap6%20%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/">
+      
+      
+        <link rel="next" href="../../ppl/">
       
       <link rel="icon" href="../../../logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
     
     
       
-        <title>Chap7 死锁 - 果壳的宇宙</title>
+        <title>2 死锁 - 果壳的宇宙</title>
       
     
     
@@ -115,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chap7 死锁
+              2 死锁
             
           </span>
         </div>
@@ -203,13 +207,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         ZJU-CS专业课
       </a>
     </li>
@@ -410,19 +416,23 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
         
           
             
+          
+        
           
         
           
@@ -453,6 +463,374 @@
               
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">操作系统</a>
+          
+            <label for="__nav_2_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="操作系统" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          操作系统
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chap6%20%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/" class="md-nav__link">
+        1 进程同步
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          2 死锁
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        2 死锁
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chap7-死锁" class="md-nav__link">
+    Chap7 死锁
+  </a>
+  
+    <nav class="md-nav" aria-label="Chap7 死锁">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#系统模型" class="md-nav__link">
+    系统模型
+  </a>
+  
+    <nav class="md-nav" aria-label="系统模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#死锁问题" class="md-nav__link">
+    死锁问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#系统模型_1" class="md-nav__link">
+    系统模型
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#死锁特性characterization" class="md-nav__link">
+    死锁特性(Characterization)
+  </a>
+  
+    <nav class="md-nav" aria-label="死锁特性(Characterization)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#必要条件" class="md-nav__link">
+    必要条件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资源分配图" class="md-nav__link">
+    资源分配图
+  </a>
+  
+    <nav class="md-nav" aria-label="资源分配图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#基本事实" class="md-nav__link">
+    基本事实
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#处理死锁的策略" class="md-nav__link">
+    处理死锁的策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#死锁预防prevention" class="md-nav__link">
+    死锁预防(Prevention)
+  </a>
+  
+    <nav class="md-nav" aria-label="死锁预防(Prevention)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#破坏互斥条件" class="md-nav__link">
+    破坏互斥条件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#破坏请求和保持条件" class="md-nav__link">
+    破坏请求和保持条件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#破坏不可抢占条件" class="md-nav__link">
+    破坏不可抢占条件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#破坏循环等待条件" class="md-nav__link">
+    破坏循环等待条件
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#死锁避免avoidance" class="md-nav__link">
+    死锁避免(Avoidance)
+  </a>
+  
+    <nav class="md-nav" aria-label="死锁避免(Avoidance)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#安全状态" class="md-nav__link">
+    安全状态
+  </a>
+  
+    <nav class="md-nav" aria-label="安全状态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#基本事实_1" class="md-nav__link">
+    基本事实
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资源分配图算法" class="md-nav__link">
+    资源分配图算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#银行家算法bankers-algorithm" class="md-nav__link">
+    银行家算法(Banker’s Algorithm)
+  </a>
+  
+    <nav class="md-nav" aria-label="银行家算法(Banker’s Algorithm)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#安全检测算法" class="md-nav__link">
+    安全(检测)算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资源请求算法" class="md-nav__link">
+    资源请求算法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#死锁检测detection" class="md-nav__link">
+    死锁检测(Detection)
+  </a>
+  
+    <nav class="md-nav" aria-label="死锁检测(Detection)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#等待图" class="md-nav__link">
+    等待图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#检测算法" class="md-nav__link">
+    检测算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#检测算法的使用" class="md-nav__link">
+    检测算法的使用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#死锁恢复recovery" class="md-nav__link">
+    死锁恢复(Recovery)
+  </a>
+  
+    <nav class="md-nav" aria-label="死锁恢复(Recovery)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#进程终止" class="md-nav__link">
+    进程终止
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#资源抢占" class="md-nav__link">
+    资源抢占
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
   
     
     <li class="md-nav__item md-nav__item--nested">
@@ -460,7 +838,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
       
         
@@ -478,7 +856,7 @@
         </div>
       
       <nav class="md-nav" aria-label="PPL" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
+        <label class="md-nav__title" for="__nav_2_3">
           <span class="md-nav__icon md-icon"></span>
           PPL
         </label>
@@ -1045,11 +1423,11 @@
 
 
 
-  <h1>Chap7 死锁</h1>
+  <h1>2 死锁</h1>
 
 <h2 id="chap7-死锁">Chap7 死锁<a class="headerlink" href="#chap7-死锁" title="Permanent link">&para;</a></h2>
 <h3 id="系统模型">系统模型<a class="headerlink" href="#系统模型" title="Permanent link">&para;</a></h3>
-<p>​   <img src="Chap7 死锁.assets/image-20230105233507589.png" alt="image-20230105233507589" style="zoom:67%;" /></p>
+<p><img alt="image-20230105233507589" src="../../../img/image-20230105233507589.png" width="500" /></p>
 <h4 id="死锁问题">死锁问题<a class="headerlink" href="#死锁问题" title="Permanent link">&para;</a></h4>
 <p>Deadlock ：A set of <strong>blocked</strong> processes each holding a resource and waiting to acquire a resource held by another process in the set.</p>
 <p>死锁：指多个进程因竞争共享资源而造成**相互等待**的一种僵局，若无外力作用，这些进程都将永远不能再向前推进</p>
@@ -1094,9 +1472,9 @@
 <li>分配边(assignment edge) Rj -&gt; Pi，Rj类型的资源已被分配给进程Pi</li>
 </ul>
 <p>图示如下：</p>
-<p>​   <img src="Chap7 死锁.assets/image-20221110194827313.png" alt="image-20221110194827313" style="zoom: 33%;" /></p>
+<p><img alt="image-20221110194827313" src="../../../img/image-20221110194827313.png" width="300" /></p>
 <p>资源分配图示例如下(存在死锁)：</p>
-<p>​   <img src="Chap7 死锁.assets/image-20221110195110503.png" alt="image-20221110195110503" style="zoom:50%;" /></p>
+<p><img alt="" src="../../../img/image-20221110195110503.png" width="300" /></p>
 <h5 id="基本事实">基本事实<a class="headerlink" href="#基本事实" title="Permanent link">&para;</a></h5>
 <p>**(死锁定理)**S为死锁状态的充分条件是：当且仅当S状态的资源分配图是不可完全简化的。</p>
 <p>类比拓扑算法，资源就是进程的依赖项，拥有资源的进程可以完成工作并释放资源，并将该进程及其关联的边从图中删去，如果存在拓扑序列使得资源分配图最终完全简化成无进程空图，则不存在死锁。</p>
@@ -1166,7 +1544,7 @@
 <li>If a system is in unsafe state ⇒ <strong>possibility</strong> of deadlock.</li>
 <li>Avoidance ⇒ ensure that a system will never enter an unsafe state.</li>
 </ul>
-<p>​   <img alt="image-20221110210747285" src="../Chap7%20%E6%AD%BB%E9%94%81.assets/image-20221110210747285.png" /></p>
+<p>​   <img alt="image-20221110210747285" src="../../../img/image-20221110210747285.png" /></p>
 <h4 id="资源分配图算法">资源分配图算法<a class="headerlink" href="#资源分配图算法" title="Permanent link">&para;</a></h4>
 <p>每种资源只有单个实例</p>
 <p>需求边(Claim edge) Pi→Rj indicated that process Pi may request resource Rj; represented by a <strong>dashed line(- - -&gt;)</strong>.  表示进程 Pi 未来 **可能**会请求资源 Rj，用虚线表示。</p>
@@ -1177,8 +1555,8 @@
 <p>算法：假设进程Pi申请资源Rj。只有在需求边Pi→Rj变成分配边Rj→Pi 而不会导致资源分配图形成环(<strong>要考虑需求边</strong>)时，才允许申请。</p>
 <p>用算法循环检测，如果没有环存在，那么资源分配会使系统处于安全状态。如果存在环，资源分配会使系统不安全。进程Pi必须等待。</p>
 <p>举例：</p>
-<p><img src="Chap7 死锁.assets/2022-11-19-18-14-09.png" alt="img" style="zoom: 50%;" /></p>
-<p><img src="Chap7 死锁.assets/2022-11-19-18-13-46.png" alt="img" style="zoom:50%;" /></p>
+<p><img alt="" src="../../../img/2022-11-19-18-14-09.png" width="300" /></p>
+<p><img alt="" src="../../../img/2022-11-19-18-13-46.png" width="300" /></p>
 <p>R2分配给T2后成环了，不安全。</p>
 <h4 id="银行家算法bankers-algorithm">银行家算法(Banker’s Algorithm)<a class="headerlink" href="#银行家算法bankers-algorithm" title="Permanent link">&para;</a></h4>
 <p>每种资源有多个实例</p>
@@ -1321,7 +1699,7 @@ Pi→Pj if Pi is waiting for Pj.</p>
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-01-18T14:44:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-18</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-01-20T07:17:48+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-20</span>
       
         <br>
         创建日期:

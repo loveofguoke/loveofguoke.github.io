@@ -11,13 +11,17 @@
         <link rel="canonical" href="https://loveofguoke.github.io/%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%A8%8B/os/Chap6%20%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/">
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../Chap7%20%E6%AD%BB%E9%94%81/">
       
       <link rel="icon" href="../../../logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
     
     
       
-        <title>Chap6 进程同步 - 果壳的宇宙</title>
+        <title>1 进程同步 - 果壳的宇宙</title>
       
     
     
@@ -115,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chap6 进程同步
+              1 进程同步
             
           </span>
         </div>
@@ -203,13 +207,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         ZJU-CS专业课
       </a>
     </li>
@@ -410,19 +416,23 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
         
           
             
+          
+        
           
         
           
@@ -453,6 +463,369 @@
               
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">操作系统</a>
+          
+            <label for="__nav_2_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="操作系统" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          操作系统
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          1 进程同步
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        1 进程同步
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chap6-进程同步" class="md-nav__link">
+    Chap6 进程同步
+  </a>
+  
+    <nav class="md-nav" aria-label="Chap6 进程同步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#背景" class="md-nav__link">
+    背景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#临界区问题" class="md-nav__link">
+    临界区问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#软件同步" class="md-nav__link">
+    软件同步
+  </a>
+  
+    <nav class="md-nav" aria-label="软件同步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#petersons-solution" class="md-nav__link">
+    Peterson's Solution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bakery-algorithm" class="md-nav__link">
+    Bakery Algorithm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#硬件同步" class="md-nav__link">
+    硬件同步
+  </a>
+  
+    <nav class="md-nav" aria-label="硬件同步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#测试与设置" class="md-nav__link">
+    测试与设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#交换" class="md-nav__link">
+    交换
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#小结" class="md-nav__link">
+    小结
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#互斥锁-mutex-lock" class="md-nav__link">
+    互斥锁 (Mutex Lock)
+  </a>
+  
+    <nav class="md-nav" aria-label="互斥锁 (Mutex Lock)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#自旋锁-spinlock" class="md-nav__link">
+    自旋锁 spinlock
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#信号量-semaphores" class="md-nav__link">
+    信号量 (Semaphores)
+  </a>
+  
+    <nav class="md-nav" aria-label="信号量 (Semaphores)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#整型信号量-integer-semaphore" class="md-nav__link">
+    整型信号量 Integer semaphore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#计数信号量-counting-semaphore" class="md-nav__link">
+    计数信号量 Counting semaphore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#二值信号量-binary-semaphore" class="md-nav__link">
+    二值信号量 Binary semaphore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#信号量的实现" class="md-nav__link">
+    信号量的实现
+  </a>
+  
+    <nav class="md-nav" aria-label="信号量的实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#记录型信号量" class="md-nav__link">
+    记录型信号量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#两种操作原子" class="md-nav__link">
+    两种操作(原子?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#无忙等待的实现方式真正使用的--题干中所指的" class="md-nav__link">
+    无忙等待的实现方式(真正使用的 &amp; 题干中所指的)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wait-signal操作讨论" class="md-nav__link">
+    wait signal操作讨论
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#死锁与饥饿" class="md-nav__link">
+    死锁与饥饿
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#经典进程同步问题" class="md-nav__link">
+    经典进程同步问题
+  </a>
+  
+    <nav class="md-nav" aria-label="经典进程同步问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#有限缓冲区问题生产者-消费者问题" class="md-nav__link">
+    有限缓冲区问题(生产者-消费者问题)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#读者-写者问题" class="md-nav__link">
+    读者-写者问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#哲学家就餐问题" class="md-nav__link">
+    哲学家就餐问题
+  </a>
+  
+    <nav class="md-nav" aria-label="哲学家就餐问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#哲学家就餐问题讨论" class="md-nav__link">
+    哲学家就餐问题讨论
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#管程" class="md-nav__link">
+    管程*
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#总结" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chap7%20%E6%AD%BB%E9%94%81/" class="md-nav__link">
+        2 死锁
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
   
     
     <li class="md-nav__item md-nav__item--nested">
@@ -460,7 +833,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
       
         
@@ -478,7 +851,7 @@
         </div>
       
       <nav class="md-nav" aria-label="PPL" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
+        <label class="md-nav__title" for="__nav_2_3">
           <span class="md-nav__icon md-icon"></span>
           PPL
         </label>
@@ -1040,7 +1413,7 @@
 
 
 
-  <h1>Chap6 进程同步</h1>
+  <h1>1 进程同步</h1>
 
 <h2 id="chap6-进程同步">Chap6 进程同步<a class="headerlink" href="#chap6-进程同步" title="Permanent link">&para;</a></h2>
 <h3 id="背景">背景<a class="headerlink" href="#背景" title="Permanent link">&para;</a></h3>
