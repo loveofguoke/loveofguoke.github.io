@@ -23,18 +23,4 @@ const updateBoxFontColor = e => {
     }
 }
 
-(() => {
-    var p = localStorage.getItem("data-md-color-primary");
-    if (p) {
-        document.body.setAttribute('data-md-color-primary', p);
-    }
-    var a = localStorage.getItem('data-md-color-scheme');
-    if (a == null) {
-        // alert("未设置主题");
-        a = "slate";
-        localStorage.setItem("data-md-color-scheme", a);
-    }
-    document.body.setAttribute('data-md-color-scheme', a);
-    // updateScheme();
-    updateBoxFontColor();
-})()
+// Material owns the palette. Do not force a legacy localStorage theme here.
