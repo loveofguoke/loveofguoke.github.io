@@ -71,3 +71,5 @@ mkdocs serve
 - GitHub 的 Refresh and publish 与 Pages build and deployment 均成功；线上
   `https://loveofguoke.github.io/atlas/` 已实际打开，确认 16 个来源、筛选控件和订阅候选正常加载。
 - 线上截图保存到 `notes/screenshots/fieldnotes-desktop.png`。
+- 手动演练每日采集分支时，遇到与人工文档推送并发造成的 non-fast-forward；增加采集提交后的
+  `git pull --rebase`，再推送当天快照，保持已有人工提交。采集器在 GitHub runner 上运行通过。

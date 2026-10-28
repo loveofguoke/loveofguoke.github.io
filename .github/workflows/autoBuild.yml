@@ -38,6 +38,7 @@ jobs:
           git add docs/atlas/catalog.json
           if ! git diff --cached --quiet; then
             git commit -m 'chore: refresh knowledge-source feeds'
+            git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           fi
       - run: mkdocs build
