@@ -1,24 +1,44 @@
-name: autoBuild
+name: Refresh and publish
 on:
   push:
     branches:
       - master
       - main
+  workflow_dispatch:
+  schedule:
+    - cron: '30 23 * * *'
 permissions:
   contents: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: pip install jieba
-      - run: pip install rich
-      - run: git clone https://github.com/TonyCrane/mkdocs-toolchain.git && cd mkdocs-toolchain/mkdocs-statistics-plugin && pip install .
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-site.txt
+      - run: pip install -r requirements-site.txt
+      - name: Refresh feed candidates
+        if: github.event_name != 'push'
+        run: python scripts/refresh_sources.py
+      - name: Validate source catalog
+        run: python scripts/refresh_sources.py --offline
+      - name: Save daily feed snapshot
+        if: github.event_name != 'push'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/atlas/catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh knowledge-source feeds'
+            git push
+          fi
+      - run: mkdocs build
       - run: mkdocs gh-deploy --force
