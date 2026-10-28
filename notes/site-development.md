@@ -66,3 +66,8 @@ mkdocs serve
   GPU/编译器 + 技术论坛组合筛选返回 PyTorch Forums。
 - 390×844 手机视口已检查单列卡片、筛选和文本；未出现横向溢出。桌面为三列卡片。
 - skill 同时安装到当前 Codex skills 目录，并在 career 的 `实践教程/个人网站/` 备份。
+- 发布提交：`3fdceaa`（栏目与采集引擎）、`1181a1e`（清除旧脚本强制深色主题造成的首页对比度问题）。
+  HTTPS Git 连接短暂失败后使用已配置的 GitHub SSH 正常推送，没有修改代理或关闭 TLS 校验。
+- GitHub 的 Refresh and publish 与 Pages build and deployment 均成功；线上
+  `https://loveofguoke.github.io/atlas/` 已实际打开，确认 16 个来源、筛选控件和订阅候选正常加载。
+- 线上截图保存到 `notes/screenshots/fieldnotes-desktop.png`。
