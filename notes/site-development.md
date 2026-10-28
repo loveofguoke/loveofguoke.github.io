@@ -73,3 +73,6 @@ mkdocs serve
 - 线上截图保存到 `notes/screenshots/fieldnotes-desktop.png`。
 - 手动演练每日采集分支时，遇到与人工文档推送并发造成的 non-fast-forward；增加采集提交后的
   `git pull --rebase`，再推送当天快照，保持已有人工提交。采集器在 GitHub runner 上运行通过。
+- 修复后手动演练 [run 40648203256](https://github.com/loveofguoke/loveofguoke.github.io/actions/runs/40648203256)
+  全部通过：采集、校验、提交快照、构建和 gh-pages 发布均成功（16 秒）。本地已 fast-forward
+  同步机器人的最新数据提交。
