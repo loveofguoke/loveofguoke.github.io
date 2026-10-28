@@ -3,6 +3,7 @@ const updateScheme = e => {
     var a = localStorage.getItem('data-md-color-scheme');
     var theme = a === "default" ? "light" : "dark";
     // alert(a + " -> " + theme);
+    if (!giscus) return;
     giscus.contentWindow.postMessage(
         { giscus: { setConfig: { theme } } },
         "https://giscus.app"

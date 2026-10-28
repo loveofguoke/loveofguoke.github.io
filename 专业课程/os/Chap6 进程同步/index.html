@@ -16,8 +16,12 @@
       
         <link rel="next" href="../Chap7%20%E6%AD%BB%E9%94%81/">
       
+      
+        
+      
+      
       <link rel="icon" href="../../../logo.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -25,22 +29,25 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
+
     
+    
+      
     
     
       
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -50,7 +57,9 @@
     
       <link rel="stylesheet" href="../../../css/status.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+      <link rel="stylesheet" href="../../../css/editorial.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -59,14 +68,11 @@
   
   
 
-
-  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-4TE0QGKSJV"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-4TE0QGKSJV",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-4TE0QGKSJV",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
-
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-4TE0QGKSJV"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-4TE0QGKSJV",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-4TE0QGKSJV",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
   
     <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
   
 
-    
     
     
   </head>
@@ -77,9 +83,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -87,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chap6-进程同步" class="md-skip">
+        <a href="#chap6" class="md-skip">
           跳转至
         </a>
       
@@ -107,7 +112,8 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -126,30 +132,39 @@
       </div>
     </div>
     
+      
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="查找">
         
         <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             正在初始化搜索引擎
@@ -160,13 +175,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/loveofguoke/loveofguoke.github.io" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     loveofguoke/果壳的宇宙
@@ -185,38 +201,23 @@
           
             
 <nav class="md-tabs" aria-label="标签" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
   
   
-
-
-  
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
-        🏡 主页
-      </a>
-    </li>
-  
-
-      
+      <a href="../../../atlas/" class="md-tabs__link">
         
   
   
     
   
+  独立知识源
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
-        ZJU-CS专业课
       </a>
     </li>
   
@@ -225,64 +226,134 @@
         
   
   
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  🏡 主页
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/" class="md-tabs__link">
-        自学课程
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../%E6%9D%82%E9%A1%B9/" class="md-tabs__link">
-        杂项
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ZJU-CS专业课
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../%E7%94%9F%E6%B4%BB/" class="md-tabs__link">
-        生活
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  自学课程
 
+        </a>
+      </li>
+    
+  
 
+      
+        
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../../tool/" class="md-tabs__link">
-        工具
-      </a>
-    </li>
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%9D%82%E9%A1%B9/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  杂项
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%94%9F%E6%B4%BB/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  生活
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tool/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  工具
+
+        </a>
+      </li>
+    
   
 
       
@@ -302,6 +373,7 @@
                   <div class="md-sidebar__inner">
                     
 
+
   
 
 
@@ -319,7 +391,7 @@
       <a href="https://github.com/loveofguoke/loveofguoke.github.io" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     loveofguoke/果壳的宇宙
@@ -331,201 +403,355 @@
     
       
       
-      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atlas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    独立知识源
+  
 
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
   
   
   
     
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
-      
-      
-        
-          
-            
-          
-        
-          
-        
-          
-        
-      
-      
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../..">🏡 主页</a>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
           
-            <label for="__nav_1">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="🏡 主页" data-md-level="1">
-        <label class="md-nav__title" for="__nav_1">
-          <span class="md-nav__icon md-icon"></span>
-          🏡 主页
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏡 主页
+  
+
+    
+  </span>
+  
+  
+
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🏡 主页
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../../home/about/" class="md-nav__link">
-        ❤️ 我和朋友们！
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ❤️ 我和朋友们！
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../../recent/" class="md-nav__link">
-        📆 最近更新
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📆 最近更新
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
+  
+  
+    
+  
+  
+  
+    
+    
       
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZJU-CS专业课
+  
 
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ZJU-CS专业课
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
   
   
     
   
   
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
-      
-      
-        
-          
-            
-          
-        
-          
-        
-          
-        
-      
-      
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">ZJU-CS专业课</a>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
           
-            <label for="__nav_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="ZJU-CS专业课" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          ZJU-CS专业课
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
               
   
   
+  <span class="md-ellipsis">
     
   
+    操作系统
   
+
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
-      
-      
-        
-          
-            
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../">操作系统</a>
-          
-            <label for="__nav_2_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="操作系统" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
-          <span class="md-nav__icon md-icon"></span>
-          操作系统
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
+  </span>
+  
+  
+
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    操作系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          1 进程同步
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 进程同步
+  
+
+    
+  </span>
+  
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        1 进程同步
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 进程同步
+  
+
+    
+  </span>
+  
+  
+
       </a>
       
         
@@ -542,30 +768,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#chap6-进程同步" class="md-nav__link">
-    Chap6 进程同步
+  <a href="#chap6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chap6 进程同步
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Chap6 进程同步">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#背景" class="md-nav__link">
-    背景
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        背景
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#临界区问题" class="md-nav__link">
-    临界区问题
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        临界区问题
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#软件同步" class="md-nav__link">
-    软件同步
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        软件同步
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="软件同步">
@@ -573,14 +815,22 @@
         
           <li class="md-nav__item">
   <a href="#petersons-solution" class="md-nav__link">
-    Peterson's Solution
+    <span class="md-ellipsis">
+      
+        Peterson's Solution
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#bakery-algorithm" class="md-nav__link">
-    Bakery Algorithm
+    <span class="md-ellipsis">
+      
+        Bakery Algorithm
+      
+    </span>
   </a>
   
 </li>
@@ -591,30 +841,46 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#硬件同步" class="md-nav__link">
-    硬件同步
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        硬件同步
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="硬件同步">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#测试与设置" class="md-nav__link">
-    测试与设置
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        测试与设置
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#交换" class="md-nav__link">
-    交换
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        交换
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#小结" class="md-nav__link">
-    小结
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小结
+      
+    </span>
   </a>
   
 </li>
@@ -625,16 +891,24 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#互斥锁-mutex-lock" class="md-nav__link">
-    互斥锁 (Mutex Lock)
+  <a href="#mutex-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        互斥锁 (Mutex Lock)
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="互斥锁 (Mutex Lock)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#自旋锁-spinlock" class="md-nav__link">
-    自旋锁 spinlock
+  <a href="#spinlock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自旋锁 spinlock
+      
+    </span>
   </a>
   
 </li>
@@ -645,66 +919,102 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#信号量-semaphores" class="md-nav__link">
-    信号量 (Semaphores)
+  <a href="#semaphores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        信号量 (Semaphores)
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="信号量 (Semaphores)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#整型信号量-integer-semaphore" class="md-nav__link">
-    整型信号量 Integer semaphore
+  <a href="#integer-semaphore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        整型信号量 Integer semaphore
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#计数信号量-counting-semaphore" class="md-nav__link">
-    计数信号量 Counting semaphore
+  <a href="#counting-semaphore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        计数信号量 Counting semaphore
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#二值信号量-binary-semaphore" class="md-nav__link">
-    二值信号量 Binary semaphore
+  <a href="#binary-semaphore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二值信号量 Binary semaphore
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#信号量的实现" class="md-nav__link">
-    信号量的实现
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        信号量的实现
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="信号量的实现">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#记录型信号量" class="md-nav__link">
-    记录型信号量
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        记录型信号量
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#两种操作原子" class="md-nav__link">
-    两种操作(原子?)
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两种操作(原子?)
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#无忙等待的实现方式真正使用的--题干中所指的" class="md-nav__link">
-    无忙等待的实现方式(真正使用的 &amp; 题干中所指的)
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        无忙等待的实现方式(真正使用的 &amp; 题干中所指的)
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#wait-signal操作讨论" class="md-nav__link">
-    wait signal操作讨论
+  <a href="#wait-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        wait signal操作讨论
+      
+    </span>
   </a>
   
 </li>
@@ -715,8 +1025,12 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#死锁与饥饿" class="md-nav__link">
-    死锁与饥饿
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        死锁与饥饿
+      
+    </span>
   </a>
   
 </li>
@@ -727,38 +1041,58 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#经典进程同步问题" class="md-nav__link">
-    经典进程同步问题
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        经典进程同步问题
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="经典进程同步问题">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#有限缓冲区问题生产者-消费者问题" class="md-nav__link">
-    有限缓冲区问题(生产者-消费者问题)
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        有限缓冲区问题(生产者-消费者问题)
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#读者-写者问题" class="md-nav__link">
-    读者-写者问题
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        读者-写者问题
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#哲学家就餐问题" class="md-nav__link">
-    哲学家就餐问题
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哲学家就餐问题
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="哲学家就餐问题">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#哲学家就餐问题讨论" class="md-nav__link">
-    哲学家就餐问题讨论
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哲学家就餐问题讨论
+      
+    </span>
   </a>
   
 </li>
@@ -774,15 +1108,23 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#管程" class="md-nav__link">
-    管程*
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        管程*
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#总结" class="md-nav__link">
-    总结
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        总结
+      
+    </span>
   </a>
   
 </li>
@@ -799,325 +1141,493 @@
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../Chap7%20%E6%AD%BB%E9%94%81/" class="md-nav__link">
-        2 死锁
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 死锁
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
           
-            
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ppl/" class="md-nav__link ">
               
   
   
-  
+  <span class="md-ellipsis">
     
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
-      
-      
-        
-          
+  
+    PPL
+  
+
+    
+  </span>
+  
+  
+
+            </a>
             
-          
+          </div>
         
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../ppl/">PPL</a>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="PPL" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_3">
-          <span class="md-nav__icon md-icon"></span>
-          PPL
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
             
-          
-        </ul>
-      </nav>
+  
+    PPL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-        
-          
-            
-          
-        
-          
-        
-      
-      
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/">自学课程</a>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
           
-            <label for="__nav_3">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="自学课程" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          自学课程
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/" class="md-nav__link ">
               
   
   
-  
+  <span class="md-ellipsis">
     
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/GAMES101/">GAMES101</a>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="GAMES101" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          GAMES101
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
   
-
-            
-          
-        </ul>
-      </nav>
-    </li>
+    自学课程
   
 
     
-      
-      
-      
-
+  </span>
   
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../%E6%9D%82%E9%A1%B9/">杂项</a>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="杂项" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          杂项
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
   
 
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
-      
-      
-        
-          
-            
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../%E7%94%9F%E6%B4%BB/">生活</a>
-          
-            <label for="__nav_5">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="生活" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          生活
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    自学课程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../%E8%87%AA%E5%AD%A6%E8%AF%BE%E7%A8%8B/GAMES101/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GAMES101
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GAMES101
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../%E6%9D%82%E9%A1%B9/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    杂项
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    杂项
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../%E7%94%9F%E6%B4%BB/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    生活
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    生活
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../../%E7%94%9F%E6%B4%BB/2022/" class="md-nav__link">
-        2022 年终总结
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022 年终总结
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
-      
-      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../tool/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具
+  
+
+    
+  </span>
+  
+  
+
+            </a>
             
-          
+          </div>
         
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../tool/">工具</a>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="工具" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          工具
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
             
-          
-        </ul>
-      </nav>
+  
+    工具
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1147,30 +1657,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#chap6-进程同步" class="md-nav__link">
-    Chap6 进程同步
+  <a href="#chap6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chap6 进程同步
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Chap6 进程同步">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#背景" class="md-nav__link">
-    背景
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        背景
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#临界区问题" class="md-nav__link">
-    临界区问题
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        临界区问题
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#软件同步" class="md-nav__link">
-    软件同步
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        软件同步
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="软件同步">
@@ -1178,14 +1704,22 @@
         
           <li class="md-nav__item">
   <a href="#petersons-solution" class="md-nav__link">
-    Peterson's Solution
+    <span class="md-ellipsis">
+      
+        Peterson's Solution
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#bakery-algorithm" class="md-nav__link">
-    Bakery Algorithm
+    <span class="md-ellipsis">
+      
+        Bakery Algorithm
+      
+    </span>
   </a>
   
 </li>
@@ -1196,30 +1730,46 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#硬件同步" class="md-nav__link">
-    硬件同步
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        硬件同步
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="硬件同步">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#测试与设置" class="md-nav__link">
-    测试与设置
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        测试与设置
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#交换" class="md-nav__link">
-    交换
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        交换
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#小结" class="md-nav__link">
-    小结
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小结
+      
+    </span>
   </a>
   
 </li>
@@ -1230,16 +1780,24 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#互斥锁-mutex-lock" class="md-nav__link">
-    互斥锁 (Mutex Lock)
+  <a href="#mutex-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        互斥锁 (Mutex Lock)
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="互斥锁 (Mutex Lock)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#自旋锁-spinlock" class="md-nav__link">
-    自旋锁 spinlock
+  <a href="#spinlock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自旋锁 spinlock
+      
+    </span>
   </a>
   
 </li>
@@ -1250,66 +1808,102 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#信号量-semaphores" class="md-nav__link">
-    信号量 (Semaphores)
+  <a href="#semaphores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        信号量 (Semaphores)
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="信号量 (Semaphores)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#整型信号量-integer-semaphore" class="md-nav__link">
-    整型信号量 Integer semaphore
+  <a href="#integer-semaphore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        整型信号量 Integer semaphore
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#计数信号量-counting-semaphore" class="md-nav__link">
-    计数信号量 Counting semaphore
+  <a href="#counting-semaphore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        计数信号量 Counting semaphore
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#二值信号量-binary-semaphore" class="md-nav__link">
-    二值信号量 Binary semaphore
+  <a href="#binary-semaphore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二值信号量 Binary semaphore
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#信号量的实现" class="md-nav__link">
-    信号量的实现
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        信号量的实现
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="信号量的实现">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#记录型信号量" class="md-nav__link">
-    记录型信号量
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        记录型信号量
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#两种操作原子" class="md-nav__link">
-    两种操作(原子?)
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两种操作(原子?)
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#无忙等待的实现方式真正使用的--题干中所指的" class="md-nav__link">
-    无忙等待的实现方式(真正使用的 &amp; 题干中所指的)
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        无忙等待的实现方式(真正使用的 &amp; 题干中所指的)
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#wait-signal操作讨论" class="md-nav__link">
-    wait signal操作讨论
+  <a href="#wait-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        wait signal操作讨论
+      
+    </span>
   </a>
   
 </li>
@@ -1320,8 +1914,12 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#死锁与饥饿" class="md-nav__link">
-    死锁与饥饿
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        死锁与饥饿
+      
+    </span>
   </a>
   
 </li>
@@ -1332,38 +1930,58 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#经典进程同步问题" class="md-nav__link">
-    经典进程同步问题
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        经典进程同步问题
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="经典进程同步问题">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#有限缓冲区问题生产者-消费者问题" class="md-nav__link">
-    有限缓冲区问题(生产者-消费者问题)
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        有限缓冲区问题(生产者-消费者问题)
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#读者-写者问题" class="md-nav__link">
-    读者-写者问题
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        读者-写者问题
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#哲学家就餐问题" class="md-nav__link">
-    哲学家就餐问题
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哲学家就餐问题
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="哲学家就餐问题">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#哲学家就餐问题讨论" class="md-nav__link">
-    哲学家就餐问题讨论
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哲学家就餐问题讨论
+      
+    </span>
   </a>
   
 </li>
@@ -1379,15 +1997,23 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#管程" class="md-nav__link">
-    管程*
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        管程*
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#总结" class="md-nav__link">
-    总结
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        总结
+      
+    </span>
   </a>
   
 </li>
@@ -1407,6 +2033,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -1415,8 +2042,8 @@
 
   <h1>1 进程同步</h1>
 
-<h2 id="chap6-进程同步">Chap6 进程同步<a class="headerlink" href="#chap6-进程同步" title="Permanent link">&para;</a></h2>
-<h3 id="背景">背景<a class="headerlink" href="#背景" title="Permanent link">&para;</a></h3>
+<h2 id="chap6">Chap6 进程同步<a class="headerlink" href="#chap6" title="Permanent link">&para;</a></h2>
+<h3 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>并行或并发的进程在访问共享的数据区域的时候可能会导致数据的不一致性，保持数据一致性需要有特定的机制使协作过程有序执行 </p>
 <p>有限缓冲区问题：生产者往有限的缓冲区写入数据，消费者从中读取数据，如果我们用一个 count 来表示缓冲区中数据的个数，两种操作分别对应的就是count++ 和count--，但是这两种操作都需要满足原子性，即操作的时候不能被中断，如果一个生产者和一个消费者同时想要改变count 就会造成数据的不一致性(取决于进程调度执行的顺序)。</p>
 <p>count++可能通过如下机器语言实现：</p>
@@ -1457,7 +2084,7 @@
 <li>死锁（deadlock )指多个进程互不相让，都得不到足够的资源。永远得不到资源</li>
 <li>饥饿（starvation )指一个进程长时间得不到资源（其它进程可能轮流占用资源）。资源分配不公平</li>
 </ul>
-<h3 id="临界区问题">临界区问题<a class="headerlink" href="#临界区问题" title="Permanent link">&para;</a></h3>
+<h3 id="_2">临界区问题<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>临界资源：一次只允许一个进程使用(访问)的资源，如消息缓冲队列、打印机等。这里的一次指只有当一个进程使**用完**(可能分多个时间片)这些资源，其它进程才能访问。</p>
 <p>临界区：进程中访问临界资源的代码段</p>
 <p>临界区问题：设计一个协议，确保当一个进程在临界区内执行时，别的进程不被允许执行其临界区。</p>
@@ -1484,7 +2111,7 @@
 <p>让权等待</p>
 <p>如果一个进程在当前状态下根本无法获得临界资源而进入临界区，则应当释放处理机暂时退让，防止进程忙等待</p>
 </blockquote>
-<h3 id="软件同步">软件同步<a class="headerlink" href="#软件同步" title="Permanent link">&para;</a></h3>
+<h3 id="_3">软件同步<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>前提：LOAD和STORE指令是原子的，即无法被中断</p>
 <h4 id="petersons-solution">Peterson's Solution<a class="headerlink" href="#petersons-solution" title="Permanent link">&para;</a></h4>
 <p>适用于两个进程交错执行临界区，要求两个进程共享两个数据项：</p>
@@ -1554,10 +2181,10 @@ number小优先级高，number相同时进程id小优先级高
 由于取到的号总是递增的，所以一个进程进入一次后下一次的号会变大，所以同一轮取号的进程能依次进入，满足有限等待</li>
 </ol>
 </blockquote>
-<h3 id="硬件同步">硬件同步<a class="headerlink" href="#硬件同步" title="Permanent link">&para;</a></h3>
+<h3 id="_4">硬件同步<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>对于单处理器环境，可以禁用中断，这样当前运行的代码将在没有抢占的情况下执行。对于多处理器系统，禁用中断效率很低，因为消息要传递到所有处理器。</p>
 <p>许多现代操作系统提供特殊的原子硬件指令(无法被中断)，用于测试和设置内存字的内容，或者用于原子地交换两个字。</p>
-<h4 id="测试与设置">测试与设置<a class="headerlink" href="#测试与设置" title="Permanent link">&para;</a></h4>
+<h4 id="_5">测试与设置<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="c1">// 原子指令，同时应该只能由一个进程执行(硬件实现)，否则可能多个进程同时取到false</span>
 <span class="kt">boolean</span><span class="w"> </span><span class="nf">TestAndSet</span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="o">&amp;</span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">boolean</span><span class="w"> </span><span class="n">rv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">;</span>
@@ -1600,7 +2227,7 @@ number小优先级高，number相同时进程id小优先级高
 </code></pre></div>
 <p>此版本只有在初始化以及没有进程要访问临界区时lock才等于false，在依次访问临界区时lock始终为true，即锁是伴随着设置下一个的waiting = false使其退出死循环而**平滑传递**的，不需要每次都上锁再释放锁。</p>
 <p>原来的版本就是只管自己能不能访问临界区，互相之间没有任何交流。现在引入排队队列，相当于互相告知自己是否渴望进入临界区，并将渴望的进程**排个队**，一个进程访问完后就礼貌地把锁交给排在它后面的进程，这样就是先来先得，解决了饥饿的问题。</p>
-<h4 id="交换">交换<a class="headerlink" href="#交换" title="Permanent link">&para;</a></h4>
+<h4 id="_6">交换<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="c1">// 原子指令，通过原子交换实现lock的转移，同时应该只能由一个进程执行(硬件实现)</span>
 <span class="kt">void</span><span class="w"> </span><span class="nf">Swap</span><span class="w"> </span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="o">*</span><span class="n">b</span><span class="p">)</span>
 <span class="p">{</span>
@@ -1629,7 +2256,7 @@ number小优先级高，number相同时进程id小优先级高
 如果交换完key为false，则lock本来是false，本次交换中我把key的true给了lock，我独占了锁，我可以进
 进完就释放锁</p>
 </blockquote>
-<h4 id="小结">小结<a class="headerlink" href="#小结" title="Permanent link">&para;</a></h4>
+<h4 id="_7">小结<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
 <p>硬件方法的优点</p>
 <ul>
 <li>适用于任意数目的进程，在单处理器或多处理器上</li>
@@ -1642,18 +2269,18 @@ number小优先级高，number相同时进程id小优先级高
 <li>可能“饥饿”：从等待进程中随机选择一个进入临界区，有的进程可能一直选不上</li>
 <li>可能死锁：单CPU情况下,P1执行特殊指令(swap)进入临界区，这时拥有更高优先级P2执行并中断P1,如果P2又要使用P1占用的资源，按照资源分配规则拒绝P2对资源的要求，陷入忙等循环。然后P1也得不到CPU，因为P1比P2优先级低。(解决方案：P2进入waiting状态 or 动态优先级，P1优先级升高)</li>
 </ul>
-<h3 id="互斥锁-mutex-lock">互斥锁 (Mutex Lock)<a class="headerlink" href="#互斥锁-mutex-lock" title="Permanent link">&para;</a></h3>
+<h3 id="mutex-lock">互斥锁 (Mutex Lock)<a class="headerlink" href="#mutex-lock" title="Permanent link">&para;</a></h3>
 <p>采用互斥锁保护临界区，从而防止竞争条件</p>
 <p>一个进程在进入临界区时应得到锁，在退出临界区时释放锁</p>
-<h4 id="自旋锁-spinlock">自旋锁 spinlock<a class="headerlink" href="#自旋锁-spinlock" title="Permanent link">&para;</a></h4>
+<h4 id="spinlock">自旋锁 spinlock<a class="headerlink" href="#spinlock" title="Permanent link">&para;</a></h4>
 <p>当一个进程欲访问已被其他进程锁定的资源时，进程循环检测该锁是否被释放，等待锁变得可用</p>
 <p>自旋锁<a href="https://blog.csdn.net/qq_46311811/article/details/122354855">不适用于单处理器系统</a>，但通常用于多处理器系统。</p>
 <p>自旋锁不适合单处理器的原因是由于当一个进程处于自旋锁状态时说明其正在等待某一个资源，而在单处理器系统中，一旦发生了这种自旋锁，那么拥有资源的那个进程也会由于无法得到CPU而一直等待，这样之后，占用CPU的进程会等待另一个进程释放资源，占用资源的进程会等待另一个进程释放CPU，从而导致程序进入一个死锁的状态，因此单处理器不适合自旋锁</p>
 <p>在多处理器中，即使一个进程处于自旋锁状态而占用一个CPU，拥有资源的进程也可以在另外空闲的处理器上执行，直到资源释放，处于忙等的进程这时便可以正常进行，防止了死锁的发生</p>
-<h3 id="信号量-semaphores">信号量 (Semaphores)<a class="headerlink" href="#信号量-semaphores" title="Permanent link">&para;</a></h3>
+<h3 id="semaphores">信号量 (Semaphores)<a class="headerlink" href="#semaphores" title="Permanent link">&para;</a></h3>
 <p>信号量是一种数据类型，只有初始化，wait(P) 和signal(V) 三种操作，信号量可以分为整型信号量、<strong>记录型信号量</strong>，AND 型信号量和二值信号量。现在信号量机制已广泛应用于操作系统了同步互斥中。</p>
 <p>不需要忙等待的同步工具，复杂度更低</p>
-<h4 id="整型信号量-integer-semaphore">整型信号量 Integer semaphore<a class="headerlink" href="#整型信号量-integer-semaphore" title="Permanent link">&para;</a></h4>
+<h4 id="integer-semaphore">整型信号量 Integer semaphore<a class="headerlink" href="#integer-semaphore" title="Permanent link">&para;</a></h4>
 <p>信号量是个整型变量，除了初始化外只能通过两个标准**原子**操作<code>wait()</code>和<code>signal()</code>来访问</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// 等待资源，等到后取走一份资源</span>
 <span class="n">wait</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1667,10 +2294,10 @@ number小优先级高，number相同时进程id小优先级高
 <span class="p">}</span>
 </code></pre></div>
 <p>在<code>wait()</code>和<code>signal()</code>操作中，信号量整数值的修改应不可分割地执行，即当一个进程修改信号量值时，没有其它进程能够同时修改同一信号量的值。</p>
-<h4 id="计数信号量-counting-semaphore">计数信号量 Counting semaphore<a class="headerlink" href="#计数信号量-counting-semaphore" title="Permanent link">&para;</a></h4>
+<h4 id="counting-semaphore">计数信号量 Counting semaphore<a class="headerlink" href="#counting-semaphore" title="Permanent link">&para;</a></h4>
 <p>integer value can range over an unrestricted domain</p>
 <p>Can implement a counting semaphore S as a binary semaphore</p>
-<h4 id="二值信号量-binary-semaphore">二值信号量 Binary semaphore<a class="headerlink" href="#二值信号量-binary-semaphore" title="Permanent link">&para;</a></h4>
+<h4 id="binary-semaphore">二值信号量 Binary semaphore<a class="headerlink" href="#binary-semaphore" title="Permanent link">&para;</a></h4>
 <p>integer value can range only between 0 and 1; can be simpler to implement</p>
 <ul>
 <li>Also known as mutex locks，提供互斥锁</li>
@@ -1715,7 +2342,7 @@ number小优先级高，number相同时进程id小优先级高
 <span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">mutex</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<h4 id="信号量的实现">信号量的实现<a class="headerlink" href="#信号量的实现" title="Permanent link">&para;</a></h4>
+<h4 id="_8">信号量的实现<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
 <p>当信号量只是一个值时，必须保证没有两个进程能同时对同一个信号量执行wait()或signal()，因此wait和signal的代码就要被放在临界区，成为临界区问题。</p>
 <p>Could now have <strong>busy waiting</strong> in critical section implementation</p>
 <ul>
@@ -1729,7 +2356,7 @@ number小优先级高，number相同时进程id小优先级高
 <div class="highlight"><pre><span></span><code><span class="n">value</span><span class="p">;</span><span class="w"> </span><span class="c1">// 整型</span>
 <span class="n">pointer</span><span class="p">;</span><span class="w"> </span><span class="c1">// 指向列表中的下一条记录</span>
 </code></pre></div>
-<h5 id="记录型信号量">记录型信号量<a class="headerlink" href="#记录型信号量" title="Permanent link">&para;</a></h5>
+<h5 id="_9">记录型信号量<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="c1">// 将信号量定义成结构体</span>
 <span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
@@ -1737,10 +2364,10 @@ number小优先级高，number相同时进程id小优先级高
 <span class="p">}</span><span class="w"> </span><span class="n">semaphore</span><span class="p">;</span>
 </code></pre></div>
 <p>该数据结构中list 指向等待队列的下一个进程，记录型信号量中value 的值大于0 表示资源的个数，等于0 的时候表示没有资源可以用或者不允许进入临界区，负数表示在等待队列中的进程个数或者等待进入临界区的进程。</p>
-<h5 id="两种操作原子">两种操作(原子?)<a class="headerlink" href="#两种操作原子" title="Permanent link">&para;</a></h5>
+<h5 id="_10">两种操作(原子?)<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
 <p>block()，将调用该操作的进程放置到适当的等待队列中。即将该进程从running转变为waiting。然后 CPU 调度程序选择执行另一个进程。</p>
 <p>wakeup()，将一个进程从等待队列中移出并放置到就绪队列中，从waiting转变为ready。即让等待信号量而阻塞的进程在其他进程执行操作<code>signal()</code>之后重新执行，将进程从等待状态改为就绪状态。</p>
-<h5 id="无忙等待的实现方式真正使用的--题干中所指的">无忙等待的实现方式(真正使用的 &amp; 题干中所指的)<a class="headerlink" href="#无忙等待的实现方式真正使用的--题干中所指的" title="Permanent link">&para;</a></h5>
+<h5 id="_11">无忙等待的实现方式(真正使用的 &amp; 题干中所指的)<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="n">wait</span><span class="p">(</span><span class="n">semaphore</span><span class="w"> </span><span class="o">*</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 相当于申请资源</span>
 <span class="w">    </span><span class="n">S</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">--</span><span class="p">;</span><span class="w"> </span><span class="c1">// 声明我需要此资源</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="o">-&gt;</span><span class="n">value</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 资源已被分配完毕且我没拿到(若=0则我拿到了最后一份资源)</span>
@@ -1757,7 +2384,7 @@ number小优先级高，number相同时进程id小优先级高
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<h5 id="wait-signal操作讨论">wait signal操作讨论<a class="headerlink" href="#wait-signal操作讨论" title="Permanent link">&para;</a></h5>
+<h5 id="wait-signal">wait signal操作讨论<a class="headerlink" href="#wait-signal" title="Permanent link">&para;</a></h5>
 <p>通常用信号量表示资源或临界区
 信号量的物理含义</p>
 <ul>
@@ -1779,12 +2406,12 @@ wait、signal操作的优缺点</p>
 <li>缺点：不够安全；wait、signal操作使用不当会出现死锁；实现复杂。</li>
 </ul>
 <p><strong>使用信号量时必须设定信号量的初始值。</strong></p>
-<h4 id="死锁与饥饿">死锁与饥饿<a class="headerlink" href="#死锁与饥饿" title="Permanent link">&para;</a></h4>
+<h4 id="_12">死锁与饥饿<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
 <p>死锁：两个或多个进程无限等待一个事件，而该事件只能由等待进程之一引发</p>
 <p>饥饿：无限阻塞。A process may never be removed from the semaphore queue in which it is suspended</p>
 <p>优先级反转：因低优先级进程持有高优先级进程所需的锁而引发的调度问题</p>
-<h3 id="经典进程同步问题">经典进程同步问题<a class="headerlink" href="#经典进程同步问题" title="Permanent link">&para;</a></h3>
-<h4 id="有限缓冲区问题生产者-消费者问题">有限缓冲区问题(生产者-消费者问题)<a class="headerlink" href="#有限缓冲区问题生产者-消费者问题" title="Permanent link">&para;</a></h4>
+<h3 id="_13">经典进程同步问题<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h4 id="-">有限缓冲区问题(生产者-消费者问题)<a class="headerlink" href="#-" title="Permanent link">&para;</a></h4>
 <p>主要形式就是生产者写入缓冲区，消费者读取缓冲区，是许多相互合作进程的一种抽象。消息队列。</p>
 <p><code>n</code>个缓冲区，每个缓冲区可存一个数据项</p>
 <p>信号量<code>mutex</code>提供缓冲池访问的互斥要求，并初始化为 1，即生产者和消费者不能同时访问缓冲区</p>
@@ -1830,7 +2457,7 @@ wait、signal操作的优缺点</p>
 <blockquote>
 <p>看看有没有满的缓冲区，如果没有则等待，等到后等待互斥锁，拿到锁后消费一个数据项，释放锁并将空的缓冲区数量+1</p>
 </blockquote>
-<h4 id="读者-写者问题">读者-写者问题<a class="headerlink" href="#读者-写者问题" title="Permanent link">&para;</a></h4>
+<h4 id="-_1">读者-写者问题<a class="headerlink" href="#-_1" title="Permanent link">&para;</a></h4>
 <p>一个数据集（如文件）如果被几个并行进程所共享：</p>
 <ul>
 <li>有些进程只要求读数据集内容，它称读者</li>
@@ -1881,7 +2508,7 @@ wait、signal操作的优缺点</p>
 <li>一旦写者就绪就尽快让它执行写操作，即写者等待时不允许新读者进行操作</li>
 <li>读者可能会饥饿</li>
 </ul>
-<h4 id="哲学家就餐问题">哲学家就餐问题<a class="headerlink" href="#哲学家就餐问题" title="Permanent link">&para;</a></h4>
+<h4 id="_14">哲学家就餐问题<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
 <p>问题描述：</p>
 <ul>
 <li>N个哲学家围成一圈吃饭</li>
@@ -1908,7 +2535,7 @@ wait、signal操作的优缺点</p>
 <span class="w">    </span><span class="err">…</span>
 <span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 </code></pre></div>
-<h5 id="哲学家就餐问题讨论">哲学家就餐问题讨论<a class="headerlink" href="#哲学家就餐问题讨论" title="Permanent link">&para;</a></h5>
+<h5 id="_15">哲学家就餐问题讨论<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h5>
 <p>这个方案可以保证对筷子的使用互斥，但显然很容易导致死锁(都拿起左边的筷子)，且可能导致饥饿(starvation)。</p>
 <p>有几种可能的解决方案：</p>
 <ul>
@@ -1919,25 +2546,49 @@ wait、signal操作的优缺点</p>
 <li>每个哲学家拿起第1根筷子一定时间后，若拿不到第2根筷子，再放下第1根筷子。(可以解决死锁，但是不能消除饥饿，比如大家都拿起、放下、拿起...)</li>
 </ul>
 <p>没有死锁的解决方案不一定能消除饥饿的可能性</p>
-<h3 id="管程">管程*<a class="headerlink" href="#管程" title="Permanent link">&para;</a></h3>
-<h3 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h3>
+<h3 id="_16">管程*<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h3 id="_17">总结<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <p>同步问题对进程执行有额外的条件(顺序、时机)</p>
 <p>互斥问题仅要求不同时访问临界区</p>
 
-  <hr>
-<div class="md-source-file">
-  <small>
+
+
+
+
+
+
+  
     
-      最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-01-18T14:44:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-18</span>
-      
-        <br>
-        创建日期:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-01-18T14:44:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-01-18</span>
-      
+  
+  
     
-  </small>
-</div>
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2023年1月18日 14:44:16 UTC"><span class="timeago" datetime="2023-01-18T14:44:16+00:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2023年1月18日 14:44:16 UTC">2023-01-18</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2023年1月18日 14:44:16 UTC"><span class="timeago" datetime="2023-01-18T14:44:16+00:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2023年1月18日 14:44:16 UTC">2023-01-18</span>
+  </span>
+
+    
+    
+    
+  </aside>
 
 
   
@@ -2056,12 +2707,14 @@ var giscus = document.querySelector("script[src*=giscus]")
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            回到页面顶部
-          </a>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
         
       </main>
       
@@ -2092,10 +2745,14 @@ var giscus = document.querySelector("script[src*=giscus]")
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "content.code.annotate", "navigation.tracking", "navigation.indexes", "navigation.top", "toc.follow"], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "content.code.annotate", "navigation.tracking", "navigation.indexes", "navigation.top", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../../js/timeago.min.js"></script>
       
@@ -2104,8 +2761,6 @@ var giscus = document.querySelector("script[src*=giscus]")
         <script src="../../../from_oi_wiki/js/extra.js"></script>
       
         <script src="../../../js/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="果壳的独立知识源：寻找值得反复阅读的个人博客、研究者网站与技术社区。">
+  <title>独立知识源 · 果壳的宇宙</title>
+  <link rel="stylesheet" href="atlas.css">
+  <script src="atlas.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#library">跳到来源目录</a>
+<header class="site-header"><a class="wordmark" href="../">果壳<span>的宇宙</span><i></i></a><nav aria-label="主导航"><a href="../">主页</a><a href="./" aria-current="page">知识源</a><a href="../专业课程/">旧笔记</a><a href="https://github.com/loveofguoke" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></header>
+<main>
+  <section class="intro">
+    <div class="eyebrow"><span class="dot"></span> FIELDNOTES / 独立知识源</div>
+    <div class="intro-grid"><div><h1>沿着好奇心，<br>找到值得读的人<span>。</span></h1><p class="lead">论文之外，还有作者的工作日志、实验细节和长长的讨论。<br class="desktop">把这些散落的好内容，收进一份持续生长的阅读地图。</p></div><aside class="intro-note"><span class="note-number">01 —</span><p>先找到好作者，<br>再跟着问题深入。</p><a href="#method">这份目录如何生长 <span>↗</span></a></aside></div>
+    <div class="stats"><span><strong id="source-count">—</strong> 个精选来源</span><span><strong id="topic-count">—</strong> 个阅读方向</span><span class="update" id="review-date">正在载入目录</span></div>
+  </section>
+  <section id="library" class="library">
+    <div class="section-heading"><div><span class="eyebrow">THE DIRECTORY</span><h2>从这里出发</h2></div><p>原作者 · 有细节 · 能追溯</p></div>
+    <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索作者、方向或关键词…" autocomplete="off" aria-label="搜索知识源"><kbd>/</kbd></label><label class="kind-select"><span class="sr-only">载体类型</span><select id="kind"><option value="">所有载体</option></select></label><button id="saved-only" aria-pressed="false">☆ 我的收藏</button></div>
+    <div id="topics" class="topics" role="group" aria-label="阅读方向"></div>
+    <div class="results-line"><span id="result-count" role="status" aria-live="polite"></span><label>排序 <select id="sort" aria-label="排序"><option value="curated">编辑顺序</option><option value="name">名称 A–Z</option></select></label></div>
+    <div id="source-grid" class="source-grid"></div><p id="empty" hidden>还没有匹配的来源。换一个关键词，或试试其他方向。</p>
+    <noscript><p>此目录需要 JavaScript 来筛选。可直接阅读 <a href="catalog.json">完整来源数据</a>。</p></noscript>
+  </section>
+  <section class="dispatch" id="dispatch"><div class="section-heading"><div><span class="eyebrow">FROM THE FEEDS</span><h2>刚刚路过的信息</h2></div><p id="collection-date">订阅更新</p></div><p class="section-copy">来自已收录来源的订阅候选。自动去重，尚未逐篇选读；发布时间以原站提供的信息为准。</p><div id="feed-list" class="feed-list"></div><button id="more-feed" class="text-button" hidden>再看 8 篇 ↓</button></section>
+  <section class="method" id="method"><div><span class="eyebrow">A SMALL EDITORIAL SYSTEM</span><h2>让目录生长，<br>让阅读保持有意。</h2></div><div class="method-steps"><article><span>01</span><h3>发现</h3><p>从作者的博客列表、文章引用和社区讨论里找线索，优先回到原作者。</p></article><article><span>02</span><h3>选读</h3><p>检查具体文章的推导、代码与实验；给每个来源写清楚值得阅读的理由。</p></article><article><span>03</span><h3>持续追踪</h3><p>每日订阅采集与链接去重。新内容进入候选区，人工核验后再进入精选目录。</p></article></div></section>
+  <footer><span>果壳的宇宙 <span class="muted">/ 保持好奇，慢慢积累。</span></span><a href="https://github.com/loveofguoke/loveofguoke.github.io" target="_blank" rel="noopener noreferrer">来源数据与更新记录 ↗</a></footer>
+</main>
+<div id="notice" class="notice" role="status" aria-live="polite"></div>
+</body></html>
