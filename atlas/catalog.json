@@ -290,6 +290,181 @@
   ],
   "entries": [
     {
+      "title": "The case of the 9 bit AES key",
+      "url": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T02:13:24+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Plan R: AI Safety by ASICs",
+      "url": "https://www.lesswrong.com/posts/n8u3BfqFoGh4jnzpo/plan-r-ai-safety-by-asics",
+      "source_id": "lesswrong",
+      "published_at": "2026-10-29T02:08:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Redox Ring Buffers Project Summary",
+      "url": "https://www.redox-os.org/news/nlnet-rb-summary",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T02:04:00+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Introducing the Accessible Components Library",
+      "url": "https://tetralogical.com/blog/2026/10/14/accessible-components-library",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T00:30:45+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "EMACS turns 50",
+      "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T23:57:12+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Ted Sanders",
+      "url": "https://simonwillison.net/2026/Oct/28/ted-sanders",
+      "source_id": "simon",
+      "published_at": "2026-10-28T23:23:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "GitLab security incident: attempted exploitation of CVE-2026-97229 | Alpine Linux",
+      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T23:01:26+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Why Is This Fingerprinting Script Creating Bioweapons?",
+      "url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T18:55:15+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Hoot 0.10.0 released",
+      "url": "https://spritely.institute/news/hoot-0-10-0-released.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T16:47:10+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "GitHub Octoverse 2026",
+      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026",
+      "source_id": "simon",
+      "published_at": "2026-10-28T16:45:23+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "TorchTPU DevLabs, Nov 9-10, 2026",
+      "url": "https://discuss.pytorch.org/t/torchtpu-devlabs-nov-9-10-2026/225673",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-10-28T16:32:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "GOTO Considered Totally Sick (for error handling in C)",
+      "url": "https://thestateofinahaze.net/blog/c-goto-considered-totally-sick",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T16:07:18+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Pair-coding Lobste.rs feat",
+      "url": "https://lobste.rs/s/mgy3tr/pair_coding_lobste_rs_feat",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T15:53:34+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The October inflection point for vibe game development",
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development",
+      "source_id": "simon",
+      "published_at": "2026-10-28T13:55:15+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Raspberry Pi Zero 3 W and Pi 4 Model A on the Way?",
+      "url": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T13:39:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Forging a Microsoft Edge Full Chain with Logic Bugs Only",
+      "url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T13:34:06+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Apple's git still trusts the compromised eMudhra certificates",
+      "url": "https://emudhra.we-have-a-problem.com/apple.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T11:03:56+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "AlpineBSD",
+      "url": "https://wiki.alpinebsd.org",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T10:34:55+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Start Doing Graph Theory",
+      "url": "https://vertex.degree",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T10:12:59+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Terk Terkowitz",
+      "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz",
+      "source_id": "simon",
+      "published_at": "2026-10-28T10:09:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Billion-query-per-second lookup tables in C++",
+      "url": "https://lemire.me/blog/2026/10/26/billion-query-per-second-lookup-tables-in-c",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T09:47:41+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
+      "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T09:18:31+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The Benchmarking Crisis",
+      "url": "http://databasearchitects.blogspot.com/2026/10/the-benchmarking-crisis.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T08:32:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Who’s 0xabadbabe and why? (2011)",
+      "url": "https://daniel.haxx.se/blog/2011/10/28/whos-0xabadbabe-and-why",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T07:57:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Scalable Vector Grief",
+      "url": "https://portswigger.net/research/scalable-vector-grief",
+      "source_id": "lobsters",
+      "published_at": "2026-10-28T07:26:03+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "This is not sustainable",
       "url": "https://www.netmeister.org/blog/defense-ddos.html",
       "source_id": "lobsters",
@@ -1793,181 +1968,6 @@
       "source_id": "lilian",
       "published_at": "2020-06-07T00:00:00+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "The Transformer Family",
-      "url": "https://lilianweng.github.io/posts/2020-04-07-the-transformer-family",
-      "source_id": "lilian",
-      "published_at": "2020-04-07T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Curriculum for Reinforcement Learning",
-      "url": "https://lilianweng.github.io/posts/2020-01-29-curriculum-rl",
-      "source_id": "lilian",
-      "published_at": "2020-01-29T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Self-Supervised Representation Learning",
-      "url": "https://lilianweng.github.io/posts/2019-11-10-self-supervised",
-      "source_id": "lilian",
-      "published_at": "2019-11-10T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Evolution Strategies",
-      "url": "https://lilianweng.github.io/posts/2019-09-05-evolution-strategies",
-      "source_id": "lilian",
-      "published_at": "2019-09-05T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Normalizing Flow Network",
-      "url": "http://siboehm.com/articles/19/normalizing-flow-network",
-      "source_id": "siboehm",
-      "published_at": "2019-08-08T13:06:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Meta Reinforcement Learning",
-      "url": "https://lilianweng.github.io/posts/2019-06-23-meta-rl",
-      "source_id": "lilian",
-      "published_at": "2019-06-23T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A Recipe for Training Neural Networks",
-      "url": "http://karpathy.github.io/2019/04/25/recipe",
-      "source_id": "karpathy",
-      "published_at": "2019-04-25T09:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "(started posting on Medium instead)",
-      "url": "http://karpathy.github.io/2018/01/20/medium",
-      "source_id": "karpathy",
-      "published_at": "2018-01-20T11:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A Survival Guide to a PhD",
-      "url": "http://karpathy.github.io/2016/09/07/phd",
-      "source_id": "karpathy",
-      "published_at": "2016-09-07T11:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Deep Reinforcement Learning: Pong from Pixels",
-      "url": "http://karpathy.github.io/2016/05/31/rl",
-      "source_id": "karpathy",
-      "published_at": "2016-05-31T11:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Short Story on AI: A Cognitive Discontinuity.",
-      "url": "http://karpathy.github.io/2015/11/14/ai",
-      "source_id": "karpathy",
-      "published_at": "2015-11-14T11:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Replacing the old battery on rechargeable bike lights",
-      "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Some more things about Django I've been enjoying",
-      "url": "https://jvns.ca/blog/2026/07/21/more-nice-django-things",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Learning a few things about running SQLite",
-      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Moving away from Tailwind, and learning to structure my CSS",
-      "url": "https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Links to CSS colour palettes",
-      "url": "https://jvns.ca/blog/2026/05/04/css-colour-palettes",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Testing Vue components in the browser",
-      "url": "https://jvns.ca/blog/2026/05/02/testing-vue-components-in-the-browser",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Examples for the tcpdump and dig man pages",
-      "url": "https://jvns.ca/blog/2026/03/10/examples-for-the-tcpdump-and-dig-man-pages",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Notes on clarifying man pages",
-      "url": "https://jvns.ca/blog/2026/02/18/man-pages",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Some notes on starting to use Django",
-      "url": "https://jvns.ca/blog/2026/01/27/some-notes-on-starting-to-use-django",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A data model for Git (and other docs updates)",
-      "url": "https://jvns.ca/blog/2026/01/08/a-data-model-for-git",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Notes on switching to Helix from vim",
-      "url": "https://jvns.ca/blog/2025/10/10/notes-on-switching-to-helix-from-vim",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "New zine: The Secret Rules of the Terminal",
-      "url": "https://jvns.ca/blog/2025/06/24/new-zine--the-secret-rules-of-the-terminal",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Using `make` to compile C programs (for non-C-programmers)",
-      "url": "https://jvns.ca/blog/2025/06/10/how-to-compile-a-c-program",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Standards for ANSI escape codes",
-      "url": "https://jvns.ca/blog/2025/03/07/escape-code-standards",
-      "source_id": "jvns",
-      "published_at": null,
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-10-28T07:09:24.930072+00:00"
+  "collected_at": "2026-10-29T02:35:50.371254+00:00"
 }
