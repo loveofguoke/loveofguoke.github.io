@@ -290,6 +290,181 @@
   ],
   "entries": [
     {
+      "title": "gh-inbox: clean up GitHub notifications in bulk from the command line",
+      "url": "https://github.com/maraino/gh-inbox",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T02:37:55+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "If you love a website, back it up",
+      "url": "http://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T01:29:00+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Design the interface for functionality not familiarity",
+      "url": "https://lapcatsoftware.com/articles/2026/10/10.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T01:04:38+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "XSS in yarr RSS reader",
+      "url": "https://0x67673068.me/xss-in-yarr",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T23:55:54+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "API credits benefit for eligible ChatGPT subscriptions",
+      "url": "https://simonwillison.net/2026/Oct/29/api-credits",
+      "source_id": "simon",
+      "published_at": "2026-10-29T22:48:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "London meetup",
+      "url": "https://lobste.rs/s/dsrruj/london_meetup",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T20:56:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "C2PA's eMudhra Moment",
+      "url": "https://www.da.vidbuchanan.co.uk/blog/c2pa-four.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T20:33:44+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Building a multiplayer game world with autonomous Fable-class models",
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world",
+      "source_id": "simon",
+      "published_at": "2026-10-29T17:00:26+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "My favourite PowerMac is a Nintendo Wii",
+      "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T16:32:18+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "An open format for writing agent-native software requirements",
+      "url": "https://slcr.dev/announcements",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T16:17:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Phorge",
+      "url": "https://www.phorge.it",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T16:08:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The Web Can't Afford a JavaScript Runtime Monoculture",
+      "url": "https://redmonk.com/kholterhoff/2026/10/27/js-runtime-monoculture",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T15:44:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Extremely brief history of PDP computers",
+      "url": "https://entropicthoughts.com/history-of-pdp-computers",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T14:48:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Shared password manager for families?",
+      "url": "https://lobste.rs/s/eccbci/shared_password_manager_for_families",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T14:39:51+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Will Open Firmware Become the Next Big Trend in Electronic Music Gear?",
+      "url": "https://www.synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T14:37:32+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Ben Hylak",
+      "url": "https://simonwillison.net/2026/Oct/29/ben-hylak",
+      "source_id": "simon",
+      "published_at": "2026-10-29T14:06:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Building NixOS using Nixtamal",
+      "url": "https://nixtamal.toast.al/cookbook/nixos-using-nixtamal",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T13:45:55+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How to Improve Small Object Detection in Indoor Warehouse Drone Images Using PyTorch?",
+      "url": "https://discuss.pytorch.org/t/how-to-improve-small-object-detection-in-indoor-warehouse-drone-images-using-pytorch/225687",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-10-29T13:03:24+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Title: Seeking feedback on a resource-constrained MIL + Spatial GNN research project",
+      "url": "https://discuss.pytorch.org/t/title-seeking-feedback-on-a-resource-constrained-mil-spatial-gnn-research-project/225685",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-10-29T13:02:44+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Nim version 2.4.0 released",
+      "url": "https://nim-lang.org/blog/2026/10/28/nim-240.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T12:07:26+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "NetBSD adds a new Emacs-like text editor called atto",
+      "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T11:58:00+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Qwenputer: a fully functioning, deterministic RISC-V CPU inside Qwen3.5",
+      "url": "https://divagr.com/blog/qwenputer",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T10:00:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "What the fox say?",
+      "url": "https://entropicthoughts.com/what-the-fox-say",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T06:42:40+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How Do You Represent Time-Aligned Captions for Video Training?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-represent-time-aligned-captions-for-video-training/225678",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-10-29T06:10:30+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The Future Trait Has A Missing State",
+      "url": "https://blog.yoshuawuyts.com/the-future-trait-has-a-missing-state",
+      "source_id": "lobsters",
+      "published_at": "2026-10-29T04:24:28+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "The case of the 9 bit AES key",
       "url": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
       "source_id": "lobsters",
@@ -332,7 +507,7 @@
       "status": "feed-candidate"
     },
     {
-      "title": "GitLab security incident: attempted exploitation of CVE-2026-97229 | Alpine Linux",
+      "title": "GitLab security incident: attempted exploitation of CVE-2026-97229",
       "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
       "source_id": "lobsters",
       "published_at": "2026-10-28T23:01:26+00:00",
@@ -1793,181 +1968,6 @@
       "source_id": "lilian",
       "published_at": "2023-01-10T17:00:00+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog",
-      "url": "http://siboehm.com/articles/22/CUDA-MMM",
-      "source_id": "siboehm",
-      "published_at": "2022-12-31T07:06:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Why and how to write things on the Internet",
-      "url": "https://www.benkuhn.net/writing",
-      "source_id": "benkuhn",
-      "published_at": "2022-12-29T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Pipeline-Parallelism: Distributed Training via Model Partitioning",
-      "url": "http://siboehm.com/articles/22/pipeline-parallel-training",
-      "source_id": "siboehm",
-      "published_at": "2022-10-03T07:06:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Some Math behind Neural Tangent Kernel",
-      "url": "https://lilianweng.github.io/posts/2022-09-08-ntk",
-      "source_id": "lilian",
-      "published_at": "2022-09-08T17:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Data-Parallel Distributed Training of Deep Learning Models",
-      "url": "http://siboehm.com/articles/22/data-parallel-training",
-      "source_id": "siboehm",
-      "published_at": "2022-09-08T07:06:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Fast Multidimensional Matrix Multiplication on CPU from Scratch",
-      "url": "http://siboehm.com/articles/22/Fast-MMM-on-CPU",
-      "source_id": "siboehm",
-      "published_at": "2022-08-14T07:06:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Generalized Visual Language Models",
-      "url": "https://lilianweng.github.io/posts/2022-06-09-vlm",
-      "source_id": "lilian",
-      "published_at": "2022-06-09T22:10:30+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Becoming a Better Programmer by Tightening Feedback Loops",
-      "url": "http://siboehm.com/articles/22/tight-feedback-loops",
-      "source_id": "siboehm",
-      "published_at": "2022-05-12T07:06:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Learning with not Enough Data Part 3: Data Generation",
-      "url": "https://lilianweng.github.io/posts/2022-04-15-data-gen",
-      "source_id": "lilian",
-      "published_at": "2022-04-15T22:10:30+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Deep Neural Nets: 33 years ago and 33 years from now",
-      "url": "http://karpathy.github.io/2022/03/14/lecun1989",
-      "source_id": "karpathy",
-      "published_at": "2022-03-14T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Learning with not Enough Data Part 2: Active Learning",
-      "url": "https://lilianweng.github.io/posts/2022-02-20-active-learning",
-      "source_id": "lilian",
-      "published_at": "2022-02-20T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Learning with not Enough Data Part 1: Semi-Supervised Learning",
-      "url": "https://lilianweng.github.io/posts/2021-12-05-semi-supervised",
-      "source_id": "lilian",
-      "published_at": "2021-12-05T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Interactive scraping with Jupyter and Puppeteer",
-      "url": "https://blog.ezyang.com/2021/11/interactive-scraping-with-jupyter-and-puppeteer",
-      "source_id": "ezyang",
-      "published_at": "2021-11-23T09:28:07+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How to Train Really Large Models on Many GPUs?",
-      "url": "https://lilianweng.github.io/posts/2021-09-25-train-large",
-      "source_id": "lilian",
-      "published_at": "2021-09-24T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "lleaves - Compiling Decision Trees for Fast Prediction using LLVM",
-      "url": "http://siboehm.com/articles/21/lleaves",
-      "source_id": "siboehm",
-      "published_at": "2021-09-20T07:06:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "What are Diffusion Models?",
-      "url": "https://lilianweng.github.io/posts/2021-07-11-diffusion-models",
-      "source_id": "lilian",
-      "published_at": "2021-07-11T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A from-scratch tour of Bitcoin in Python",
-      "url": "http://karpathy.github.io/2021/06/21/blockchain",
-      "source_id": "karpathy",
-      "published_at": "2021-06-21T10:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Contrastive Representation Learning",
-      "url": "https://lilianweng.github.io/posts/2021-05-31-contrastive",
-      "source_id": "lilian",
-      "published_at": "2021-05-31T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Short Story on AI: Forward Pass",
-      "url": "http://karpathy.github.io/2021/03/27/forward-pass",
-      "source_id": "karpathy",
-      "published_at": "2021-03-27T10:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Reducing Toxicity in Language Models",
-      "url": "https://lilianweng.github.io/posts/2021-03-21-lm-toxicity",
-      "source_id": "lilian",
-      "published_at": "2021-03-21T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Controllable Neural Text Generation",
-      "url": "https://lilianweng.github.io/posts/2021-01-02-controllable-text-generation",
-      "source_id": "lilian",
-      "published_at": "2021-01-02T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How to Build an Open-Domain Question Answering System?",
-      "url": "https://lilianweng.github.io/posts/2020-10-29-odqa",
-      "source_id": "lilian",
-      "published_at": "2020-10-29T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Neural Architecture Search",
-      "url": "https://lilianweng.github.io/posts/2020-08-06-nas",
-      "source_id": "lilian",
-      "published_at": "2020-08-06T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Biohacking Lite",
-      "url": "http://karpathy.github.io/2020/06/11/biohacking-lite",
-      "source_id": "karpathy",
-      "published_at": "2020-06-11T10:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Exploration Strategies in Deep Reinforcement Learning",
-      "url": "https://lilianweng.github.io/posts/2020-06-07-exploration-drl",
-      "source_id": "lilian",
-      "published_at": "2020-06-07T00:00:00+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-10-29T02:35:50.371254+00:00"
+  "collected_at": "2026-10-30T02:45:35.180279+00:00"
 }
