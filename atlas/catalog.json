@@ -290,6 +290,153 @@
   ],
   "entries": [
     {
+      "title": "Tactical-Retreat: a freely available, multi-platform QuakeC-based Counter-Strike v1.5 port",
+      "url": "https://www.frag-net.com/project_tacticalretreat.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T02:32:10+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The support case of a customer who said that all they could see was a black screen",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20261029-00?p=112808%2F",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T01:01:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The top ten reasons embedded projects get into trouble (2002)",
+      "url": "https://www.ganssle.com/articles/jackstoptenlist.htm",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T22:35:08+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How hard is it to check for whitespace?",
+      "url": "https://serce.me/posts/2026-10-30-how-hard-is-it-to-check-for-whitespace",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T22:25:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "dbreunig/nesformer",
+      "url": "https://simonwillison.net/2026/Oct/30/nesformer",
+      "source_id": "simon",
+      "published_at": "2026-10-30T21:59:22+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Defending the patch gap against automated attackers",
+      "url": "https://blog.mozilla.org/en/firefox/privacy-security/defending-patch-gap",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T21:06:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Switch lowering in GCC",
+      "url": "https://xoranth.net/gcc-switch",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T20:00:34+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Getting Google Cast on my Soundbar",
+      "url": "https://codon.org.uk/~mjg59/blog/p/getting-google-cast-on-my-soundbar",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T19:14:44+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The federated code forge",
+      "url": "https://tangled.org/blog/forge",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T17:57:54+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Protecting against CVE-2026-98432",
+      "url": "https://groups.google.com/g/golang-announce/c/PCoQcdxoScw",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T17:54:52+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Rationale for filtering LLM usage links as off-topic",
+      "url": "https://lobste.rs/s/spv7tb/rationale_for_filtering_llm_usage_links",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T16:49:53+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Infinite Mac: BeOS",
+      "url": "https://blog.persistent.info/2026/10/infinite-mac-beos.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T16:06:56+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Go 1.28's HTTP/2 Parking: Measuring Memory Savings",
+      "url": "https://abdolirad.me/articles/go-1-28-http2-parking-memory",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T15:39:37+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Shrinking NixOS Ram footprint and resource requirements to the bare minimum",
+      "url": "https://lowendspirit.com/discussion/11543/shrinking-nixos-ram-footprint-and-resource-requirements-to-the-bare-minimum",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T15:04:44+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "No, npm, “estee” is not a typo of “testem”",
+      "url": "https://smoores.dev/post/no_npm_estee_is_not_a_typo",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T15:01:56+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Provenance and license notices for libomp.dylib in PyTorch 2.8.0 macOS ARM64 wheel",
+      "url": "https://discuss.pytorch.org/t/provenance-and-license-notices-for-libomp-dylib-in-pytorch-2-8-0-macos-arm64-wheel/225695",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-10-30T13:21:40+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Do At-Proto Users Know This Is Public?",
+      "url": "https://melaniekat.com/blog/public-on-pds",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T11:22:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Backdoors in Claude Code for VS, Cursor official extensions",
+      "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T11:04:55+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "What are you doing this weekend?",
+      "url": "https://lobste.rs/s/u7dsbx/what_are_you_doing_this_weekend",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T09:55:20+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How curl was accidentally Turing-complete for nine months",
+      "url": "https://seriot.ch/computation/curl.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T07:24:01+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Pidgin 3.0 Alpha 4 2.98.0 has been released",
+      "url": "https://discourse.imfreedom.org/t/pidgin-3-0-alpha-4-2-98-0-has-been-released/445",
+      "source_id": "lobsters",
+      "published_at": "2026-10-30T03:58:19+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "gh-inbox: clean up GitHub notifications in bulk from the command line",
       "url": "https://github.com/maraino/gh-inbox",
       "source_id": "lobsters",
@@ -1821,153 +1968,6 @@
       "source_id": "hamel",
       "published_at": "2024-11-30T08:00:00+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "Reward Hacking in Reinforcement Learning",
-      "url": "https://lilianweng.github.io/posts/2024-11-28-reward-hacking",
-      "source_id": "lilian",
-      "published_at": "2024-11-28T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Ways to use torch.compile",
-      "url": "https://blog.ezyang.com/2024/11/ways-to-use-torch-compile",
-      "source_id": "ezyang",
-      "published_at": "2024-11-05T10:11:52+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Using LLM-as-a-Judge For Evaluation: A Complete Guide",
-      "url": "https://hamel.dev/blog/posts/llm-judge",
-      "source_id": "hamel",
-      "published_at": "2024-10-29T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Tensor programming for databases, with first class dimensions",
-      "url": "https://blog.ezyang.com/2024/10/tensor-programming-for-databases-with-first-class-dimensions",
-      "source_id": "ezyang",
-      "published_at": "2024-10-14T01:07:14+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "What's different this time? LLM edition",
-      "url": "https://blog.ezyang.com/2024/10/whats-different-this-time-llm-edition",
-      "source_id": "ezyang",
-      "published_at": "2024-10-04T00:30:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "An Open Course on LLMs, Led by Practitioners",
-      "url": "https://hamel.dev/blog/posts/course",
-      "source_id": "hamel",
-      "published_at": "2024-07-29T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Categories of leadership on technical teams",
-      "url": "https://www.benkuhn.net/leadcats",
-      "source_id": "benkuhn",
-      "published_at": "2024-07-21T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Trust as a bottleneck to growing teams quickly",
-      "url": "https://www.benkuhn.net/trust",
-      "source_id": "benkuhn",
-      "published_at": "2024-07-13T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Extrinsic Hallucinations in LLMs",
-      "url": "https://lilianweng.github.io/posts/2024-07-07-hallucination",
-      "source_id": "lilian",
-      "published_at": "2024-07-07T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "What We've Learned From A Year of Building with LLMs",
-      "url": "https://hamel.dev",
-      "source_id": "hamel",
-      "published_at": "2024-06-01T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Diffusion Models for Video Generation",
-      "url": "https://lilianweng.github.io/posts/2024-04-12-diffusion-video",
-      "source_id": "lilian",
-      "published_at": "2024-04-12T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How I build and run behavioral interviews",
-      "url": "https://www.benkuhn.net/behavioral",
-      "source_id": "benkuhn",
-      "published_at": "2024-02-25T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Thinking about High-Quality Human Data",
-      "url": "https://lilianweng.github.io/posts/2024-02-05-human-data-quality",
-      "source_id": "lilian",
-      "published_at": "2024-02-05T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Adversarial Attacks on LLMs",
-      "url": "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm",
-      "source_id": "lilian",
-      "published_at": "2023-10-25T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Can Function Inlining Affect Floating Point Outputs? Exploring FMA and Other Consistency Issues",
-      "url": "http://siboehm.com/articles/23/Inlining-FMA-FP-consistency",
-      "source_id": "siboehm",
-      "published_at": "2023-06-23T07:06:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "LLM Powered Autonomous Agents",
-      "url": "https://lilianweng.github.io/posts/2023-06-23-agent",
-      "source_id": "lilian",
-      "published_at": "2023-06-23T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Some mistakes I made as a new manager",
-      "url": "https://www.benkuhn.net/newmgr",
-      "source_id": "benkuhn",
-      "published_at": "2023-04-23T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Prompt Engineering",
-      "url": "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering",
-      "source_id": "lilian",
-      "published_at": "2023-03-15T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Leaving Wave, joining Anthropic",
-      "url": "https://www.benkuhn.net/leaving",
-      "source_id": "benkuhn",
-      "published_at": "2023-02-01T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Transformer Family Version 2.0",
-      "url": "https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2",
-      "source_id": "lilian",
-      "published_at": "2023-01-27T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Large Transformer Model Inference Optimization",
-      "url": "https://lilianweng.github.io/posts/2023-01-10-inference-optimization",
-      "source_id": "lilian",
-      "published_at": "2023-01-10T17:00:00+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-10-30T02:45:35.180279+00:00"
+  "collected_at": "2026-10-31T02:35:18.277187+00:00"
 }
