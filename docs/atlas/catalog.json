@@ -290,6 +290,153 @@
   ],
   "entries": [
     {
+      "title": "The Duty of a Scholar",
+      "url": "https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-01T00:46:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How We Took Over ChatGPT Accounts",
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts",
+      "source_id": "simon",
+      "published_at": "2026-10-31T23:15:22+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-llm 0.1a9",
+      "url": "https://simonwillison.net/2026/Oct/31/datasette-llm",
+      "source_id": "simon",
+      "published_at": "2026-10-31T22:10:01+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Effective Type: Part 1",
+      "url": "https://uecker.codeberg.page/2026-10-31.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T21:59:52+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Novellas with groff",
+      "url": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T20:31:13+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Mystery of 60-Second Fluctuations in Power Grids Solved",
+      "url": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T19:50:11+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How do you keep camera and audio direction in one prompt?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-keep-camera-and-audio-direction-in-one-prompt/225720",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-10-31T18:27:46+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Applied Scientist, Part-Time Statistics and AI Evaluation - Remote (United States)",
+      "url": "https://discuss.pytorch.org/t/applied-scientist-part-time-statistics-and-ai-evaluation-remote-united-states/225718",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-10-31T18:27:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Avoid Public Functions Calling Other Public Functions",
+      "url": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T18:05:03+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Enlightenment 0.28.0 Release",
+      "url": "https://www.enlightenment.org/news/2026-10-31-enlightenment-0.28.0",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T18:02:18+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Speeding up GPU copies by permuting iteration spaces, or, optimising the identity function",
+      "url": "https://futhark-lang.org/blog/2026-10-31-faster-copying.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T17:03:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Tangled, hire a front-end accessibility expert",
+      "url": "https://dbushell.com/2026/11/01/tangled-accessibility",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T16:29:45+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "An LC-3 Disassembler in Haskell",
+      "url": "https://abhinavsarkar.net/posts/lc3-disassembler",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T16:08:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Let’s Build a Brain",
+      "url": "https://aatishb.com/myriad/lets-build-a-brain",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T15:09:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The Kluever Maneuver",
+      "url": "https://jordi.inversethought.com/blog/the-kluever-maneuver",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T15:05:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Torchinfo-viz: see your PyTorch model as an interactive graph",
+      "url": "https://discuss.pytorch.org/t/torchinfo-viz-see-your-pytorch-model-as-an-interactive-graph/225711",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-10-31T13:59:50+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Jepsen: ParticleDB 1.1.4",
+      "url": "https://jepsen.io/analyses/particledb-1.1.4",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T13:39:52+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Digital minimalism",
+      "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T11:10:19+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Marelleo, a story box I built for my kids",
+      "url": "https://zebra.rodeo/en/blog/marelleo",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T10:36:46+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The Secret of Fast Programming: Stop Thinking »",
+      "url": "https://www.codesimplicity.com/post/the-secret-of-fast-programming-stop-thinking",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T10:20:48+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Clojure/Conj 2026",
+      "url": "http://www.youtube.com/playlist?list=PLAkHRk3lgU_Q",
+      "source_id": "lobsters",
+      "published_at": "2026-10-31T06:25:34+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "Tactical-Retreat: a freely available, multi-platform QuakeC-based Counter-Strike v1.5 port",
       "url": "https://www.frag-net.com/project_tacticalretreat.html",
       "source_id": "lobsters",
@@ -1821,153 +1968,6 @@
       "source_id": "raschka",
       "published_at": "2025-12-03T12:03:33+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "[笔记] 从 Tokenization 视角看生成式推荐（GR）近几年的发展（2025）",
-      "url": "https://arthurchiao.art/blog/large-generative-recommendation-tokenization-perspective-notes-zh",
-      "source_id": "arthurchiao",
-      "published_at": "2025-11-27T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "An Illustrated Guide to AP2 (Agent Payment Protocol) (2025)",
-      "url": "https://arthurchiao.art/blog/ap2-illustrated-guide",
-      "source_id": "arthurchiao",
-      "published_at": "2025-11-15T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Beyond Standard LLMs",
-      "url": "https://magazine.sebastianraschka.com/p/beyond-standard-llms",
-      "source_id": "raschka",
-      "published_at": "2025-11-04T13:06:07+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Draw high dimensional tensors as a matrix of matrices",
-      "url": "https://blog.ezyang.com/2025/10/draw-high-dimensional-tensors-as-a-matrix-of-matrices",
-      "source_id": "ezyang",
-      "published_at": "2025-10-25T12:55:10+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)",
-      "url": "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches",
-      "source_id": "raschka",
-      "published_at": "2025-10-05T11:12:32+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Selecting The Right AI Evals Tool",
-      "url": "https://hamel.dev/blog/posts/eval-tools",
-      "source_id": "hamel",
-      "published_at": "2025-10-01T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Understanding and Implementing Qwen3 From Scratch",
-      "url": "https://magazine.sebastianraschka.com/p/qwen3-from-scratch",
-      "source_id": "raschka",
-      "published_at": "2025-09-06T11:10:21+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "So you want to control flow in PT2",
-      "url": "https://blog.ezyang.com/2025/09/so-you-want-to-control-flow-in-pt2",
-      "source_id": "ezyang",
-      "published_at": "2025-09-05T10:01:23+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Parallelism Mesh Zoo",
-      "url": "https://blog.ezyang.com/2025/08/the-parallelism-mesh-zoo",
-      "source_id": "ezyang",
-      "published_at": "2025-08-30T23:20:01+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "You could have invented CuTe hierarchical layout (but maybe not the rest of it?)",
-      "url": "https://blog.ezyang.com/2025/08/you-could-have-invented-cute-hierarchical-layout-but-maybe-not-the-rest-of-it",
-      "source_id": "ezyang",
-      "published_at": "2025-08-22T02:48:48+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "State of torch.compile for training (August 2025)",
-      "url": "https://blog.ezyang.com/2025/08/state-of-torch-compile-august-2025",
-      "source_id": "ezyang",
-      "published_at": "2025-08-13T22:33:58+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Vibe coding case study: ScubaDuck",
-      "url": "https://blog.ezyang.com/2025/06/vibe-coding-case-study-scubaduck",
-      "source_id": "ezyang",
-      "published_at": "2025-06-02T00:31:25+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Why We Think",
-      "url": "https://lilianweng.github.io/posts/2025-05-01-thinking",
-      "source_id": "lilian",
-      "published_at": "2025-05-01T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Impact, agency, and taste",
-      "url": "https://www.benkuhn.net/impact",
-      "source_id": "benkuhn",
-      "published_at": "2025-04-19T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Why you should maintain a personal LLM coding benchmark",
-      "url": "https://blog.ezyang.com/2025/04/why-you-should-maintain-a-personal-llm-coding-benchmark",
-      "source_id": "ezyang",
-      "published_at": "2025-04-04T03:05:46+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Advice for time management as a manager",
-      "url": "https://www.benkuhn.net/tmgr",
-      "source_id": "benkuhn",
-      "published_at": "2025-04-01T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A Field Guide to Rapidly Improving AI Products",
-      "url": "https://hamel.dev/blog/posts/field-guide",
-      "source_id": "hamel",
-      "published_at": "2025-03-24T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How I've run major projects",
-      "url": "https://www.benkuhn.net/pjm",
-      "source_id": "benkuhn",
-      "published_at": "2025-03-16T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "New Years resolutions for PyTorch in 2025",
-      "url": "https://blog.ezyang.com/2025/01/new-years-resolutions-for-pytorch-in-2025",
-      "source_id": "ezyang",
-      "published_at": "2025-01-09T15:50:08+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Ways to use torch.export",
-      "url": "https://blog.ezyang.com/2024/12/ways-to-use-torch-export",
-      "source_id": "ezyang",
-      "published_at": "2024-12-23T23:28:23+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Building an Audience Through Technical Writing: Strategies and Mistakes",
-      "url": "https://hamel.dev/blog/posts/audience",
-      "source_id": "hamel",
-      "published_at": "2024-11-30T08:00:00+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-10-31T02:35:18.277187+00:00"
+  "collected_at": "2026-11-01T02:24:44.848164+00:00"
 }
