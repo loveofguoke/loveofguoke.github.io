@@ -290,6 +290,181 @@
   ],
   "entries": [
     {
+      "title": "Quantity vs quality in pottery is a lie",
+      "url": "https://www.lesswrong.com/posts/LrAqM4bGmAoA79rP3/quantity-vs-quality-in-pottery-is-a-lie",
+      "source_id": "lesswrong",
+      "published_at": "2026-11-03T03:29:41+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Scaling Git at OpenAI",
+      "url": "https://openai.com/index/scaling-git-at-openai",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T02:18:20+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "llm 0.37",
+      "url": "https://simonwillison.net/2026/Nov/2/llm",
+      "source_id": "simon",
+      "published_at": "2026-11-02T23:49:30+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The road to opaque software is paved with good (engineering) intentions",
+      "url": "https://tomasp.net/longreads/closing",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T21:42:37+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "A Decade of Kill Bugs",
+      "url": "https://alangrow.com/blog/a-decade-of-kill-bugs",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T21:23:24+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "An Introduction to Bε-trees and Write-Optimization",
+      "url": "https://www.usenix.org/publications/login/oct15/bender",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T20:26:38+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "My favourite laptop",
+      "url": "https://blog.jsbarretto.com/post/laptop",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T19:48:40+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "This background sound leaks your exact location",
+      "url": "https://youtu.be/UytYrhYLOKI",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T19:42:32+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T19:24:33+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Stop Hardcoding Your Timeouts",
+      "url": "https://alfy.blog/2026/04/23/stop-hardcoding-your-timeouts.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T19:22:32+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Jailbreaking my car's navigation system just so I can change the time",
+      "url": "https://blog.nns.ee/2026/11/02/renault-hack",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T16:30:58+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "New Release: Tor Browser 16.0",
+      "url": "https://blog.torproject.org/new-release-tor-browser-160",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T16:28:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Virtual Art Museum built with Three js",
+      "url": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T15:51:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Polyend releases the Tracker firmware source code",
+      "url": "https://backstage.polyend.com/t/tracker-the-biggest-update-yet/25120",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T15:22:16+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Recognizing Keystrokes Using WiFi Devices",
+      "url": "https://ieeexplore.ieee.org/document/7875144",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T14:43:13+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "SuperVote: 15 year retrospective on an app for sharing political endorsements",
+      "url": "https://callejas.com/a/supervote",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T14:38:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The advantages of mobile Linux over AOSP",
+      "url": "https://amosbbatto.wordpress.com/2026/10/19/the-advantages-of-mobile-linux-over-aosp",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T14:29:18+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "What are you doing this week?",
+      "url": "https://lobste.rs/s/maqsgl/what_are_you_doing_this_week",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T13:53:32+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The U.S. Census Bureau and “Super Intelligence”",
+      "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence",
+      "source_id": "simon",
+      "published_at": "2026-11-02T13:31:26+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Union Types and Option Types",
+      "url": "https://tibleiz.net/blog/2025-03-16-union-types-and-option-types.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T12:01:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Program",
+      "url": "https://schmud.de/posts/2026-11-02-program.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T11:18:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "My reflex of assuming our servers need ever-growing amounts of RAM",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/ServerRAMGrowthReflex",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T10:33:02+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "the lost malloc()",
+      "url": "https://napcakes.nekoweb.org/posts/malloc",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T08:46:48+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How Do You Build Balanced Sampling for a Long-Tail Video Dataset?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-build-balanced-sampling-for-a-long-tail-video-dataset/225727",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-02T08:34:53+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "A400000 Winners",
+      "url": "https://oeis.org/wiki/A400K_Winners",
+      "source_id": "lobsters",
+      "published_at": "2026-11-02T03:25:15+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "The Problem with C++ Safety: Modern C++ Is a Mindset, Not a Standard",
       "url": "https://www.modernescpp.com/index.php/cpp-and-memory-safety-part-2",
       "source_id": "lobsters",
@@ -1793,181 +1968,6 @@
       "source_id": "lesswrong",
       "published_at": "2026-09-17T02:05:40+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-      "source_id": "raschka",
-      "published_at": "2026-09-09T11:14:25+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How Claude Watermarks AI-Generated Text",
-      "url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
-      "source_id": "raschka",
-      "published_at": "2026-08-22T11:11:39+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Building an AI Text Detector From Scratch",
-      "url": "https://magazine.sebastianraschka.com/p/ai-detector-from-scratch",
-      "source_id": "raschka",
-      "published_at": "2026-08-15T11:54:24+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Controlling Reasoning Effort in LLMs",
-      "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
-      "source_id": "raschka",
-      "published_at": "2026-07-18T11:16:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "[译] 大模型训练的中场叙事：从 Reasoning Thinking 转向 Agentic Thinking (2026)",
-      "url": "https://arthurchiao.art/blog/from-reasoning-thinking-to-agentic-thinking-zh",
-      "source_id": "arthurchiao",
-      "published_at": "2026-07-05T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Harness Engineering for Self-Improvement",
-      "url": "https://lilianweng.github.io/posts/2026-07-04-harness",
-      "source_id": "lilian",
-      "published_at": "2026-07-04T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "“It’s Hard to Eval” Is a Product Smell",
-      "url": "https://hamel.dev/blog/posts/eval-smell",
-      "source_id": "hamel",
-      "published_at": "2026-06-29T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Using Local Coding Agents",
-      "url": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
-      "source_id": "raschka",
-      "published_at": "2026-06-27T11:21:58+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Scaling Laws, Carefully",
-      "url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws",
-      "source_id": "lilian",
-      "published_at": "2026-06-24T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "LLM Research Papers: The 2026 List (January to May)",
-      "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
-      "source_id": "raschka",
-      "published_at": "2026-06-06T11:16:22+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
-      "url": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
-      "source_id": "raschka",
-      "published_at": "2026-05-16T11:33:51+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "[译] Anthropic 的产品团队为什么能比其他公司更快（2026）",
-      "url": "https://arthurchiao.art/blog/how-anthropic-product-team-moves-faster-zh",
-      "source_id": "arthurchiao",
-      "published_at": "2026-05-05T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "You should try contra dancing",
-      "url": "https://www.benkuhn.net/contra",
-      "source_id": "benkuhn",
-      "published_at": "2026-04-24T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "My Workflow for Understanding LLM Architectures",
-      "url": "https://magazine.sebastianraschka.com/p/workflow-for-understanding-llms",
-      "source_id": "raschka",
-      "published_at": "2026-04-18T11:24:36+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "OSS code review, in the era of LLMs",
-      "url": "https://blog.ezyang.com/2026/04/oss-code-review-in-the-era-of-llms",
-      "source_id": "ezyang",
-      "published_at": "2026-04-17T14:31:05+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Components of A Coding Agent",
-      "url": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
-      "source_id": "raschka",
-      "published_at": "2026-04-04T11:45:37+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Autograd and Mutation",
-      "url": "https://blog.ezyang.com/2026/03/autograd-and-mutation",
-      "source_id": "ezyang",
-      "published_at": "2026-03-29T03:23:32+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Revenge of the Data Scientist",
-      "url": "https://hamel.dev/blog/posts/revenge",
-      "source_id": "hamel",
-      "published_at": "2026-03-26T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "OpenClaw：技术解读和给 AI 应用开发的启示（2026）",
-      "url": "https://arthurchiao.art/blog/openclaw-technical-notes-zh",
-      "source_id": "arthurchiao",
-      "published_at": "2026-03-24T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A Visual Guide to Attention Variants in Modern LLMs",
-      "url": "https://magazine.sebastianraschka.com/p/visual-attention-variants",
-      "source_id": "raschka",
-      "published_at": "2026-03-22T11:55:40+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Read Less, Steer More",
-      "url": "https://blog.ezyang.com/2026/03/read-less-steer-more",
-      "source_id": "ezyang",
-      "published_at": "2026-03-18T19:26:58+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Parallel Agents ❤️ Sapling",
-      "url": "https://blog.ezyang.com/2026/03/parallel-agents-heart-sapling",
-      "source_id": "ezyang",
-      "published_at": "2026-03-13T15:00:47+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "AI-assisted programming for spmd_types",
-      "url": "https://blog.ezyang.com/2026/03/ai-assisted-programming-for-spmd-types",
-      "source_id": "ezyang",
-      "published_at": "2026-03-11T01:11:43+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Silent BC Breaking Changes",
-      "url": "https://blog.ezyang.com/2026/03/silent-bc-breaking-changes",
-      "source_id": "ezyang",
-      "published_at": "2026-03-03T03:45:08+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Evals Skills for Coding Agents",
-      "url": "https://hamel.dev/blog/posts/evals-skills",
-      "source_id": "hamel",
-      "published_at": "2026-03-02T08:00:00+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-02T02:38:48.919729+00:00"
+  "collected_at": "2026-11-03T03:58:20.435937+00:00"
 }
