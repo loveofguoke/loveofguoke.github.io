@@ -290,6 +290,167 @@
   ],
   "entries": [
     {
+      "title": "The valley of webhooks",
+      "url": "https://weli.dev/blog/the-valley-of-webhooks",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T02:10:26+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Observations from Running stealmybitcoin.com",
+      "url": "https://pavursec.com/blog/stealmybitcoin",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T23:45:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Gist of Go: Concurrency",
+      "url": "https://antonz.org/go-concurrency",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T23:05:03+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Postgres 19 REPACK: Built-In Online Table Bloat Cleanup",
+      "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T22:44:48+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Announcing NetBSD 11.1",
+      "url": "https://www.netbsd.org/releases/formal-11/NetBSD-11.1.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T22:00:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "macOS 27 Golden Gate does not actually support CoreStorage volumes",
+      "url": "https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T21:37:11+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "mine",
+      "url": "https://coalton-lang.github.io/mine",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T21:01:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Would you believe it's jank?",
+      "url": "https://www.youtube.com/watch?v=tHgApFhevrQ",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T20:03:16+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Common Beliefs About DNSSEC Put to the Test: An Invitation to Fact-Check Your Assumptions",
+      "url": "https://circleid.com/posts/common-beliefs-about-dnssec-put-to-the-test-an-invitation-to-fact-check-your-assumptions",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T19:45:28+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Your terminal manipulation/navigation setups",
+      "url": "https://lobste.rs/s/r3gton/your_terminal_manipulation_navigation",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T18:54:55+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "kitty 0.50.0",
+      "url": "https://sw.kovidgoyal.net/kitty/changelog",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T17:43:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Planning with open variable lists in Gecode",
+      "url": "https://zayenz.se/blog/post/open-cp-in-gecode",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T16:33:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
+      "source_id": "simon",
+      "published_at": "2026-11-03T16:29:48+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "A Second Futamura Projection",
+      "url": "https://blog.veitheller.de/A_Second_Futamura_Projection.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T16:14:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
+      "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T15:44:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The Ubuntu 26.04 Rust sudo is not compatible with standard sudo",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604RustSudoNotCompatible",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T15:23:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Death comes for XSLT",
+      "url": "https://dbushell.com/2026/11/03/xslt-rip",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T15:19:50+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Ideas for social networks",
+      "url": "https://raphaelkabo.com/blog/social-network-ideas",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T14:24:08+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Why we're moving our warehouse off DuckDB",
+      "url": "https://posthog.com/blog/moving-off-duckdb",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T07:33:25+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How Do You Evaluate Segment-Level Video Retrieval in PyTorch?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-evaluate-segment-level-video-retrieval-in-pytorch/225730",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-03T06:03:34+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+      "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location",
+      "source_id": "simon",
+      "published_at": "2026-11-03T05:32:25+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "October sponsors-only newsletter",
+      "url": "https://simonwillison.net/2026/Nov/3/october-newsletter",
+      "source_id": "simon",
+      "published_at": "2026-11-03T05:28:59+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Why did you choose the nix you nix?",
+      "url": "https://lobste.rs/s/7fcuxz/why_did_you_choose_nix_you_nix",
+      "source_id": "lobsters",
+      "published_at": "2026-11-03T03:58:06+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "Quantity vs quality in pottery is a lie",
       "url": "https://www.lesswrong.com/posts/LrAqM4bGmAoA79rP3/quantity-vs-quality-in-pottery-is-a-lie",
       "source_id": "lesswrong",
@@ -1807,167 +1968,6 @@
       "source_id": "lesswrong",
       "published_at": "2026-10-15T02:32:11+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "LaTeX renderer",
-      "url": "https://simonwillison.net/2026/Oct/15/latex",
-      "source_id": "simon",
-      "published_at": "2026-10-15T02:07:28+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Tree Appreciator",
-      "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator",
-      "source_id": "simon",
-      "published_at": "2026-10-14T21:23:01+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "AI is mass decompiling games. That's both awesome and scary.",
-      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games",
-      "source_id": "simon",
-      "published_at": "2026-10-14T16:26:53+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "License clarification for Torchvision ResNet50 weights and fine-tuned checkpoints",
-      "url": "https://discuss.pytorch.org/t/license-clarification-for-torchvision-resnet50-weights-and-fine-tuned-checkpoints/225542",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-14T13:31:17+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Redesigning source control at Anthropic",
-      "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic",
-      "source_id": "simon",
-      "published_at": "2026-10-13T23:00:06+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "llm-gemini 0.35",
-      "url": "https://simonwillison.net/2026/Oct/13/llm-gemini",
-      "source_id": "simon",
-      "published_at": "2026-10-13T22:28:54+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quoting Geoffrey Huntley",
-      "url": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley",
-      "source_id": "simon",
-      "published_at": "2026-10-13T13:32:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A critical look at Lean4",
-      "url": "https://www.lesswrong.com/posts/zHhGa3iQBQcdSifFL/a-critical-look-at-lean4-1",
-      "source_id": "lesswrong",
-      "published_at": "2026-10-11T18:34:40+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Trying to reproduce a small For-Loop in LibTorch JIT",
-      "url": "https://discuss.pytorch.org/t/trying-to-reproduce-a-small-for-loop-in-libtorch-jit/225515",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-08T23:20:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "KernelLens: Deploying Triton Kernels to C++ Inference Engines (TensorRT & ONNX)",
-      "url": "https://discuss.pytorch.org/t/kernellens-deploying-triton-kernels-to-c-inference-engines-tensorrt-onnx/225514",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-08T18:35:36+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Multi label classification accuracy calculation",
-      "url": "https://discuss.pytorch.org/t/multi-label-classification-accuracy-calculation/225513",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-08T18:14:41+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "What's the date?",
-      "url": "https://www.lesswrong.com/posts/vzKWsEskYBEWTwpBP/what-s-the-date",
-      "source_id": "lesswrong",
-      "published_at": "2026-10-08T02:49:10+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "About the TPU category",
-      "url": "https://discuss.pytorch.org/t/about-the-tpu-category/225504",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-07T17:03:28+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "CrashLens: local GPU log triage for OOM, NCCL and Xid errors",
-      "url": "https://discuss.pytorch.org/t/crashlens-local-gpu-log-triage-for-oom-nccl-and-xid-errors/225493",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-05T13:34:55+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Running Windows C++ executables (LibTorch + CUDA) on a Linux GPU server",
-      "url": "https://discuss.pytorch.org/t/running-windows-c-executables-libtorch-cuda-on-a-linux-gpu-server/225491",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-05T13:34:11+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "On Social Reality in China",
-      "url": "https://www.lesswrong.com/posts/b5cSYh4emQb2qrGmK/on-social-reality-in-china",
-      "source_id": "lesswrong",
-      "published_at": "2026-10-05T02:56:58+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Frog and Toad and the Increasingly Capable Machines",
-      "url": "https://www.lesswrong.com/posts/7NZ6ZWjenzzCbCJ5b/frog-and-toad-and-the-increasingly-capable-machines",
-      "source_id": "lesswrong",
-      "published_at": "2026-09-30T18:27:42+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Claude’s new auto eval tool",
-      "url": "https://hamel.dev/blog/posts/claude-auto-evals",
-      "source_id": "hamel",
-      "published_at": "2026-09-30T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Language Models for Text Classification: From Bag-of-Words to Jev",
-      "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
-      "source_id": "raschka",
-      "published_at": "2026-09-29T10:50:25+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Swarm Scaling",
-      "url": "https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling",
-      "source_id": "lesswrong",
-      "published_at": "2026-09-25T02:32:30+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "We've saved the world before: what the ozone hole teaches us about AI",
-      "url": "https://www.lesswrong.com/posts/zxXPEtSSSEdwpjopb/we-ve-saved-the-world-before-what-the-ozone-hole-teaches-us",
-      "source_id": "lesswrong",
-      "published_at": "2026-09-22T01:13:30+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "AI Evals: Everything You Need to Know",
-      "url": "https://hamel.dev/blog/posts/evals-faq",
-      "source_id": "hamel",
-      "published_at": "2026-09-18T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Talker Does Not Control The Doer (in Current AIs)",
-      "url": "https://www.lesswrong.com/posts/cJX2ssssGoYqnijwi/the-talker-does-not-control-the-doer-in-current-ais",
-      "source_id": "lesswrong",
-      "published_at": "2026-09-17T02:05:40+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-03T03:58:20.435937+00:00"
+  "collected_at": "2026-11-04T03:04:48.963003+00:00"
 }
