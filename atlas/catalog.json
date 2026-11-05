@@ -290,6 +290,146 @@
   ],
   "entries": [
     {
+      "title": "A history of backdoors (2015)",
+      "url": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors",
+      "source_id": "lobsters",
+      "published_at": "2026-11-05T01:53:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Declarative Dragging",
+      "url": "https://declarative-dragging.github.io",
+      "source_id": "lobsters",
+      "published_at": "2026-11-05T00:35:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "SUBSTACK: Theory: \"Master Research Framework: Substrate-Neutral Consciousness Measurement\" & Experiment: \"The Courgette Accords: Technical Protocol L2.1 (The Experimental Blueprint)\"",
+      "url": "https://discuss.pytorch.org/t/substack-theory-master-research-framework-substrate-neutral-consciousness-measurement-experiment-the-courgette-accords-technical-protocol-l2-1-the-experimental-blueprint/225746",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-04T19:08:28+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Burnt TOAST",
+      "url": "https://www.pgedge.com/blog/burnt-toast",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T18:00:32+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "A new Go API for JSON",
+      "url": "https://go.dev/blog/jsonv2",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T17:52:32+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Python on my wrist",
+      "url": "https://tildeweb.nl/~michiel/python-on-my-wrist.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T17:31:02+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Gleam Programming Language Update October 2026",
+      "url": "https://www.youtube.com/watch?v=Jm2HZhwreNs",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T15:54:58+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Arrows to Arrows, Categories to Queries",
+      "url": "https://reasonablypolymorphic.com/blog/arrows-to-arrows",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T15:49:15+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-llm 0.1a10",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-llm",
+      "source_id": "simon",
+      "published_at": "2026-11-04T15:26:02+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Shlemiel the Painter Is Back: How Zig’s libc Rewrite Made SQLite Slower",
+      "url": "https://dennisforbes.ca/blog/microblog/2026/10/the_accidental_12000x_sqlite_slowdown",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T15:23:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Your Cryptography Conspiracy Theory Is Wrong",
+      "url": "https://soatok.blog/2026/10/29/your-cryptography-conspiracy-theory-is-wrong",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T14:58:11+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Lorem Ipsum Dot Gov Dot UK",
+      "url": "https://shkspr.mobi/blog/2026/11/lorem-ipsum-dot-gov-dot-uk",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T14:50:34+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How to speed up the Rust compiler in November 2026",
+      "url": "https://nnethercote.github.io/2026/11/04/how-to-speed-up-the-rust-compiler-in-november-2026.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T14:05:16+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Man-in-the-middle arbitrary code execution in Debian’s apt",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00526.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T13:36:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "So my ISP was hijacking my DNS",
+      "url": "https://karthihegde.dev/posts/dns_tampering",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T12:06:23+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Introducing Adaptive Dark Mode",
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T11:04:40+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Zig 0.17.1 Released",
+      "url": "https://ziglang.org/news/0.17.1-released",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T10:57:35+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "C++26 Disapproved",
+      "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T08:56:24+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The cryptography behind electronic voting (and why paper ballots are still essential)",
+      "url": "https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T07:33:05+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Mac at any scale",
+      "url": "https://namespace.so/blog/mac-at-any-scale",
+      "source_id": "lobsters",
+      "published_at": "2026-11-04T03:08:11+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "The valley of webhooks",
       "url": "https://weli.dev/blog/the-valley-of-webhooks",
       "source_id": "lobsters",
@@ -297,10 +437,24 @@
       "status": "feed-candidate"
     },
     {
+      "title": "datasette-apps 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps",
+      "source_id": "simon",
+      "published_at": "2026-11-04T00:29:36+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "Observations from Running stealmybitcoin.com",
       "url": "https://pavursec.com/blog/stealmybitcoin",
       "source_id": "lobsters",
       "published_at": "2026-11-03T23:45:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-agent 0.5a0",
+      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent",
+      "source_id": "simon",
+      "published_at": "2026-11-03T23:13:45+00:00",
       "status": "feed-candidate"
     },
     {
@@ -322,6 +476,13 @@
       "url": "https://www.netbsd.org/releases/formal-11/NetBSD-11.1.html",
       "source_id": "lobsters",
       "published_at": "2026-11-03T22:00:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "llm 0.37.1",
+      "url": "https://simonwillison.net/2026/Nov/3/llm",
+      "source_id": "simon",
+      "published_at": "2026-11-03T21:41:42+00:00",
       "status": "feed-candidate"
     },
     {
@@ -1807,167 +1968,6 @@
       "source_id": "lesswrong",
       "published_at": "2026-10-20T20:26:31+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
-      "url": "https://simonwillison.net/2026/Oct/20/battledrones",
-      "source_id": "simon",
-      "published_at": "2026-10-20T19:34:19+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Agentic RAG vs. standard RAG for healthcare: is the extra complexity worth it?",
-      "url": "https://discuss.pytorch.org/t/agentic-rag-vs-standard-rag-for-healthcare-is-the-extra-complexity-worth-it/225584",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-20T12:36:08+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How To Use Decision Models for Evals",
-      "url": "https://hamel.dev/blog/posts/decision-model-evals",
-      "source_id": "hamel",
-      "published_at": "2026-10-20T07:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Training a Search-R1 agent with Flame: warm GPU services, gang scheduling, and incremental weight sync",
-      "url": "https://discuss.pytorch.org/t/training-a-search-r1-agent-with-flame-warm-gpu-services-gang-scheduling-and-incremental-weight-sync/225581",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-20T05:28:58+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "My obituary for programming",
-      "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming",
-      "source_id": "simon",
-      "published_at": "2026-10-19T23:58:25+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Released gabp-sparse-inv 0.4.1 - differentiable selected inversion in PyTorch",
-      "url": "https://discuss.pytorch.org/t/released-gabp-sparse-inv-0-4-1-differentiable-selected-inversion-in-pytorch/225573",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-19T07:40:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "llm-tools-datasette 0.1.1",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette",
-      "source_id": "simon",
-      "published_at": "2026-10-18T23:43:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "llm-echo 0.5",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-echo",
-      "source_id": "simon",
-      "published_at": "2026-10-18T23:16:16+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "When AI Amplifies the Upstream: An Organizational Shift Underway (2026)",
-      "url": "https://arthurchiao.art/blog/when-ai-amplifies-the-upstream",
-      "source_id": "arthurchiao",
-      "published_at": "2026-10-18T00:00:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Inline rendering with document​.currentScript",
-      "url": "https://simonwillison.net/2026/Oct/17/document-currentscript",
-      "source_id": "simon",
-      "published_at": "2026-10-17T21:11:12+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "web-edit 0.1a2",
-      "url": "https://simonwillison.net/2026/Oct/17/web-edit",
-      "source_id": "simon",
-      "published_at": "2026-10-17T13:16:49+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-      "url": "https://simonwillison.net/2026/Oct/16/code-review",
-      "source_id": "simon",
-      "published_at": "2026-10-16T22:06:37+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Two code patterns that caused every torch.compile graph break in Keras's PyTorch backend",
-      "url": "https://discuss.pytorch.org/t/two-code-patterns-that-caused-every-torch-compile-graph-break-in-kerass-pytorch-backend/225567",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-16T18:28:30+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Request authoritative wheel sizes and release provenance for PyTorch 2.12.1+cu130",
-      "url": "https://discuss.pytorch.org/t/request-authoritative-wheel-sizes-and-release-provenance-for-pytorch-2-12-1-cu130/225563",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-16T14:24:44+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Remote contract: ML engineers for AI training tasks (PyTorch, JAX, vLLM), $80-$150/hr, about 15 hrs/week",
-      "url": "https://discuss.pytorch.org/t/remote-contract-ml-engineers-for-ai-training-tasks-pytorch-jax-vllm-80-150-hr-about-15-hrs-week/225559",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-16T13:39:03+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Kpnn2: sparsely connected PyTorch layers from a named graph, with attributions by node name",
-      "url": "https://discuss.pytorch.org/t/kpnn2-sparsely-connected-pytorch-layers-from-a-named-graph-with-attributions-by-node-name/225558",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-16T11:28:51+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "sparqlite: SPARQL 1.1 inside SQLite, written in Rust",
-      "url": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust",
-      "source_id": "simon",
-      "published_at": "2026-10-16T01:58:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Chirp Pong",
-      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong",
-      "source_id": "simon",
-      "published_at": "2026-10-15T19:47:52+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "TBCCL: Custom PyTorch Distributed Backend for Mac/Linux over Thunderbolt",
-      "url": "https://discuss.pytorch.org/t/tbccl-custom-pytorch-distributed-backend-for-mac-linux-over-thunderbolt/225551",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-15T15:21:24+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "TorchYAND: A Matrix-Free PyTorch Implementation for Higher-Moment Portfolio Optimization",
-      "url": "https://discuss.pytorch.org/t/torchyand-a-matrix-free-pytorch-implementation-for-higher-moment-portfolio-optimization/225549",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-15T14:34:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "An alternative AD approach that seems to be faster than autograd",
-      "url": "https://discuss.pytorch.org/t/an-alternative-ad-approach-that-seems-to-be-faster-than-autograd/225548",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-15T13:11:33+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
-      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors",
-      "source_id": "simon",
-      "published_at": "2026-10-15T13:04:03+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Cat-Belling Problems",
-      "url": "https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems",
-      "source_id": "lesswrong",
-      "published_at": "2026-10-15T02:32:11+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-04T03:04:48.963003+00:00"
+  "collected_at": "2026-11-05T03:35:48.646736+00:00"
 }
