@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <title>果壳中的宇宙</title>
+  <desc>两瓣温润的果壳之间，一片星系与行星组成的小宇宙；远处还有一颗微小的果壳。</desc>
+  <defs>
+    <radialGradient id="space"><stop stop-color="#55706a"/><stop offset="1" stop-color="#243e3b"/></radialGradient>
+    <linearGradient id="shell" x2="1" y2="1"><stop stop-color="#e5d5b7"/><stop offset="1" stop-color="#bfa882"/></linearGradient>
+    <clipPath id="inside"><path d="M101 125C133 77 236 72 288 130C322 169 296 266 237 300C177 326 105 284 86 224C76 191 81 153 101 125Z"/></clipPath>
+  </defs>
+  <circle cx="200" cy="200" r="174" stroke="#dce2d7" stroke-dasharray="2 9"/>
+  <ellipse cx="201" cy="210" rx="184" ry="63" transform="rotate(-31 201 210)" stroke="#c6d0bf"/>
+  <path d="M101 125C133 77 236 72 288 130C322 169 296 266 237 300C177 326 105 284 86 224C76 191 81 153 101 125Z" fill="url(#space)"/>
+  <g clip-path="url(#inside)">
+    <ellipse cx="194" cy="197" rx="92" ry="33" transform="rotate(-35 194 197)" stroke="#b9ccc0" stroke-opacity=".45"/>
+    <ellipse cx="194" cy="197" rx="65" ry="22" transform="rotate(-35 194 197)" stroke="#dbe2cf" stroke-opacity=".6"/>
+    <ellipse cx="194" cy="197" rx="37" ry="12" transform="rotate(-35 194 197)" stroke="#e2d7b6"/>
+    <circle cx="194" cy="197" r="6" fill="#f1e9cf"/>
+    <g fill="#e4e8d8"><circle cx="120" cy="160" r="1.5"/><circle cx="158" cy="116" r="2"/><circle cx="236" cy="127" r="1.5"/><circle cx="270" cy="204" r="2"/><circle cx="230" cy="266" r="1.5"/><circle cx="130" cy="237" r="2"/><circle cx="190" cy="277" r="1"/><circle cx="258" cy="170" r="1"/><circle cx="159" cy="253" r="1"/></g>
+    <circle cx="248" cy="231" r="11" fill="#bdc9ad"/>
+    <ellipse cx="248" cy="231" rx="20" ry="5" transform="rotate(-25 248 231)" stroke="#e3d9b9"/>
+    <path d="M135 180v-10m-5 5h10M225 154v-8m-4 4h8" stroke="#ede8d4" stroke-linecap="round"/>
+  </g>
+  <path d="M104 119C67 135 49 189 67 240C83 288 136 324 185 317C126 291 96 258 91 218C85 181 93 147 104 119Z" fill="url(#shell)" stroke="#a38f70"/>
+  <path d="M85 151C66 198 83 258 136 293M77 183C73 226 95 267 119 279" stroke="#a38f70" stroke-opacity=".6" stroke-linecap="round"/>
+  <path d="M266 93C311 104 341 151 330 203C321 246 281 291 236 306C279 270 299 233 302 193C306 154 290 121 266 93Z" fill="url(#shell)" stroke="#a38f70"/>
+  <path d="M294 119C329 163 319 219 280 267M311 146C326 183 309 229 297 244" stroke="#a38f70" stroke-opacity=".6" stroke-linecap="round"/>
+  <path d="M331 78C339 66 350 67 353 76C356 85 346 95 337 94C332 90 329 85 331 78Z" fill="#d9c8a7" stroke="#a38f70"/>
+  <path d="M347 72l-11 18M337 74l10 13" stroke="#ac9978" stroke-width=".8"/>
+  <circle cx="61" cy="105" r="2" fill="#728774"/><circle cx="310" cy="313" r="2" fill="#728774"/>
+</svg>

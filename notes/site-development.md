@@ -76,3 +76,9 @@ mkdocs serve
 - 修复后手动演练 [run 40648203256](https://github.com/loveofguoke/loveofguoke.github.io/actions/runs/40648203256)
   全部通过：采集、校验、提交快照、构建和 gh-pages 发布均成功（16 秒）。本地已 fast-forward
   同步机器人的最新数据提交。
+
+## 2026年11月13日 换机前同步
+
+- 用户授权提交推送首页、专题学习、待读、笔记、概念关联、Personal Agent文件桥接与相关测试、记录。
+- `node --test tests/learning-store.test.cjs`：6项通过；`.venv/Scripts/python.exe -m mkdocs build`成功，既有PPL链接警告保留；来源offline校验成功，16个来源、240项候选。
+- 远端master有8次自动采集提交，仅修改docs/atlas/catalog.json；先保存本地开发提交，再rebase保留远端更新后推送。浏览器localStorage中的个人学习数据不属于仓库，需另行导出备份。

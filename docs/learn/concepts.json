@@ -1,0 +1,24 @@
+{
+  "reviewed_at":"2026-10-28",
+  "concepts":[{
+    "id":"kv-cache","title":"KV cache","subtitle":"Key–Value cache / 自回归注意力的键值缓存","intro":"围绕同一个概念，把缓存的意义、内存组织、模型结构和服务策略放到同一张阅读地图。","aliases":["KV cache","键值缓存","PagedAttention","prefix caching","MLA","KIVI","H2O"],
+    "foundations":["自回归生成时，历史 token 的 key/value 可以缓存起来，避免每一步重新计算这部分状态。新 query 仍要读取需要的历史 KV；缓存并不让注意力计算和显存访问消失。","讨论内存开销时，先固定 batch、层数、缓存长度、KV head 数、head dimension 和数据类型。标准密集缓存可先用 2 × B × L × T × Hkv × D × bytes 做容量估算，再考虑实际布局、分片与实现开销。","同叫 KV 优化，修改的层次可能完全不同：分页关注如何分配；量化关注每个元素占多少位；驱逐关注保存哪些 token；前缀复用关注哪些请求能共享；MLA（Multi-head Latent Attention，多头潜在注意力）则涉及模型的表示方式。"],
+    "axes":[{"id":"all","title":"所有方向"},{"id":"origin","title":"来源与意义"},{"id":"layout","title":"分配 / 分页"},{"id":"precision","title":"精度 / 量化"},{"id":"selection","title":"保留 / 驱逐"},{"id":"reuse","title":"共享 / 复用"},{"id":"architecture","title":"模型结构"}],
+    "resources":[
+      {"id":"hf-cache","title":"Transformers · Cache strategies","kind":"教程 / 文档","year":null,"date_label":"滚动文档","url":"https://huggingface.co/docs/transformers/kv_cache","axes":["origin","precision"],"relation":"解释缓存策略与工程接口","note":"从实际 API 进入缓存、量化和 offloading 选择；支持范围随版本更新。","status":"工程文档"},
+      {"id":"mqa","title":"Fast Transformer Decoding: One Write-Head is All You Need","kind":"论文","year":2019,"date_label":"2019-11","url":"https://arxiv.org/abs/1911.02150","axes":["origin","architecture"],"relation":"减少 KV head 的架构方向","note":"Multi-Query Attention 的早期工作；这是减少缓存成本的一条结构路线，不是分页分配算法。","status":"研究论文"},
+      {"id":"h2o","title":"H₂O · Heavy-Hitter Oracle","kind":"论文","year":2023,"date_label":"2023-06","url":"https://arxiv.org/abs/2306.14048","axes":["selection"],"relation":"选择保留哪些缓存 token","note":"研究基于重要性的缓存驱逐。比较时需要把质量与长上下文任务一起测量。","status":"研究论文"},
+      {"id":"paged","title":"PagedAttention / vLLM","kind":"论文","year":2023,"date_label":"2023-09","url":"https://arxiv.org/abs/2309.06180","axes":["layout","reuse"],"relation":"把 KV 的逻辑序列与物理块解耦","note":"关注动态内存管理、碎片和共享，和降低数值位宽是不同维度的优化。","status":"论文 + 系统"},
+      {"id":"kivi","title":"KIVI · Asymmetric 2-bit KV Quantization","kind":"论文","year":2024,"date_label":"2024-02","url":"https://arxiv.org/abs/2402.02750","axes":["precision"],"relation":"压缩 KV 的数值表示","note":"关注 KV 的低比特表示；容量、解量化开销和精度需要联合评估。","status":"研究论文"},
+      {"id":"mla","title":"DeepSeek-V2 · Multi-head Latent Attention","kind":"模型报告","year":2024,"date_label":"2024-05","url":"https://arxiv.org/abs/2405.04434","axes":["architecture"],"relation":"改变缓存的表示形式","note":"从模型结构降低 KV 状态成本；不能将其当成任意已有模型都能直接开启的推理开关。","status":"模型报告"},
+      {"id":"vllm","title":"vLLM · Serving implementation","kind":"代码仓库","year":null,"date_label":"持续维护","url":"https://github.com/vllm-project/vllm","axes":["layout","reuse","precision"],"relation":"查看方法如何进入真实服务框架","note":"回到具体提交与模型后端检查组合支持，不从单篇论文推断框架已经支持。","status":"开源实现"}
+    ],
+    "questions":["缓存减少的是计算、存储还是数据传输？","哪些优化可以叠加，哪些需要模型配合？","TTFT、逐 token 延迟、吞吐、容量与质量，分别应该怎样测？","现有模型、硬件和上下文分布下，哪种组合值得复现？"],
+    "combinations":[
+      {"scenario":"大量共享提示词","combination":"分页管理 + 前缀复用","metric":"缓存命中、首 token 延迟、内存共享","condition":"前缀内容与模型等缓存键条件匹配；收益取决于命中率"},
+      {"scenario":"长上下文、容量受限","combination":"分页管理 + KV 量化 / offload 候选","metric":"显存容量、带宽、逐 token 延迟、精度","condition":"检查后端支持与反量化 / 传输开销，不能只比较节省的字节"},
+      {"scenario":"允许近似的长序列任务","combination":"token 选择 / 驱逐策略","metric":"任务质量、长距离依赖、延迟","condition":"必须在目标任务上评估丢弃历史信息带来的影响"},
+      {"scenario":"支持 MLA 的模型","combination":"模型原生潜在缓存 + 对应服务后端","metric":"缓存容量、kernel 效率、服务吞吐","condition":"以模型架构和后端实现为前提；不等同于通用插件"}
+    ]
+  }]
+}

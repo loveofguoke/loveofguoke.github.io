@@ -30,6 +30,8 @@ jobs:
         run: python scripts/refresh_sources.py
       - name: Validate source catalog
         run: python scripts/refresh_sources.py --offline
+      - name: Test learning state and backup behavior
+        run: node --test tests/learning-store.test.cjs
       - name: Save daily feed snapshot
         if: github.event_name != 'push'
         run: |

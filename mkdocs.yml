@@ -1,11 +1,18 @@
 nav:
-  - 独立知识源: atlas/index.html
-  - 🏡 主页: # home/
-    - index.md
-    - ❤️ 我和朋友们！: home/about.md
-    - 📆 最近更新: recent.md
-    # - 🌈 颜色主题 & 夜间模式: home/theme.md
-  - ZJU-CS专业课: 
+  - 主页: index.html
+  - 学习:
+    - 学习总览: learn/index.html
+    - 每日发现: atlas/index.html
+    - 学习队列: learn/queue.html
+    - 系统学习: learn/topic.html
+    - Agent 桥接: learn/agent.html
+    - 概念讨论台: learn/concepts.html
+    - 课程归档:
+      - 专业课程/index.md
+      - 自学课程/index.md
+  - 项目: projects/index.html
+  - 随记: notes/index.html
+  - 课程归档:
     - 专业课程/index.md
     - 操作系统:
       - 0 前言: 专业课程/os/index.md
@@ -13,7 +20,7 @@ nav:
       - 2 死锁: 专业课程/os/Chap7 死锁.md
     - PPL:
       - 0 前言: 专业课程/ppl/index.md
-  - 自学课程:
+  - 自学课程归档:
     - 自学课程/index.md
     - GAMES101:
       - 0 前言: 自学课程/GAMES101/index.md

@@ -8,6 +8,12 @@
   let data, topic = '', onlySaved = false, visibleFeeds = 8;
   const params = new URLSearchParams(location.search);
   $('search').value = params.get('q') || '';
+  const enqueue = (url,title,origin) => {
+    try {
+      const result=LearningStore.add({url,title,origin});
+      UI.toast(result.duplicate?'已在学习队列中':'已加入学习队列，可在学习页归入专题');
+    } catch(error) { UI.toast(error.message); }
+  };
   function render() {
     const query = $('search').value.toLocaleLowerCase().trim();
     const kind = $('kind').value;
@@ -23,7 +29,8 @@
       const bottom = node('div','card-bottom'); const entry = link(s.entry.url,s.entry.title,'entry-link'); entry.title=s.entry.title; bottom.append(entry);
       const status=data.feed_status[s.id]?.status;
       if(s.feed){const rss=link(s.feed,status==='ok'?'RSS ↗':'订阅 ↗','feed-indicator');rss.title=status==='error'?'最近采集失败；可访问原站查看':'打开原站订阅源';bottom.append(rss);}
-      card.append(top,heading,node('div','domain',new URL(s.url).hostname),node('p','reason',s.reason),tags,bottom);return card;
+      const queue=node('button','enqueue','＋ 加入学习');queue.type='button';queue.setAttribute('aria-label',`加入学习：${s.entry.title}`);queue.onclick=()=>enqueue(s.entry.url,s.entry.title,`每日发现 / ${s.name}`);
+      card.append(top,heading,node('div','domain',new URL(s.url).hostname),node('p','reason',s.reason),tags,bottom,queue);return card;
     }));
     $('empty').hidden=!!sources.length;$('result-count').textContent=`${sources.length} / ${data.sources.length} 个来源`;
     const next=new URL(location.href);if(query)next.searchParams.set('q',$('search').value);else next.searchParams.delete('q');history.replaceState(null,'',next);
@@ -31,7 +38,7 @@
   }
   function renderFeeds(){
     const filtered=data.entries.filter(e=>!topic||data.sources.find(s=>s.id===e.source_id)?.topics.includes(topic));
-    $('feed-list').replaceChildren(...filtered.slice(0,visibleFeeds).map(e=>{const row=node('article','feed-row');const time=node('time','',e.published_at?e.published_at.slice(0,10):'日期未提供');if(e.published_at)time.dateTime=e.published_at;row.append(time,link(e.url,e.title),node('span','',data.sources.find(s=>s.id===e.source_id)?.name||e.source_id));return row;}));
+    $('feed-list').replaceChildren(...filtered.slice(0,visibleFeeds).map(e=>{const row=node('article','feed-row');const time=node('time','',e.published_at?e.published_at.slice(0,10):'日期未提供');if(e.published_at)time.dateTime=e.published_at;const queue=node('button','enqueue','＋ 学习');queue.setAttribute('aria-label',`加入学习：${e.title}`);queue.onclick=()=>enqueue(e.url,e.title,`订阅候选 / ${e.source_id}`);row.append(time,link(e.url,e.title),node('span','',data.sources.find(s=>s.id===e.source_id)?.name||e.source_id),queue);return row;}));
     if(!filtered.length)$('feed-list').append(node('p','muted','暂时没有该方向的订阅候选。可先从上面的推荐入口阅读。'));
     $('more-feed').hidden=filtered.length<=visibleFeeds;
   }
