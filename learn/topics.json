@@ -1,0 +1,24 @@
+{
+  "updated_at":"2026-10-28",
+  "topics":[
+    {
+      "id":"moonep","title":"MoonEP：从 token 到远端 buffer","category":"训练系统","description":"沿着一次真实的追问，理解专家并行里的数据布局、零拷贝与动态负载规划。","tags":["MoE","通信","GPU"],
+      "chapters":[
+        {"id":"memory","title":"先把内存和布局说清楚","body":["先固定观察坐标：rank 是一个分布式进程，在常见的一进程一卡设置里对应一张 GPU。每张卡有自己的 HBM（High Bandwidth Memory，高带宽显存）。专家计算读取的是执行它的 GPU 可寻址的输入张量；寄存器与 shared memory 是 kernel 内部的计算和暂存资源，不是把所有 rank 的 token 共享起来的一块普通内存。","读通信实现时，先画三样东西：源 token 在哪张卡、目标专家计算在哪张卡、通信把数据写到目标卡的哪个偏移。不要把可远程寻址的 buffer 和所有进程共同拥有一份数据混为一谈。","阅读问题：expert-grouped 的布局是谁决定的？按源 rank 收到的数据，如何变成按目标专家计算的顺序？这两个问题把通信和后续 GEMM（General Matrix Multiplication，通用矩阵乘法）连接起来。"],"references":["readme"]},
+        {"id":"dispatch","title":"Zero copy 到底省掉什么","body":["MoonEP 的设计把最终专家分组布局直接用于远端写入。地址规划已经包含目标位置时，dispatch 可以把 token 放到后续计算需要的位置，并把 buffer 的 view 交给计算端。","这里的 zero copy 是省掉中间的重排与缓冲区之间的数据搬运；token 仍然需要跨设备传输，kernel 也仍然需要读取数据。把逻辑上的布局转换与单独物化一份重排后张量区分开，才看得出优化发生在哪里。","下面的可交互图只展示两个 rank、两个 token 的目的地址思想，不模拟 MoonEP planner 的完整算法，也不表达实际网络延迟。切换阶段，看中间物化布局和最终布局的关系。"],"references":["readme"],"visual":"dispatch"},
+        {"id":"balance","title":"固定大小与负载不均衡","body":["S 表示每个 rank 的输入 token 数，K 表示每个 token 路由到的专家数。S×K 是一个 rank 产生的 token-expert assignment 数；它不能单独证明静态专家放置下每个目标 rank 都收到相同负载。","要理解 MoonEP 的均衡保证，需要连着看动态冗余专家与规划，而不能只盯着 buffer 大小。阅读时还应区分真实 token 数与对齐后的存储槽位：padding、capacity 和实际参与计算的数据是不同量。","下一步：对照 planning.py 中的 N、NvS、NvS_capacity 及分配元数据，逐项画出 shape 和数据流。当前笔记保留为阅读路线，不把尚未跑过的实验写成验证结果。"],"references":["planning","readme"]},
+        {"id":"gmm","title":"Grouped GEMM 不是拼成一个大矩阵","body":["多个专家各有自己的权重矩阵。把它们组织成 grouped GEMM，目的是让一次调度管理多组矩阵乘法，减少细碎调度并改善设备利用率；并不是把不同专家权重拼成一个普通 GEMM 就自然等价。","实际 kernel 仍需要按 tile 处理各个问题，读取对应专家的输入和权重。专家间在数学上独立，但共享 kernel 调度、设备算力、内存带宽等资源。是否需要 padding，取决于具体算子、布局和 tile 的约束。","这解决了一个常见误区：grouped 的是调度与执行组织方式，不代表所有专家之间新增了数学依赖。小 token 数的解码与大 token 数的训练也不能一概归为同一种性能瓶颈。"],"references":["readme"]},
+        {"id":"next","title":"继续追踪 planner 与 combine","body":["接下来分别追踪两条线：planner 如何决定每个 assignment 的目的位置；专家输出如何沿映射回到原 token 并按路由权重归并。","不要仅凭“零拷贝”推断输入、输出必然覆盖同一块 buffer。是否允许复用，需要检查实现的张量别名、stream 依赖与生命周期。把这件事作为下一轮源码阅读的明确问题。","复现清单：固定代码提交，记录设备与拓扑；对照 dispatch 前后的 token ID 和专家 ID；再检查 combine 输出与参考实现一致性。尚未完成这些实验前，进度只表示个人阅读与回顾。"],"references":["planning","readme"]}
+      ],
+      "resources":[
+        {"id":"readme","title":"MoonEP · README 与集成说明","url":"https://github.com/MoonshotAI/MoonEP","kind":"源码 / 设计","note":"原始说明；性能结论需连同设备、规模与基准条件阅读"},
+        {"id":"planning","title":"moonep/planning.py","url":"https://github.com/MoonshotAI/MoonEP/blob/master/moonep/planning.py","kind":"源码","note":"跟踪布局元数据与分配过程；链接指向滚动分支"}
+      ],
+      "questions":["一个 assignment 最终地址需要哪些元数据？","NvS 与真实 token 数如何区分？","combine 的输出 buffer 能否与输入安全复用？"],
+      "sessions":[
+        {"date":"2026-10-28","title":"从两次 permute 的疑问开始","question":"是不是把本地 token-major 改成 expert-major，以及收到数据后的再次 permute，都省掉了？","answer":"关键是把最终地址规划与通信融合起来。先明确原始路径中哪些布局只是逻辑索引，哪些需要写出一份中间张量，再判断哪些拷贝被省略。","kind":"既有学习对话的整理摘录"},
+        {"date":"2026-10-28","title":"澄清 grouped GEMM 的误区","question":"是不是所有专家合成一个大矩阵乘法，就能减少细碎开销？","answer":"每个专家仍对应自己的输入和权重。grouped GEMM 共同组织调度，但 tile 需要知道自己属于哪个问题；这不是一个忽略专家边界的大 GEMM。","kind":"既有学习对话的整理摘录"}
+      ]
+    }
+  ]
+}

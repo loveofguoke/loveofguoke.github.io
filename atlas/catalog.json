@@ -290,6 +290,573 @@
   ],
   "entries": [
     {
+      "title": "Jujutsu Primer",
+      "url": "https://ethanlowman.com/posts/jj-primer",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T03:34:36+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
+      "source_id": "simon",
+      "published_at": "2026-11-20T02:49:57+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Garage Door Spam",
+      "url": "https://blog.harrison.page/garage-door-spam",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T02:41:39+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Farcall, a terminal-ready Rust PC+DOS emulator",
+      "url": "https://www.dialup.net/farcall",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T02:12:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "PostgreSQL 19 Released",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19",
+      "source_id": "simon",
+      "published_at": "2026-11-19T20:43:57+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Visualizing a Ledger with pgledger-ui",
+      "url": "https://www.pgrs.net/2026/11/19/visualizing-a-ledger-with-pgledger-ui",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T19:55:10+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Rebuilding my local voice assistant pipeline",
+      "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T19:50:25+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Supporting FOSS projects to transition to memory safe tech",
+      "url": "https://tweedegolf.nl/en/blog/243/supporting-foss-projects-to-transition-to-memory-safe-tech",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T18:39:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Mercurius — A Zero-Trust Network‑Native Window System",
+      "url": "https://mercurius.tebibyte.org",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T18:37:35+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Hiring a Systems Programmer for Boxem",
+      "url": "https://lobste.rs/s/pnfs5p/hiring_systems_programmer_for_boxem",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T16:45:34+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Postel Awardee Dave Täht Made Every Millisecond Count",
+      "url": "https://www.internetsociety.org/blog/2026/11/postel-awardee-dave-taht-made-every-millisecond-count",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T16:01:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "PostgreSQL 19 Released",
+      "url": "https://www.postgresql.org/about/news/postgresql-19-released-3449",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T15:12:08+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "15 million web servers on one VM - smoltcp, DPDK, AF_XDP",
+      "url": "https://kapteko.com/15-million-webservers",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T13:38:19+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Type inference and narrowing with reverse arrows",
+      "url": "https://elixir-lang.org/blog/2026/11/10/inference-narrowing-reverse-arrows",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T13:34:58+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "We Need Smart People Who Give a Shit",
+      "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T13:28:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Design for Understandability",
+      "url": "https://jschuster.org/blog/2026/11/19/design-for-understandability",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T13:07:34+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Mutex poisoning is not for everyone",
+      "url": "https://bertptrs.nl/2026/11/16/mutex-poisoning-is-not-for-everyone.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T13:01:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Ruby2Shell (GHSA-34m4-m9fh-gqp5)",
+      "url": "https://verialabs.com/ruby2shell",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T10:50:28+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "PHP 8.6 Release Announcement",
+      "url": "https://www.php.net/releases/8.6/en.php",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T10:17:55+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Validating a High-Performance Cloud Object Store with Lightweight Formal Methods",
+      "url": "https://dl.acm.org/doi/10.1145/3830418.3843899",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T08:53:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Distributed, high-performance blob storage on SQLite",
+      "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage",
+      "source_id": "lobsters",
+      "published_at": "2026-11-19T08:37:13+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How To Get A Friend To Leave An Abusive Relationship",
+      "url": "https://www.lesswrong.com/posts/2xaen4jJdnksfkCJx/how-to-get-a-friend-to-leave-an-abusive-relationship",
+      "source_id": "lesswrong",
+      "published_at": "2026-11-19T04:17:15+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "llm-gemini 0.38",
+      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
+      "source_id": "simon",
+      "published_at": "2026-11-18T23:59:20+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Upcoming Critical PHP Security Release (18 Nov 2026)",
+      "url": "https://www.php.net/index.php",
+      "source_id": "lobsters",
+      "published_at": "2026-11-18T19:44:06+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-arrows 0.1a0",
+      "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows",
+      "source_id": "simon",
+      "published_at": "2026-11-18T17:09:59+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How I made a custom game engine for Satelital",
+      "url": "https://spectralorbit.com/blog/satelital_game_engine",
+      "source_id": "lobsters",
+      "published_at": "2026-11-18T16:39:00+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Daniel Stenberg",
+      "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg",
+      "source_id": "simon",
+      "published_at": "2026-11-18T15:58:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "nginx2root",
+      "url": "https://xint.io/blog/nginx2root-remote-code-execution",
+      "source_id": "lobsters",
+      "published_at": "2026-11-18T15:28:56+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The PSF end-of-year fundraiser",
+      "url": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser",
+      "source_id": "simon",
+      "published_at": "2026-11-18T14:44:48+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Build provenance and component/notice evidence for one exact Torch CPU wheel",
+      "url": "https://discuss.pytorch.org/t/build-provenance-and-component-notice-evidence-for-one-exact-torch-cpu-wheel/225950",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-18T14:33:53+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Java4Shell is a reason to use Java",
+      "url": "https://mccue.dev/pages/11-18-26-java4shell",
+      "source_id": "lobsters",
+      "published_at": "2026-11-18T14:21:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Windows 11 collects data on which coding agents and dev tools you use",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry",
+      "source_id": "lobsters",
+      "published_at": "2026-11-18T11:57:46+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Codeberg's domain suddenly disappeared from their account, site is unreachable",
+      "url": "https://social.anoxinon.de/@Codeberg/117636454915265360",
+      "source_id": "lobsters",
+      "published_at": "2026-11-18T08:51:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Seeking collaborators (unpaid, portfolio): AI engineering & AI safety evaluation on public water-utility data",
+      "url": "https://discuss.pytorch.org/t/seeking-collaborators-unpaid-portfolio-ai-engineering-ai-safety-evaluation-on-public-water-utility-data/225941",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-18T03:41:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "External sandboxes for coding agents",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
+      "source_id": "simon",
+      "published_at": "2026-11-17T22:52:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
+      "source_id": "simon",
+      "published_at": "2026-11-17T22:38:52+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+      "url": "https://simonwillison.net/2026/Nov/17/datasette-lite",
+      "source_id": "simon",
+      "published_at": "2026-11-17T16:48:33+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Announcing dataplan: An Industrial-Grade, Air-Gapped Synthetic Data Generation Engine for PyTorch Fine-Tuning",
+      "url": "https://discuss.pytorch.org/t/announcing-dataplan-an-industrial-grade-air-gapped-synthetic-data-generation-engine-for-pytorch-fine-tuning/225925",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-17T08:18:40+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How Do You Detect Near-Duplicate Video Samples Before PyTorch Training?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-detect-near-duplicate-video-samples-before-pytorch-training/225924",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-17T06:39:24+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Go Proverbs",
+      "url": "https://simonwillison.net/2026/Nov/17/go-proverbs",
+      "source_id": "simon",
+      "published_at": "2026-11-17T06:16:26+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "llm 0.37.3",
+      "url": "https://simonwillison.net/2026/Nov/16/llm",
+      "source_id": "simon",
+      "published_at": "2026-11-16T23:57:26+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Remote contract work for ML engineers and Kaggle-style data scientists (micro1)",
+      "url": "https://discuss.pytorch.org/t/remote-contract-work-for-ml-engineers-and-kaggle-style-data-scientists-micro1/225921",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-16T20:29:12+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Remote, full-time: GPU training infrastructure and platform roles at micro1",
+      "url": "https://discuss.pytorch.org/t/remote-full-time-gpu-training-infrastructure-and-platform-roles-at-micro1/225920",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-16T19:58:25+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Serving a PyTorch model on a Canadian GPU VPS",
+      "url": "https://discuss.pytorch.org/t/serving-a-pytorch-model-on-a-canadian-gpu-vps/225916",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-16T15:07:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How Do You Handle Variable-Length Video Clips in a PyTorch DataLoader?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-handle-variable-length-video-clips-in-a-pytorch-dataloader/225909",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-16T08:42:16+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-maplibre 0.1a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
+      "source_id": "simon",
+      "published_at": "2026-11-15T23:58:36+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette 1.0a43",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette",
+      "source_id": "simon",
+      "published_at": "2026-11-15T23:20:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette 0.65.6",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-2",
+      "source_id": "simon",
+      "published_at": "2026-11-15T23:18:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "A compact workstation for office work — Minisforum MS-02 Ultra",
+      "url": "https://discuss.pytorch.org/t/a-compact-workstation-for-office-work-minisforum-ms-02-ultra/225903",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-15T19:00:55+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "A small NCCL probe to distinguish initialization hangs from the first collective",
+      "url": "https://discuss.pytorch.org/t/a-small-nccl-probe-to-distinguish-initialization-hangs-from-the-first-collective/225901",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-15T15:16:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "source_id": "raschka",
+      "published_at": "2026-11-15T12:10:37+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-apps 0.4a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-apps",
+      "source_id": "simon",
+      "published_at": "2026-11-15T04:02:45+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-agent 0.6a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-agent",
+      "source_id": "simon",
+      "published_at": "2026-11-15T03:49:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-llm 0.1a11",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm",
+      "source_id": "simon",
+      "published_at": "2026-11-14T23:59:28+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Catching rank desync bugs on a laptop before the GPU job. Would you use this?",
+      "url": "https://discuss.pytorch.org/t/catching-rank-desync-bugs-on-a-laptop-before-the-gpu-job-would-you-use-this/225889",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-14T21:15:20+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-vega 0.7",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-vega",
+      "source_id": "simon",
+      "published_at": "2026-11-14T17:09:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Tiled inference for upscaling images larger than VRAM: a working pattern",
+      "url": "https://discuss.pytorch.org/t/tiled-inference-for-upscaling-images-larger-than-vram-a-working-pattern/225886",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-14T15:20:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-cluster-map 0.19",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map",
+      "source_id": "simon",
+      "published_at": "2026-11-13T23:02:45+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-leaflet 0.3",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet",
+      "source_id": "simon",
+      "published_at": "2026-11-13T22:30:54+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Problem with Intel Iris Xe MAX",
+      "url": "https://discuss.pytorch.org/t/problem-with-intel-iris-xe-max/225864",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-13T03:21:08+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Scattered thoughts on how doing math feels these days",
+      "url": "https://www.lesswrong.com/posts/HuQAuWjc2Z5tqCjyw/scattered-thoughts-on-how-doing-math-feels-these-days",
+      "source_id": "lesswrong",
+      "published_at": "2026-11-13T01:10:37+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "llm-gemini 0.37",
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini",
+      "source_id": "simon",
+      "published_at": "2026-11-12T22:55:19+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "adambridge: drop-in AdamW that offloads optimizer state to CPU (7B full FT on 24GB)",
+      "url": "https://discuss.pytorch.org/t/adambridge-drop-in-adamw-that-offloads-optimizer-state-to-cpu-7b-full-ft-on-24gb/225857",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-12T18:32:12+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Hiring: Agentic Python Engineer @ Evaboot | Remote (anywhere) | Full-time | $60-120K USD/year",
+      "url": "https://discuss.pytorch.org/t/hiring-agentic-python-engineer-evaboot-remote-anywhere-full-time-60-120k-usd-year/225853",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-12T14:31:00+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Gemini Decisions API",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
+      "source_id": "simon",
+      "published_at": "2026-11-11T22:03:25+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "aws-emulator",
+      "url": "https://simonwillison.net/2026/Nov/11/aws-emulator",
+      "source_id": "simon",
+      "published_at": "2026-11-11T21:18:30+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Browse tools.simonwillison.net by tag",
+      "url": "https://simonwillison.net/2026/Nov/11/tools-tags",
+      "source_id": "simon",
+      "published_at": "2026-11-11T18:42:50+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "llm 0.37.2",
+      "url": "https://simonwillison.net/2026/Nov/11/llm",
+      "source_id": "simon",
+      "published_at": "2026-11-11T17:19:52+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Anthropic's IPO roadshow video",
+      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow",
+      "source_id": "simon",
+      "published_at": "2026-11-11T15:11:59+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "llm-gemini 0.36",
+      "url": "https://simonwillison.net/2026/Nov/10/llm-gemini",
+      "source_id": "simon",
+      "published_at": "2026-11-10T20:09:44+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "yabi-torch: a stiff, differentiable ODE solver for PyTorch",
+      "url": "https://discuss.pytorch.org/t/yabi-torch-a-stiff-differentiable-ode-solver-for-pytorch/225817",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-10T18:25:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
+      "source_id": "simon",
+      "published_at": "2026-11-10T07:28:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
+      "source_id": "simon",
+      "published_at": "2026-11-10T05:34:14+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Yonkers Rises",
+      "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises",
+      "source_id": "simon",
+      "published_at": "2026-11-10T03:53:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Some Memories of Early Anthropic",
+      "url": "https://www.lesswrong.com/posts/9PiLfo6iQbbDWFHv7/some-memories-of-early-anthropic",
+      "source_id": "lesswrong",
+      "published_at": "2026-11-08T21:51:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Denoising before upscaling: why the order matters for compressed video",
+      "url": "https://discuss.pytorch.org/t/denoising-before-upscaling-why-the-order-matters-for-compressed-video/225799",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-08T21:24:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "I did a meditation and it sort of changed my personality?!",
+      "url": "https://www.benkuhn.net/meditation",
+      "source_id": "benkuhn",
+      "published_at": "2026-11-08T00:00:00+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Mitigating hallucination by decoupling extraction (deterministic scoring) from generation — architecture feedback?",
+      "url": "https://discuss.pytorch.org/t/mitigating-hallucination-by-decoupling-extraction-deterministic-scoring-from-generation-architecture-feedback/225776",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-06T15:24:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How Do You Handle Incremental Video Dataset Updates in PyTorch?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-handle-incremental-video-dataset-updates-in-pytorch/225769",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-06T08:20:54+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Towards understanding score-seeking in LLMs",
+      "url": "https://www.lesswrong.com/posts/CDMozTX7ShiqbFLrf/towards-understanding-score-seeking-in-llms-1",
+      "source_id": "lesswrong",
+      "published_at": "2026-11-06T03:19:36+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Freelance, full remote: short to mid-term project for machine learning engineers and researchers",
+      "url": "https://discuss.pytorch.org/t/freelance-full-remote-short-to-mid-term-project-for-machine-learning-engineers-and-researchers/225757",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-05T15:44:38+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "A history of backdoors (2015)",
       "url": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors",
       "source_id": "lobsters",
@@ -1401,573 +1968,6 @@
       "source_id": "pytorch-forums",
       "published_at": "2026-10-29T06:10:30+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "The Future Trait Has A Missing State",
-      "url": "https://blog.yoshuawuyts.com/the-future-trait-has-a-missing-state",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T04:24:28+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The case of the 9 bit AES key",
-      "url": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T02:13:24+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Plan R: AI Safety by ASICs",
-      "url": "https://www.lesswrong.com/posts/n8u3BfqFoGh4jnzpo/plan-r-ai-safety-by-asics",
-      "source_id": "lesswrong",
-      "published_at": "2026-10-29T02:08:07+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Redox Ring Buffers Project Summary",
-      "url": "https://www.redox-os.org/news/nlnet-rb-summary",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T02:04:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Introducing the Accessible Components Library",
-      "url": "https://tetralogical.com/blog/2026/10/14/accessible-components-library",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T00:30:45+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "EMACS turns 50",
-      "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T23:57:12+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quoting Ted Sanders",
-      "url": "https://simonwillison.net/2026/Oct/28/ted-sanders",
-      "source_id": "simon",
-      "published_at": "2026-10-28T23:23:21+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "GitLab security incident: attempted exploitation of CVE-2026-97229",
-      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T23:01:26+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Why Is This Fingerprinting Script Creating Bioweapons?",
-      "url": "https://nullpt.rs/fingerprinting-bioweapons",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T18:55:15+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Hoot 0.10.0 released",
-      "url": "https://spritely.institute/news/hoot-0-10-0-released.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T16:47:10+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "GitHub Octoverse 2026",
-      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026",
-      "source_id": "simon",
-      "published_at": "2026-10-28T16:45:23+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "TorchTPU DevLabs, Nov 9-10, 2026",
-      "url": "https://discuss.pytorch.org/t/torchtpu-devlabs-nov-9-10-2026/225673",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-28T16:32:43+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "GOTO Considered Totally Sick (for error handling in C)",
-      "url": "https://thestateofinahaze.net/blog/c-goto-considered-totally-sick",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T16:07:18+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Pair-coding Lobste.rs feat",
-      "url": "https://lobste.rs/s/mgy3tr/pair_coding_lobste_rs_feat",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T15:53:34+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The October inflection point for vibe game development",
-      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development",
-      "source_id": "simon",
-      "published_at": "2026-10-28T13:55:15+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Raspberry Pi Zero 3 W and Pi 4 Model A on the Way?",
-      "url": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T13:39:42+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Forging a Microsoft Edge Full Chain with Logic Bugs Only",
-      "url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T13:34:06+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Apple's git still trusts the compromised eMudhra certificates",
-      "url": "https://emudhra.we-have-a-problem.com/apple.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T11:03:56+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "AlpineBSD",
-      "url": "https://wiki.alpinebsd.org",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T10:34:55+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Start Doing Graph Theory",
-      "url": "https://vertex.degree",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T10:12:59+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quoting Terk Terkowitz",
-      "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz",
-      "source_id": "simon",
-      "published_at": "2026-10-28T10:09:07+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Billion-query-per-second lookup tables in C++",
-      "url": "https://lemire.me/blog/2026/10/26/billion-query-per-second-lookup-tables-in-c",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T09:47:41+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
-      "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T09:18:31+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Benchmarking Crisis",
-      "url": "http://databasearchitects.blogspot.com/2026/10/the-benchmarking-crisis.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T08:32:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Who’s 0xabadbabe and why? (2011)",
-      "url": "https://daniel.haxx.se/blog/2011/10/28/whos-0xabadbabe-and-why",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T07:57:21+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Scalable Vector Grief",
-      "url": "https://portswigger.net/research/scalable-vector-grief",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T07:26:03+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "This is not sustainable",
-      "url": "https://www.netmeister.org/blog/defense-ddos.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T03:56:49+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Dataset-Level Validation Before Training a Video-Language Model",
-      "url": "https://discuss.pytorch.org/t/dataset-level-validation-before-training-a-video-language-model/225666",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-28T02:33:06+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Reminder: Lobsters NYC Meetup Tomorrow 5:30 at Walker's",
-      "url": "https://lobste.rs/s/87iesc/reminder_lobsters_nyc_meetup_tomorrow_5",
-      "source_id": "lobsters",
-      "published_at": "2026-10-28T01:27:50+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Ghostty 1.4.0",
-      "url": "https://ghostty.org/docs/install/release-notes/1-4-0",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T22:06:07+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The next circle of security hell",
-      "url": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T20:10:56+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Game Boy Color on My Conference Badge",
-      "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge",
-      "source_id": "simon",
-      "published_at": "2026-10-27T19:34:18+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
-      "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T19:08:23+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "An Evening with Berferd: In Which a Cracker is Lured, Endured, and Studied (1992)",
-      "url": "https://www.cheswick.com/ches/papers/berferd.pdf",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T18:48:45+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Four Months of Zig",
-      "url": "https://gracefulliberty.com/articles/four-months-of-zig",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T18:46:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "1,447 emoji? We'll do it live",
-      "url": "https://planetpeanut.studio/post/2026/10/27/pidgin-emoji-twitch",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T18:28:06+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Shift of Theseus — Toy Bit Provenance Abstract Domain",
-      "url": "https://www.pypy.org/posts/2026/10/toy-bit-provenance.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T17:53:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A fast and secure tar parser for the Rust ecosystem",
-      "url": "https://astral.sh/blog/tar-codec",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T16:59:30+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Finding panics with Call Graph Analyzer",
-      "url": "https://tweedegolf.nl/en/blog/242/finding-panics-with-call-graph-analyzer",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T16:45:26+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Filian, Fil-C binaries on Debian",
-      "url": "https://cr.yp.to/2025/fil-c.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T16:42:17+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A stackless floodfill automation (2023)",
-      "url": "https://t3x.org/files/floodfill.pdf",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T14:56:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Compile-Time Dependent Types",
-      "url": "https://thenumb.at/Syl-Intro",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T14:40:12+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A select should tell you something",
-      "url": "https://alfy.blog/2026/10/27/a-select-should-tell-you-something.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T11:33:23+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Full Haskell-like Type Class resolution in Java",
-      "url": "https://garciat.com/posts/java-type-classes",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T10:11:53+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Python's experimental JIT to be removed",
-      "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T06:20:38+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How do you validate a large video dataset before training?",
-      "url": "https://discuss.pytorch.org/t/how-do-you-validate-a-large-video-dataset-before-training/225661",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-27T05:59:36+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Exponential Time Hypothesis Is False [pdf]",
-      "url": "https://files.mathhelm.org/files/733/The-Exponential-Time-Hypothesis-is-False-October-25-2026.pdf",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T00:39:50+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Our Response To The eMudhra Key Disclosure Incident",
-      "url": "https://go.dev/blog/emudhra-incident",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T00:31:44+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Shitty Screenshare",
-      "url": "http://shittyscreenshare.com",
-      "source_id": "lobsters",
-      "published_at": "2026-10-27T00:12:16+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "GPT-6.1 Terra",
-      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra",
-      "source_id": "simon",
-      "published_at": "2026-10-26T23:53:07+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Oldest GUI application that still runs on Windows 11",
-      "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11",
-      "source_id": "lobsters",
-      "published_at": "2026-10-26T19:49:43+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quoting Jason Koebler",
-      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler",
-      "source_id": "simon",
-      "published_at": "2026-10-26T19:00:25+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A faster way to compute signed 64-bit floor division by constants",
-      "url": "https://www.benjoffe.com/fast-floordiv",
-      "source_id": "lobsters",
-      "published_at": "2026-10-26T18:44:53+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "CSS-Tricks has a new owner",
-      "url": "https://css-tricks.com/css-tricks-has-a-new-owner",
-      "source_id": "lobsters",
-      "published_at": "2026-10-26T17:55:19+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "[Profiler][CUDA] CUDA_SYNC not enabled by default",
-      "url": "https://discuss.pytorch.org/t/profiler-cuda-cuda-sync-not-enabled-by-default/225654",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-26T16:58:18+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Silent kernel death",
-      "url": "https://discuss.pytorch.org/t/silent-kernel-death/225653",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-26T16:38:31+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "webframe: evaluated as a scraper and a sandbox",
-      "url": "https://simonwillison.net/2026/Oct/26/webframe-evaluation",
-      "source_id": "simon",
-      "published_at": "2026-10-26T16:15:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Why is it so expensive to send an email?",
-      "url": "https://evancz.dev/why-is-it-so-expensive-to-send-an-email",
-      "source_id": "lobsters",
-      "published_at": "2026-10-26T13:25:41+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "DDP on a PCIe-only 4x RTX A6000 (no NVLink): plain DDP gave 2x, bf16 gradient compression plus accumulation gave 3.6x",
-      "url": "https://discuss.pytorch.org/t/ddp-on-a-pcie-only-4x-rtx-a6000-no-nvlink-plain-ddp-gave-2x-bf16-gradient-compression-plus-accumulation-gave-3-6x/225650",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-26T12:42:48+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Websites Should Be Printable",
-      "url": "https://brennenputh.me/blog/printable-websites",
-      "source_id": "lobsters",
-      "published_at": "2026-10-26T12:02:58+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "I Did This Without Your Knowledge",
-      "url": "https://www.lesswrong.com/posts/3375SZNGA5dKHQMie/i-did-this-without-your-knowledge",
-      "source_id": "lesswrong",
-      "published_at": "2026-10-25T20:51:57+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Seam Cutter",
-      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter",
-      "source_id": "simon",
-      "published_at": "2026-10-25T15:10:19+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Loading weights without `map_location` with `strict=True` doesnt throw error",
-      "url": "https://discuss.pytorch.org/t/loading-weights-without-map-location-with-strict-true-doesnt-throw-error/225632",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-24T23:58:46+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Building Reasoning Models from the Ground Up: A Full Video Course",
-      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
-      "source_id": "raschka",
-      "published_at": "2026-10-24T11:14:32+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "battledrones v14: Compass Rose, a four player map",
-      "url": "https://simonwillison.net/2026/Oct/24/battledrones",
-      "source_id": "simon",
-      "published_at": "2026-10-24T03:59:57+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quick Study",
-      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter",
-      "source_id": "simon",
-      "published_at": "2026-10-23T21:35:13+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Optimization problem",
-      "url": "https://discuss.pytorch.org/t/optimization-problem/225631",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-23T21:31:36+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Introducing Kimi K3.1 Pro",
-      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro",
-      "source_id": "simon",
-      "published_at": "2026-10-23T19:40:54+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "DE STAAT - FREEDOM (Official Music Video)",
-      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom",
-      "source_id": "simon",
-      "published_at": "2026-10-22T19:42:26+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Donating Agent Skills to the Agentic AI Foundation",
-      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills",
-      "source_id": "simon",
-      "published_at": "2026-10-22T18:09:56+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "LiveBoundary: boundary-guided online adaptation with native PyTorch parameter updates",
-      "url": "https://discuss.pytorch.org/t/liveboundary-boundary-guided-online-adaptation-with-native-pytorch-parameter-updates/225611",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-22T16:58:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Exact source provenance for libgomp.so.1 in PyTorch 2.8.0+cu128 Linux wheel",
-      "url": "https://discuss.pytorch.org/t/exact-source-provenance-for-libgomp-so-1-in-pytorch-2-8-0-cu128-linux-wheel/225609",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-22T16:57:44+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quoting Armin Ronacher",
-      "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher",
-      "source_id": "simon",
-      "published_at": "2026-10-22T15:34:13+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "FlagGems: trying Triton operators through PyTorch's eager API",
-      "url": "https://discuss.pytorch.org/t/flaggems-trying-triton-operators-through-pytorchs-eager-api/225597",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-21T23:26:03+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
-      "url": "https://simonwillison.net/2026/Oct/21/php-security-release",
-      "source_id": "simon",
-      "published_at": "2026-10-21T18:41:53+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "[Project] EmoLLM Organiztion: Researching Affective State Transitions & Empathetic Machine Alignment",
-      "url": "https://discuss.pytorch.org/t/project-emollm-organiztion-researching-affective-state-transitions-empathetic-machine-alignment/225594",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-21T17:16:21+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Panache — RTS Belle Époque pour mobile",
-      "url": "https://simonwillison.net/2026/Oct/21/panache",
-      "source_id": "simon",
-      "published_at": "2026-10-21T16:25:16+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Why there is no pytorch AOT graph tracer for both graph operations and bytecode",
-      "url": "https://discuss.pytorch.org/t/why-there-is-no-pytorch-aot-graph-tracer-for-both-graph-operations-and-bytecode/225591",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-21T10:39:43+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "eMudhra Intermediate CA Compromise",
-      "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates",
-      "source_id": "simon",
-      "published_at": "2026-10-20T23:50:25+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Good Starter Projects",
-      "url": "https://discuss.pytorch.org/t/good-starter-projects/225586",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-20T22:28:06+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "GLM-5.3 Sometimes Considers How Train-Time Actions Shape Future Behavior",
-      "url": "https://www.lesswrong.com/posts/R5g8YT25G9DXJJ48n/glm-5-3-sometimes-considers-how-train-time-actions-shape",
-      "source_id": "lesswrong",
-      "published_at": "2026-10-20T20:26:31+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-05T03:35:48.646736+00:00"
+  "collected_at": "2026-11-20T04:07:30.370046+00:00"
 }

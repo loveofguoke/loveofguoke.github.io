@@ -1,0 +1,30 @@
+document.addEventListener('DOMContentLoaded',async()=>{
+  const $=id=>document.getElementById(id),{node,link,toast,download}=UI,store=LearningStore,params=new URLSearchParams(location.search);
+  let data;try{const r=await fetch('topics.json');if(!r.ok)throw Error(r.status);data=await r.json();}catch{document.querySelector('main').append(node('p','empty','笔记索引加载失败。'));return;}
+  const topics=()=>[...data.topics,...store.state.topics],topicName=id=>topics().find(t=>t.id===id)?.title||'未分类';
+  const pages=()=>[...data.topics.filter(t=>t.published_notes!==false).flatMap(t=>t.chapters.map((c,i)=>({id:`public-${t.id}-${c.id}`,title:c.title,body:c.body.join('\n\n'),topic:t.id,createdAt:`2026-10-28T${String(10-i).padStart(2,'0')}:00:00+08:00`,references:t.resources.map(r=>r.url).join('\n'),public:true,displayDate:'2026-10-28'}))),...store.state.pages];
+  const options=(el,all=false)=>{el.replaceChildren();const empty=node('option','',all?'全部主题':'暂不归类');empty.value='';el.append(empty);topics().forEach(t=>{const o=node('option','',t.title);o.value=t.id;el.append(o);});};
+  function markdown(text,container){
+    const lines=text.split('\n');let block=[],code=null,list=null;
+    const flush=()=>{if(block.length){container.append(node('p','',block.join('\n')));block=[];}list=null;};
+    for(const line of lines){if(line.startsWith('```')){flush();if(code!==null){container.append(node('pre','',code.join('\n')));code=null;}else code=[];continue;}if(code!==null){code.push(line);continue;}const heading=/^(#{1,3})\s+(.+)$/.exec(line);if(heading){flush();container.append(node(`h${Math.min(heading[1].length+1,4)}`,'',heading[2]));}else if(/^[-*]\s/.test(line)){if(block.length)flush();if(!list){list=node('ul');container.append(list);}list.append(node('li','',line.slice(2)));}else if(!line.trim()){flush();}else{block.push(line);}}
+    flush();if(code!==null)container.append(node('pre','',code.join('\n')));
+  }
+  if($('note-list')){
+    let page=1,editing=null;const pageSize=4;options($('note-topic'),true);options($('edit-note-topic'));
+    function render(){const query=$('note-search').value.trim().toLowerCase(),topic=$('note-topic').value,scope=$('note-scope').value;const filtered=pages().filter(p=>(!topic||p.topic===topic)&&(scope==='all'||(scope==='public'?p.public:!p.public))&&(!query||[p.title,p.body,p.references,topicName(p.topic)].join(' ').toLowerCase().includes(query))).sort((a,b)=>b.createdAt.localeCompare(a.createdAt));const total=Math.max(1,Math.ceil(filtered.length/pageSize));page=Math.min(page,total);$('note-list').replaceChildren(...filtered.slice((page-1)*pageSize,page*pageSize).map(p=>{const card=node('article','journal-card'),body=node('div'),h=node('h3');h.append(link(`note.html?id=${encodeURIComponent(p.id)}`,p.title));body.append(node('div','meta',`${p.public?'公开整理':'我的笔记'} / ${topicName(p.topic)}`),h,node('p','',p.body.replace(/^#+\s*/gm,'').slice(0,150)+'…'),link(`note.html?id=${encodeURIComponent(p.id)}`,'打开笔记 →','backlink'));card.append(node('time','journal-date',p.displayDate||new Date(p.createdAt).toLocaleDateString('zh-CN')),body);return card;}));if(!filtered.length)$('note-list').append(node('p','empty','还没有匹配的笔记。可以从学习队列整理一篇。'));$('note-count').textContent=`${filtered.length} 张笔记 · 按整理时间倒序`;$('page-number').textContent=`${page} / ${total}`;$('prev-page').disabled=page<=1;$('next-page').disabled=page>=total;}
+    for(const id of ['note-search','note-topic','note-scope'])$(id).addEventListener(id==='note-search'?'input':'change',()=>{page=1;render();});$('prev-page').onclick=()=>{page--;render();};$('next-page').onclick=()=>{page++;render();};
+    const open=()=>{$('note-dialog').showModal();};$('new-note').onclick=()=>{editing=null;$('note-form').reset();$('mark-queue-label').hidden=true;open();};$('close-note').onclick=()=>$('note-dialog').close();
+    $('note-form').onsubmit=e=>{e.preventDefault();if(!$('note-title').value.trim()||!$('note-body').value.trim())return;const p=store.writePage({id:editing,title:$('note-title').value.trim(),body:$('note-body').value,topic:$('edit-note-topic').value,references:$('note-references').value});if($('mark-queue-done').checked&&params.get('queue'))store.patch(params.get('queue'),{status:'done'});location.href=`note.html?id=${encodeURIComponent(p.id)}`;};
+    if(params.get('edit')){const p=store.state.pages.find(p=>p.id===params.get('edit'));if(p){editing=p.id;$('note-title').value=p.title;$('note-body').value=p.body;$('edit-note-topic').value=p.topic;$('note-references').value=p.references;open();}}
+    else if(params.get('write')){$('note-title').value=params.get('title')||'';$('edit-note-topic').value=params.get('topic')||'';$('note-references').value=params.get('url')||'';$('mark-queue-label').hidden=!params.get('queue');open();}render();
+  }
+  if($('note-content')){
+    const p=pages().find(p=>p.id===params.get('id'));if(!p){$('note-heading').textContent='没有找到这张笔记';$('note-content').textContent='个人笔记保存在创建它的浏览器中，可以导入备份后再打开。';return;}
+    document.title=`${p.title} · 果壳的宇宙`;$('note-heading').textContent=p.title;$('note-meta').textContent=`${p.displayDate||new Date(p.createdAt).toLocaleDateString('zh-CN')} / ${p.public?'公开整理':'个人笔记'} / ${topicName(p.topic)}`;
+    $('note-topic-link').href=`topic.html?id=${encodeURIComponent(p.topic)}`;$('note-topic-link').hidden=!p.topic;
+    if(!p.public){$('edit-note-link').hidden=false;$('edit-note-link').href=`journal.html?edit=${encodeURIComponent(p.id)}`;}
+    markdown(p.body,$('note-content'));let count=0;for(const value of p.references.split('\n')){try{const url=store.normalize(value.trim()),a=link(url,url+' ↗');a.target='_blank';a.rel='noopener noreferrer';$('note-links').append(a);count++;}catch{if(value.trim())$('note-links').append(node('p','',value));}}if(!count&&!p.references.trim())$('note-evidence').hidden=true;
+    $('download-note').onclick=()=>download(`${p.id}.md`,`# ${p.title}\n\n日期：${p.displayDate||p.createdAt}\n主题：${topicName(p.topic)}\n\n${p.body}\n\n## 关联资料\n\n${p.references}`,'text/markdown');
+  }
+});
