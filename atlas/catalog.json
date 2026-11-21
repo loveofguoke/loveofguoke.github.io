@@ -290,6 +290,125 @@
   ],
   "entries": [
     {
+      "title": "Slopstrap: Make your site look hastily vibecoded",
+      "url": "https://slopstrap.mikelacher.com/l",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T00:46:40+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "DNS Stamps Specification",
+      "url": "https://dnscrypt.info/stamps-specifications",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T00:16:57+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Verifying formal models of Raft implementations",
+      "url": "https://antithesis.com/blog/2026/verifying-formal-models",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T21:54:45+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Ravi Vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil",
+      "source_id": "simon",
+      "published_at": "2026-11-20T19:21:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Internet Archive Staffers Are Unionizing",
+      "url": "https://cwa-union.org/news/releases/internet-archive-workers-launch-union-campaign-communications-workers-america",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T18:39:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Alice v0.6.0",
+      "url": "https://www.alicecaml.org/blog/alice-v0-6-0",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T16:44:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Levent Alpöge",
+      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge",
+      "source_id": "simon",
+      "published_at": "2026-11-20T16:30:48+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Levent Alpoge Claims Proof of Riemann Hypothesis",
+      "url": "https://alpo.ge/remark.pdf",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T14:46:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Exploring PyTorch, LiDAR & 3D Computer Vision as a Trucking Engineer Transitioning into Autonomous Vehicles",
+      "url": "https://discuss.pytorch.org/t/exploring-pytorch-lidar-3d-computer-vision-as-a-trucking-engineer-transitioning-into-autonomous-vehicles/225983",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-20T14:44:08+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Lisp Game Jam devlog: Polydraw",
+      "url": "https://spritely.institute/news/lisp-game-jam-devlog-polydraw.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T11:18:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "DreamCoder: coding harness and IDE from the author of Mastering Emacs",
+      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T11:14:06+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Removing binder.c",
+      "url": "https://lwn.net/Articles/1102982",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T10:33:36+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "What are you doing this weekend?",
+      "url": "https://lobste.rs/s/hneb5m/what_are_you_doing_this_weekend",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T10:05:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Vim Classic 8.3.1 released",
+      "url": "https://vim-classic.org/news/vim-8.3.1-released.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T10:02:03+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Visited links are purple",
+      "url": "https://dbushell.com/2026/11/16/visited-links",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T09:58:05+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Announcing jj-musubi: live sync for Jujutsu",
+      "url": "https://www.serpentine.com/posts/2026/announcing-jj-musubi",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T09:39:11+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Persistent incrementality in Rust",
+      "url": "https://rust-glancer.github.io/blog/persistent-incrementality-in-rust",
+      "source_id": "lobsters",
+      "published_at": "2026-11-20T04:16:34+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "Jujutsu Primer",
       "url": "https://ethanlowman.com/posts/jj-primer",
       "source_id": "lobsters",
@@ -1849,125 +1968,6 @@
       "source_id": "lobsters",
       "published_at": "2026-10-29T20:33:44+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "Building a multiplayer game world with autonomous Fable-class models",
-      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world",
-      "source_id": "simon",
-      "published_at": "2026-10-29T17:00:26+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "My favourite PowerMac is a Nintendo Wii",
-      "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T16:32:18+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "An open format for writing agent-native software requirements",
-      "url": "https://slcr.dev/announcements",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T16:17:42+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Phorge",
-      "url": "https://www.phorge.it",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T16:08:47+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Web Can't Afford a JavaScript Runtime Monoculture",
-      "url": "https://redmonk.com/kholterhoff/2026/10/27/js-runtime-monoculture",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T15:44:47+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Extremely brief history of PDP computers",
-      "url": "https://entropicthoughts.com/history-of-pdp-computers",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T14:48:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Shared password manager for families?",
-      "url": "https://lobste.rs/s/eccbci/shared_password_manager_for_families",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T14:39:51+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Will Open Firmware Become the Next Big Trend in Electronic Music Gear?",
-      "url": "https://www.synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T14:37:32+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quoting Ben Hylak",
-      "url": "https://simonwillison.net/2026/Oct/29/ben-hylak",
-      "source_id": "simon",
-      "published_at": "2026-10-29T14:06:27+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Building NixOS using Nixtamal",
-      "url": "https://nixtamal.toast.al/cookbook/nixos-using-nixtamal",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T13:45:55+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How to Improve Small Object Detection in Indoor Warehouse Drone Images Using PyTorch?",
-      "url": "https://discuss.pytorch.org/t/how-to-improve-small-object-detection-in-indoor-warehouse-drone-images-using-pytorch/225687",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-29T13:03:24+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Title: Seeking feedback on a resource-constrained MIL + Spatial GNN research project",
-      "url": "https://discuss.pytorch.org/t/title-seeking-feedback-on-a-resource-constrained-mil-spatial-gnn-research-project/225685",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-29T13:02:44+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Nim version 2.4.0 released",
-      "url": "https://nim-lang.org/blog/2026/10/28/nim-240.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T12:07:26+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "NetBSD adds a new Emacs-like text editor called atto",
-      "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T11:58:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Qwenputer: a fully functioning, deterministic RISC-V CPU inside Qwen3.5",
-      "url": "https://divagr.com/blog/qwenputer",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T10:00:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "What the fox say?",
-      "url": "https://entropicthoughts.com/what-the-fox-say",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T06:42:40+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How Do You Represent Time-Aligned Captions for Video Training?",
-      "url": "https://discuss.pytorch.org/t/how-do-you-represent-time-aligned-captions-for-video-training/225678",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-29T06:10:30+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-20T04:07:30.370046+00:00"
+  "collected_at": "2026-11-21T04:06:56.480730+00:00"
 }
