@@ -290,6 +290,111 @@
   ],
   "entries": [
     {
+      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate",
+      "source_id": "lobsters",
+      "published_at": "2026-11-22T02:03:46+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "GhostScript CVE 2026-125396: \"Upload2Shell\"",
+      "url": "https://pwn.ai/upload2shell/research.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-22T00:52:23+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "NixOS bring-up on an Alibaba RISC-V board",
+      "url": "https://feyor.sh/blog/nixos-bringup-on-an-alibaba-riscv-board",
+      "source_id": "lobsters",
+      "published_at": "2026-11-22T00:30:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Muru",
+      "url": "https://simonwillison.net/2026/Nov/21/muru",
+      "source_id": "simon",
+      "published_at": "2026-11-21T23:56:28+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "port scanning for mojang",
+      "url": "https://sipacid.com/blog/port-scanning-for-mojang",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T23:40:51+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Advice for the next 100 Rust GUIs",
+      "url": "https://linebender.org/blog/next-100-guis",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T23:10:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How I Got Postgres into a Single Binary",
+      "url": "https://progrium.xyz/articles/2026/single-binary-postgres",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T19:32:22+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How 2 Security Research (MLG)",
+      "url": "https://www.youtube.com/watch?v=dXQ_9WN6KLQ",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T16:57:15+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "TODOs JJ Style",
+      "url": "https://bwc9876.dev/blog/jj_todo",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T15:17:18+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "My Monitor Was Cutting My Download Speed by 75%",
+      "url": "https://blog.tymscar.com/posts/studiodisplayethernet",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T15:03:28+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "C++26 is done (again)! — Trip report: November 2026 ISO C++ standards meeting (Búzios, Brazil)",
+      "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T13:57:53+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Probabilistic data structures in Go, part 2",
+      "url": "https://antonz.org/probabilistic-data-structures-2",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T13:18:02+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Microsoft 365 Outage - Post Incident Report",
+      "url": "https://tianyin.github.io/misc/pir_microsoft_365_11-12-2026.pdf",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T12:22:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Changes on freedesktop.org",
+      "url": "https://blog.tenstral.net/2026/11/new-fdo-website.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T11:41:23+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "From Skiplists to B+ Trees: Making Valkey Sorted Sets More Memory Efficient",
+      "url": "https://valkey.io/blog/from-skiplist-to-b+tree",
+      "source_id": "lobsters",
+      "published_at": "2026-11-21T04:31:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "Slopstrap: Make your site look hastily vibecoded",
       "url": "https://slopstrap.mikelacher.com/l",
       "source_id": "lobsters",
@@ -339,7 +444,7 @@
       "status": "feed-candidate"
     },
     {
-      "title": "Levent Alpoge Claims Proof of Riemann Hypothesis",
+      "title": "Levent Alpöge Claims Proof of Riemann Hypothesis",
       "url": "https://alpo.ge/remark.pdf",
       "source_id": "lobsters",
       "published_at": "2026-11-20T14:46:49+00:00",
@@ -413,6 +518,13 @@
       "url": "https://ethanlowman.com/posts/jj-primer",
       "source_id": "lobsters",
       "published_at": "2026-11-20T03:34:36+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "llm-gemini 0.38.1",
+      "url": "https://simonwillison.net/2026/Nov/20/llm-gemini",
+      "source_id": "simon",
+      "published_at": "2026-11-20T03:01:57+00:00",
       "status": "feed-candidate"
     },
     {
@@ -1856,118 +1968,6 @@
       "source_id": "lobsters",
       "published_at": "2026-10-30T16:06:56+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "Go 1.28's HTTP/2 Parking: Measuring Memory Savings",
-      "url": "https://abdolirad.me/articles/go-1-28-http2-parking-memory",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T15:39:37+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Shrinking NixOS Ram footprint and resource requirements to the bare minimum",
-      "url": "https://lowendspirit.com/discussion/11543/shrinking-nixos-ram-footprint-and-resource-requirements-to-the-bare-minimum",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T15:04:44+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "No, npm, “estee” is not a typo of “testem”",
-      "url": "https://smoores.dev/post/no_npm_estee_is_not_a_typo",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T15:01:56+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Provenance and license notices for libomp.dylib in PyTorch 2.8.0 macOS ARM64 wheel",
-      "url": "https://discuss.pytorch.org/t/provenance-and-license-notices-for-libomp-dylib-in-pytorch-2-8-0-macos-arm64-wheel/225695",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-10-30T13:21:40+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Do At-Proto Users Know This Is Public?",
-      "url": "https://melaniekat.com/blog/public-on-pds",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T11:22:43+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Backdoors in Claude Code for VS, Cursor official extensions",
-      "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T11:04:55+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "What are you doing this weekend?",
-      "url": "https://lobste.rs/s/u7dsbx/what_are_you_doing_this_weekend",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T09:55:20+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How curl was accidentally Turing-complete for nine months",
-      "url": "https://seriot.ch/computation/curl.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T07:24:01+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Pidgin 3.0 Alpha 4 2.98.0 has been released",
-      "url": "https://discourse.imfreedom.org/t/pidgin-3-0-alpha-4-2-98-0-has-been-released/445",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T03:58:19+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "gh-inbox: clean up GitHub notifications in bulk from the command line",
-      "url": "https://github.com/maraino/gh-inbox",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T02:37:55+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "If you love a website, back it up",
-      "url": "http://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T01:29:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Design the interface for functionality not familiarity",
-      "url": "https://lapcatsoftware.com/articles/2026/10/10.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-30T01:04:38+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "XSS in yarr RSS reader",
-      "url": "https://0x67673068.me/xss-in-yarr",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T23:55:54+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "API credits benefit for eligible ChatGPT subscriptions",
-      "url": "https://simonwillison.net/2026/Oct/29/api-credits",
-      "source_id": "simon",
-      "published_at": "2026-10-29T22:48:29+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "London meetup",
-      "url": "https://lobste.rs/s/dsrruj/london_meetup",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T20:56:43+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "C2PA's eMudhra Moment",
-      "url": "https://www.da.vidbuchanan.co.uk/blog/c2pa-four.html",
-      "source_id": "lobsters",
-      "published_at": "2026-10-29T20:33:44+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-21T04:06:56.480730+00:00"
+  "collected_at": "2026-11-22T03:19:08.152575+00:00"
 }
