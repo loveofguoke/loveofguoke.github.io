@@ -290,6 +290,160 @@
   ],
   "entries": [
     {
+      "title": "Abolish Lock Poisoning",
+      "url": "https://lucumr.pocoo.org/2026/11/25/poisoning",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T05:10:37+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Showing a MessageBox from kernel-mode",
+      "url": "https://vollragm.github.io/posts/kernel-message-box",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T04:23:25+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Matrix Multiplication is Θ(n^2.25)",
+      "url": "https://raw.githubusercontent.com/openai/math/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T03:15:59+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "FRSTPM, a completely useless 80287 instruction?",
+      "url": "https://www.os2museum.com/wp/a-completely-useless-instruction",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T02:04:56+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "A faster algorithm for extracting hexadecimal digits of π",
+      "url": "https://www.stylewarning.com/posts/faster-digit-extraction",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T23:53:03+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "From formal verification to bug-finding in CHERIoT",
+      "url": "https://cheriot.org/verification/2026/11/24/griotte-verification-effort.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T23:52:41+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Pokemon Childhood Version: A romhack where Mew is under the truck",
+      "url": "https://wheybags.com/blog/pokemon_childhood_version.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T23:14:50+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Three LLM inflection points in twelve months",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points",
+      "source_id": "simon",
+      "published_at": "2026-11-24T23:02:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Why there are still no non-WebKit browsers on iOS",
+      "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T22:28:27+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "9/UX: a Macintosh-inspired desktop for 9front",
+      "url": "https://progrium.github.io/9ux",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T18:37:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Fund browser-grade certificate checking for every TLS client",
+      "url": "https://upki.rustls.dev/funding.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T18:27:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Per Vognsen on the effect of AVX-512 on lexing and parsing",
+      "url": "https://mastodon.social/@pervognsen/117668394962974183",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T18:11:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Beyond Linux: A Journey Through the Open Source Ecosystem",
+      "url": "https://it-notes.dragas.net/2026/11/17/beyond-linux-a-journey-through-the-open-source-ecosystem",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T17:45:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery",
+      "source_id": "simon",
+      "published_at": "2026-11-24T16:53:59+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "SeaStore: Redesigning Ceph’s Storage Backend for CPU-Efficient NVMe Performance",
+      "url": "https://dl.acm.org/doi/10.1145/3828523.3857112",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T16:35:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Nightmare mode: simulating disk failures",
+      "url": "https://antithesis.com/blog/2026/nightmare-mode",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T16:26:44+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "I checked Clojure's core with Lean and found 17 unreported bugs",
+      "url": "https://s.conao3.com/blog/2026/e4f733",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T15:22:24+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Security incident on Hex.pm",
+      "url": "https://hex.pm/blog/security-incident-on-hexpm",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T14:52:19+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "iTerm2 Arbitrary Command Execution via Kitty Image Protocol APC Response Injection",
+      "url": "https://ii4gsp.github.io/iterm2-rce",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T14:06:14+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Use flash-linear-attention on sm_70 GPU",
+      "url": "https://discuss.pytorch.org/t/use-flash-linear-attention-on-sm-70-gpu/226039",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-24T13:41:10+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Bypassing iOS Safari 60 FPS Limit",
+      "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+      "source_id": "lobsters",
+      "published_at": "2026-11-24T10:35:19+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Pacing AI via Compute Reallocation",
+      "url": "https://www.lesswrong.com/posts/dBEDh2WeZfhuiDnJ5/pacing-ai-via-compute-reallocation",
+      "source_id": "lesswrong",
+      "published_at": "2026-11-24T07:43:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "2035 came early",
       "url": "https://fzakaria.com/2026/11/23/2035-came-early",
       "source_id": "lobsters",
@@ -1814,160 +1968,6 @@
       "source_id": "lobsters",
       "published_at": "2026-11-02T13:53:32+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "The U.S. Census Bureau and “Super Intelligence”",
-      "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence",
-      "source_id": "simon",
-      "published_at": "2026-11-02T13:31:26+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Union Types and Option Types",
-      "url": "https://tibleiz.net/blog/2025-03-16-union-types-and-option-types.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T12:01:17+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Program",
-      "url": "https://schmud.de/posts/2026-11-02-program.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T11:18:07+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "My reflex of assuming our servers need ever-growing amounts of RAM",
-      "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/ServerRAMGrowthReflex",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T10:33:02+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "the lost malloc()",
-      "url": "https://napcakes.nekoweb.org/posts/malloc",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T08:46:48+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How Do You Build Balanced Sampling for a Long-Tail Video Dataset?",
-      "url": "https://discuss.pytorch.org/t/how-do-you-build-balanced-sampling-for-a-long-tail-video-dataset/225727",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-11-02T08:34:53+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A400000 Winners",
-      "url": "https://oeis.org/wiki/A400K_Winners",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T03:25:15+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Problem with C++ Safety: Modern C++ Is a Mindset, Not a Standard",
-      "url": "https://www.modernescpp.com/index.php/cpp-and-memory-safety-part-2",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T02:26:44+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Postgres 19 is late, and it's AI's fault",
-      "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T02:19:02+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "If in doubt, delete the uv.lock file",
-      "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first",
-      "source_id": "simon",
-      "published_at": "2026-11-01T23:24:22+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Understanding Org's LaTeX previews",
-      "url": "https://karthinks.com/software/understanding-org-latex-preview",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T22:19:51+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "An easy way to try local AI with braindead-local-intelligence",
-      "url": "https://dataswamp.org/~solene/2026-11-01-braindead-local-intelligence.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T20:26:47+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Work on GEFS (the Good Enough File System) for OpenBSD progresses",
-      "url": "https://www.undeadly.org/cgi?action=article%3Bsid%3D20261101115637",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T20:13:29+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "London Meetup - Nov 2026",
-      "url": "https://lobste.rs/s/cqzwwg/london_meetup_nov_2026",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T18:47:10+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Spooky C++",
-      "url": "https://www.nablag.com/spooky_cpp",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T18:17:14+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Introduction to Programming in ATS",
-      "url": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T17:59:00+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Pratt parsing is a black box",
-      "url": "https://vinipsmaker.github.io/blog/article/pratt-parsing-is-a-black-box",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T17:41:53+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Zig: From Beginner to Slightly Less Beginner",
-      "url": "https://www.youtube.com/watch?v=jWCQXBVIyrY",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T17:19:19+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quoting Kyle Kingsbury",
-      "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury",
-      "source_id": "simon",
-      "published_at": "2026-11-01T16:49:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Batch-1 LLM decoding in PyTorch + Triton, approximately at parity with llama.cpp on an RTX 4060: looking for independent reproductions",
-      "url": "https://discuss.pytorch.org/t/batch-1-llm-decoding-in-pytorch-triton-approximately-at-parity-with-llama-cpp-on-an-rtx-4060-looking-for-independent-reproductions/225725",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-11-01T16:34:55+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A Specialised Haskell Processor on FPGA",
-      "url": "https://bathtub-01.github.io/technical/ouros-demo",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T16:13:20+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "An outsider's perspective on Scion and Mononoke",
-      "url": "https://typesanitizer.com/blog/scion.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-01T15:22:36+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-24T07:00:01.474003+00:00"
+  "collected_at": "2026-11-25T05:33:30.338388+00:00"
 }
