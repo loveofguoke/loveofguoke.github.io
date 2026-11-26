@@ -290,6 +290,167 @@
   ],
   "entries": [
     {
+      "title": "Browser tabs as a container runtime",
+      "url": "https://fzakaria.com/2026/11/25/browser-tabs-as-a-container-runtime",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T04:57:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "I Booted From My Tape Backup From 2002",
+      "url": "https://changelog.complete.org/archives/45268-i-booted-from-my-tape-backup-from-2002",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T03:56:07+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Visualizing Metra (2011)",
+      "url": "https://www.c82.net/blog/visualizing-metra",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T01:14:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The beauty of CSS mixins",
+      "url": "https://patrickbrosset.com/articles/2026-11-25-the-beauty-of-css-mixins",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T01:02:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "UI style guides",
+      "url": "https://aresluna.org/ui-style-guides",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T00:54:10+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Make the Plan a Value",
+      "url": "https://jackkelly.name/blog/archives/2026/11/26/make_the_plan_a_value",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T00:12:06+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Scott Aaronson",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson",
+      "source_id": "simon",
+      "published_at": "2026-11-25T23:26:32+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "SSH is a GUI framework",
+      "url": "https://zydra.sh/articles/ssh-is-a-gui-framework",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T22:55:47+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Typed indexes in Zig",
+      "url": "https://lvignoli.eu/posts/2026-11-16-typed-indexes-in-zig",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T22:48:44+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Entering the Geminispace",
+      "url": "https://jmmv.dev/2026/11/entering-the-geminispace.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T22:43:05+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Generalized Riemann Hypothesis proof in Lean 4, in 76k lines (down from 17M)",
+      "url": "https://leanprover.zulipchat.com",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T22:26:56+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Scott Aaronson on recent complexity theory AI achievements",
+      "url": "https://scottaaronson.blog?p=10379",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T21:52:52+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Slow Ubuntu security response times",
+      "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T20:10:24+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Truestar: check that your PyTorch model gives the same answer on every chip",
+      "url": "https://discuss.pytorch.org/t/truestar-check-that-your-pytorch-model-gives-the-same-answer-on-every-chip/226060",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-25T20:00:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-charts 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/25/datasette-charts",
+      "source_id": "simon",
+      "published_at": "2026-11-25T18:16:50+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Update on a security incident involving 1Password’s backend systems",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T17:43:13+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Issue report: PyTorch Inductor CUDA graph break bug (ref: GitHub issue #127975)",
+      "url": "https://discuss.pytorch.org/t/issue-report-pytorch-inductor-cuda-graph-break-bug-ref-github-issue-127975/226053",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-25T14:32:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "October in Servo: video captions and inert content",
+      "url": "https://servo.org/blog/2026/11/25/october-in-servo",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T14:31:31+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Getting old Java phones online again",
+      "url": "https://antcating.github.io/2026/11/23/getting-old-java-phones-online-again.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T13:28:55+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Optimizing Rustc's next trait solver",
+      "url": "https://donsz.nl/blog/optimizing-rustcs-next-trait-solver",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T13:09:22+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Taking over US Treasury subdomains for $3 each",
+      "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T10:27:49+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How Do You Track Dataset Revisions and Data Quality in PyTorch Training?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-track-dataset-revisions-and-data-quality-in-pytorch-training/226048",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-25T06:52:06+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Marginalia Search, Money, C++, Rust, AI, stuff",
+      "url": "https://www.marginalia.nu/log/a_141_marginalia_update",
+      "source_id": "lobsters",
+      "published_at": "2026-11-25T06:20:29+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "Abolish Lock Poisoning",
       "url": "https://lucumr.pocoo.org/2026/11/25/poisoning",
       "source_id": "lobsters",
@@ -448,6 +609,13 @@
       "url": "https://fzakaria.com/2026/11/23/2035-came-early",
       "source_id": "lobsters",
       "published_at": "2026-11-24T06:30:15+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-charts 0.2a1",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts-2",
+      "source_id": "simon",
+      "published_at": "2026-11-24T06:07:19+00:00",
       "status": "feed-candidate"
     },
     {
@@ -1800,174 +1968,6 @@
       "source_id": "lobsters",
       "published_at": "2026-11-03T15:19:50+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "Ideas for social networks",
-      "url": "https://raphaelkabo.com/blog/social-network-ideas",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T14:24:08+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Why we're moving our warehouse off DuckDB",
-      "url": "https://posthog.com/blog/moving-off-duckdb",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T07:33:25+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How Do You Evaluate Segment-Level Video Retrieval in PyTorch?",
-      "url": "https://discuss.pytorch.org/t/how-do-you-evaluate-segment-level-video-retrieval-in-pytorch/225730",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-11-03T06:03:34+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
-      "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location",
-      "source_id": "simon",
-      "published_at": "2026-11-03T05:32:25+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "October sponsors-only newsletter",
-      "url": "https://simonwillison.net/2026/Nov/3/october-newsletter",
-      "source_id": "simon",
-      "published_at": "2026-11-03T05:28:59+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Why did you choose the nix you nix?",
-      "url": "https://lobste.rs/s/7fcuxz/why_did_you_choose_nix_you_nix",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T03:58:06+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Quantity vs quality in pottery is a lie",
-      "url": "https://www.lesswrong.com/posts/LrAqM4bGmAoA79rP3/quantity-vs-quality-in-pottery-is-a-lie",
-      "source_id": "lesswrong",
-      "published_at": "2026-11-03T03:29:41+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Scaling Git at OpenAI",
-      "url": "https://openai.com/index/scaling-git-at-openai",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T02:18:20+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "llm 0.37",
-      "url": "https://simonwillison.net/2026/Nov/2/llm",
-      "source_id": "simon",
-      "published_at": "2026-11-02T23:49:30+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The road to opaque software is paved with good (engineering) intentions",
-      "url": "https://tomasp.net/longreads/closing",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T21:42:37+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A Decade of Kill Bugs",
-      "url": "https://alangrow.com/blog/a-decade-of-kill-bugs",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T21:23:24+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "An Introduction to Bε-trees and Write-Optimization",
-      "url": "https://www.usenix.org/publications/login/oct15/bender",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T20:26:38+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "My favourite laptop",
-      "url": "https://blog.jsbarretto.com/post/laptop",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T19:48:40+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "This background sound leaks your exact location",
-      "url": "https://youtu.be/UytYrhYLOKI",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T19:42:32+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
-      "url": "https://rikiyat.github.io/blog/weight-space-programming",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T19:24:33+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Stop Hardcoding Your Timeouts",
-      "url": "https://alfy.blog/2026/04/23/stop-hardcoding-your-timeouts.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T19:22:32+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Jailbreaking my car's navigation system just so I can change the time",
-      "url": "https://blog.nns.ee/2026/11/02/renault-hack",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T16:30:58+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "New Release: Tor Browser 16.0",
-      "url": "https://blog.torproject.org/new-release-tor-browser-160",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T16:28:17+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Virtual Art Museum built with Three js",
-      "url": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T15:51:17+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Polyend releases the Tracker firmware source code",
-      "url": "https://backstage.polyend.com/t/tracker-the-biggest-update-yet/25120",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T15:22:16+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Recognizing Keystrokes Using WiFi Devices",
-      "url": "https://ieeexplore.ieee.org/document/7875144",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T14:43:13+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "SuperVote: 15 year retrospective on an app for sharing political endorsements",
-      "url": "https://callejas.com/a/supervote",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T14:38:42+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The advantages of mobile Linux over AOSP",
-      "url": "https://amosbbatto.wordpress.com/2026/10/19/the-advantages-of-mobile-linux-over-aosp",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T14:29:18+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "What are you doing this week?",
-      "url": "https://lobste.rs/s/maqsgl/what_are_you_doing_this_week",
-      "source_id": "lobsters",
-      "published_at": "2026-11-02T13:53:32+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-25T05:33:30.338388+00:00"
+  "collected_at": "2026-11-26T05:15:38.838951+00:00"
 }
