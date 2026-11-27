@@ -290,6 +290,125 @@
   ],
   "entries": [
     {
+      "title": "How do you handle model performance degradation in production with PyTorch?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-handle-model-performance-degradation-in-production-with-pytorch/226080",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-27T03:55:43+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "AI made self-hosting fun again",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T01:50:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Human military relevance is more important than economic relevance",
+      "url": "https://www.lesswrong.com/posts/MSk9tqAmrmeasFgAZ/human-military-relevance-is-more-important-than-economic",
+      "source_id": "lesswrong",
+      "published_at": "2026-11-26T23:31:00+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Ambiguous Errors Are the Mind Killer",
+      "url": "https://amit.prasad.me/blog/ambiguous-errors",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T21:23:06+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The need for a formally verifiable mainstream programming language",
+      "url": "https://blainehansen.me/post/mainstream-verifiable-language",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T20:06:50+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Taking Email Back",
+      "url": "http://www.linux-magazine.com/Online/Features/Taking-Email-Back",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T19:51:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "London Meetup - 13th December 2026",
+      "url": "https://lobste.rs/s/l8cjcz/london_meetup_13th_december_2026",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T16:09:08+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Quoting Jack Despain Zhou",
+      "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou",
+      "source_id": "simon",
+      "published_at": "2026-11-26T15:09:31+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Hints and hazards: pg_plan_advice in PG19",
+      "url": "https://clickhouse.com/blog/pg-plan-advice-postgresql-19",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T13:20:26+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Garage v2.6.0 released with web admin, v1.x EoL & other news",
+      "url": "https://garagehq.deuxfleurs.fr/blog/2026-11-webadmin-release",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T12:40:23+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "In defense of lock poisoning in Rust (2025)",
+      "url": "https://sunshowers.io/posts/on-poisoning",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T11:51:23+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Understanding \"You are not expected to understand this.\"",
+      "url": "https://www.taniwha.com/~paul/not.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T11:30:21+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Ansible Fails waiting for privilege escalation on Ubuntu 26",
+      "url": "https://www.jeffgeerling.com/blog/2026/ansible-fails-become-ubuntu2604",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T09:45:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Qualcomm’s Oryon 3 Reaches the Top",
+      "url": "https://chipsandcheese.com/p/qualcomms-oryon-3-reaches-the-top",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T08:02:18+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How WinHelp files work",
+      "url": "https://quin.fyi/posts/how-winhelp-files-work.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-26T06:39:00+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync",
+      "source_id": "simon",
+      "published_at": "2026-11-26T06:08:25+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://simonwillison.net/2026/Nov/26/hn-50651685",
+      "source_id": "simon",
+      "published_at": "2026-11-26T05:08:46+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "Browser tabs as a container runtime",
       "url": "https://fzakaria.com/2026/11/25/browser-tabs-as-a-container-runtime",
       "source_id": "lobsters",
@@ -1849,125 +1968,6 @@
       "source_id": "lobsters",
       "published_at": "2026-11-03T23:45:21+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "datasette-agent 0.5a0",
-      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent",
-      "source_id": "simon",
-      "published_at": "2026-11-03T23:13:45+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Gist of Go: Concurrency",
-      "url": "https://antonz.org/go-concurrency",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T23:05:03+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Postgres 19 REPACK: Built-In Online Table Bloat Cleanup",
-      "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T22:44:48+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Announcing NetBSD 11.1",
-      "url": "https://www.netbsd.org/releases/formal-11/NetBSD-11.1.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T22:00:17+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "llm 0.37.1",
-      "url": "https://simonwillison.net/2026/Nov/3/llm",
-      "source_id": "simon",
-      "published_at": "2026-11-03T21:41:42+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "macOS 27 Golden Gate does not actually support CoreStorage volumes",
-      "url": "https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T21:37:11+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "mine",
-      "url": "https://coalton-lang.github.io/mine",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T21:01:04+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Would you believe it's jank?",
-      "url": "https://www.youtube.com/watch?v=tHgApFhevrQ",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T20:03:16+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Common Beliefs About DNSSEC Put to the Test: An Invitation to Fact-Check Your Assumptions",
-      "url": "https://circleid.com/posts/common-beliefs-about-dnssec-put-to-the-test-an-invitation-to-fact-check-your-assumptions",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T19:45:28+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Your terminal manipulation/navigation setups",
-      "url": "https://lobste.rs/s/r3gton/your_terminal_manipulation_navigation",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T18:54:55+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "kitty 0.50.0",
-      "url": "https://sw.kovidgoyal.net/kitty/changelog",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T17:43:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Planning with open variable lists in Gecode",
-      "url": "https://zayenz.se/blog/post/open-cp-in-gecode",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T16:33:43+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
-      "source_id": "simon",
-      "published_at": "2026-11-03T16:29:48+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A Second Futamura Projection",
-      "url": "https://blog.veitheller.de/A_Second_Futamura_Projection.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T16:14:27+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
-      "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T15:44:27+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The Ubuntu 26.04 Rust sudo is not compatible with standard sudo",
-      "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604RustSudoNotCompatible",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T15:23:21+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Death comes for XSLT",
-      "url": "https://dbushell.com/2026/11/03/xslt-rip",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T15:19:50+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-26T05:15:38.838951+00:00"
+  "collected_at": "2026-11-27T05:13:33.540635+00:00"
 }
