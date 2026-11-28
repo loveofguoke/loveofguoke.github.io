@@ -290,6 +290,146 @@
   ],
   "entries": [
     {
+      "title": "FastLanes: Next-gen File Format",
+      "url": "https://research.vu.nl/files/447013431/afroozehphdthesis%20-%2069280d90f0bfd.pdf",
+      "source_id": "lobsters",
+      "published_at": "2026-11-28T00:12:53+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "A Best-in-Class iOS App: The Book Series",
+      "url": "https://www.bestinclassiosapp.com",
+      "source_id": "lobsters",
+      "published_at": "2026-11-28T00:12:41+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-charts 0.4a0",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-charts",
+      "source_id": "simon",
+      "published_at": "2026-11-27T23:57:17+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "My Approach to Alt Text (2024)",
+      "url": "http://adrianroselli.com/2024/05/my-approach-to-alt-text.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T22:00:18+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Proof automation in a language",
+      "url": "https://www.imperialviolet.org/2026/11/15/proofauto2.html",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T20:42:02+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "x86 is an octal machine",
+      "url": "https://gist.github.com/seanjensengrey/f971c20d05d4d0efc0781f2f3c0353da",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T20:24:04+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Why optimistic updates are corrosive",
+      "url": "https://datastar-instant-intent.ndyg.cross.stream/corrosive",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T20:01:50+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Objections to .php application being published on ICANN site",
+      "url": "https://pub.roddie.digital/3n3aavxi6hc2g",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T18:16:09+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Pop!_OS 26.04 LTS Has Landed",
+      "url": "https://system76.com/blog/post/pop_os-26-04-lts-has-landed",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T16:42:50+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Build your own Paint",
+      "url": "https://www.buildyourownpaint.com/en",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T16:22:36+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Hard Drive pricing has gotten bad",
+      "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T16:15:23+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "The State of Allocators in 2026 - Finally Stabilised",
+      "url": "https://cetra3.github.io/blog/state-of-allocators-2026-finally-stabilised",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T16:09:11+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "What are you doing this weekend?",
+      "url": "https://lobste.rs/s/locqp9/what_are_you_doing_this_weekend",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T13:23:08+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Exception Best Practices",
+      "url": "https://www.well-typed.com/blog/2026/11/exception-best-practices",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T13:05:30+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "An Overview of Go's Tooling: Version 2",
+      "url": "https://www.alexedwards.net/blog/an-overview-of-go-tooling-v2",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T12:22:52+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Tiny Hat: a new Linux distro dedicated to retro gamedev",
+      "url": "https://roboticoverlords.org/tinyhat",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T09:11:13+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Pimalaya goes stable",
+      "url": "https://blog.pimalaya.org/pimalaya-goes-stable",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T08:01:31+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Company Culture = Slack Emoji ÷ sqrt(Headcount)",
+      "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T07:35:52+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "How Do You Integrate Active Learning with a PyTorch Robot Dataset?",
+      "url": "https://discuss.pytorch.org/t/how-do-you-integrate-active-learning-with-a-pytorch-robot-dataset/226081",
+      "source_id": "pytorch-forums",
+      "published_at": "2026-11-27T07:04:20+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "Curb impacts of AI on programming to maintain EU sovereignty",
+      "url": "https://www.draketo.de/software/curb-ai-impact",
+      "source_id": "lobsters",
+      "published_at": "2026-11-27T07:00:03+00:00",
+      "status": "feed-candidate"
+    },
+    {
       "title": "How do you handle model performance degradation in production with PyTorch?",
       "url": "https://discuss.pytorch.org/t/how-do-you-handle-model-performance-degradation-in-production-with-pytorch/226080",
       "source_id": "pytorch-forums",
@@ -301,6 +441,13 @@
       "url": "https://janlukas.blog/posts/ai-self-hosting",
       "source_id": "lobsters",
       "published_at": "2026-11-27T01:50:42+00:00",
+      "status": "feed-candidate"
+    },
+    {
+      "title": "datasette-mcp 0.4",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp",
+      "source_id": "simon",
+      "published_at": "2026-11-27T00:26:17+00:00",
       "status": "feed-candidate"
     },
     {
@@ -1821,153 +1968,6 @@
       "source_id": "lobsters",
       "published_at": "2026-11-05T00:35:09+00:00",
       "status": "feed-candidate"
-    },
-    {
-      "title": "SUBSTACK: Theory: \"Master Research Framework: Substrate-Neutral Consciousness Measurement\" & Experiment: \"The Courgette Accords: Technical Protocol L2.1 (The Experimental Blueprint)\"",
-      "url": "https://discuss.pytorch.org/t/substack-theory-master-research-framework-substrate-neutral-consciousness-measurement-experiment-the-courgette-accords-technical-protocol-l2-1-the-experimental-blueprint/225746",
-      "source_id": "pytorch-forums",
-      "published_at": "2026-11-04T19:08:28+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Burnt TOAST",
-      "url": "https://www.pgedge.com/blog/burnt-toast",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T18:00:32+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "A new Go API for JSON",
-      "url": "https://go.dev/blog/jsonv2",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T17:52:32+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Python on my wrist",
-      "url": "https://tildeweb.nl/~michiel/python-on-my-wrist.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T17:31:02+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Gleam Programming Language Update October 2026",
-      "url": "https://www.youtube.com/watch?v=Jm2HZhwreNs",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T15:54:58+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Arrows to Arrows, Categories to Queries",
-      "url": "https://reasonablypolymorphic.com/blog/arrows-to-arrows",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T15:49:15+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "datasette-llm 0.1a10",
-      "url": "https://simonwillison.net/2026/Nov/4/datasette-llm",
-      "source_id": "simon",
-      "published_at": "2026-11-04T15:26:02+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Shlemiel the Painter Is Back: How Zig’s libc Rewrite Made SQLite Slower",
-      "url": "https://dennisforbes.ca/blog/microblog/2026/10/the_accidental_12000x_sqlite_slowdown",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T15:23:09+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Your Cryptography Conspiracy Theory Is Wrong",
-      "url": "https://soatok.blog/2026/10/29/your-cryptography-conspiracy-theory-is-wrong",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T14:58:11+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Lorem Ipsum Dot Gov Dot UK",
-      "url": "https://shkspr.mobi/blog/2026/11/lorem-ipsum-dot-gov-dot-uk",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T14:50:34+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "How to speed up the Rust compiler in November 2026",
-      "url": "https://nnethercote.github.io/2026/11/04/how-to-speed-up-the-rust-compiler-in-november-2026.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T14:05:16+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Man-in-the-middle arbitrary code execution in Debian’s apt",
-      "url": "https://lists.debian.org/debian-security-announce/2026/msg00526.html",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T13:36:43+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "So my ISP was hijacking my DNS",
-      "url": "https://karthihegde.dev/posts/dns_tampering",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T12:06:23+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Introducing Adaptive Dark Mode",
-      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T11:04:40+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Zig 0.17.1 Released",
-      "url": "https://ziglang.org/news/0.17.1-released",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T10:57:35+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "C++26 Disapproved",
-      "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T08:56:24+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The cryptography behind electronic voting (and why paper ballots are still essential)",
-      "url": "https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T07:33:05+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Mac at any scale",
-      "url": "https://namespace.so/blog/mac-at-any-scale",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T03:08:11+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "The valley of webhooks",
-      "url": "https://weli.dev/blog/the-valley-of-webhooks",
-      "source_id": "lobsters",
-      "published_at": "2026-11-04T02:10:26+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "datasette-apps 0.3a0",
-      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps",
-      "source_id": "simon",
-      "published_at": "2026-11-04T00:29:36+00:00",
-      "status": "feed-candidate"
-    },
-    {
-      "title": "Observations from Running stealmybitcoin.com",
-      "url": "https://pavursec.com/blog/stealmybitcoin",
-      "source_id": "lobsters",
-      "published_at": "2026-11-03T23:45:21+00:00",
-      "status": "feed-candidate"
     }
   ],
   "feed_status": {
@@ -2036,5 +2036,5 @@
       "message": "无订阅源，按需人工复核"
     }
   },
-  "collected_at": "2026-11-27T05:13:33.540635+00:00"
+  "collected_at": "2026-11-28T04:49:21.596187+00:00"
 }
